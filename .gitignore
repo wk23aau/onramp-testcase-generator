@@ -59,8 +59,8 @@ venv.bak/
 Thumbs.db
 
 # Data files (exclude large raw data files and processed outputs)
-data/raw/
-data/processed/
+# data/raw/
+# data/processed/
 
 # Model artifacts (if generated and large)
 models/

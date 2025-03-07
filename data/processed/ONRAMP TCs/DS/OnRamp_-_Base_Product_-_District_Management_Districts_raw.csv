@@ -1,0 +1,1018 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+76165.0,Test Case,DM - Districts - Streets - Search Streets,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,Pre-requisite: Have an existing street and a voter assigned to that street segment ,"
+",,,
+,,,2.0,Access EMS,Dashboard is displayed ,,,
+,,,3.0,Navigate to District Management > Districts > View Streets,Search Streets page is displayed,,,
+,,,4.0,"Select a Street from the ""Street Name"" dropdown and click ""Search""",All the Street Segments under that Street Name will be listed,,,
+,,,5.0,Choose a desired Street Segment and click on the Action ellipsis ,Options displayed,,,
+,,,6.0,"Click on ""View""",All the voters that are assigned to that Street Segment will be listed below,,,
+,,,7.0,"Choose a desired Voter and click on the Action ellipsis
+","Options displayed
+",,,
+,,,8.0,"Click on ""View""
+",User will be taken to the View Voter screen for that particular Voter,,,
+76181.0,Test Case,DM - Districts - Street Segments - Add New Street,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,Access the EMS system,Dashboard displayed,,,
+,,,2.0,Navigate to District Management > Districts > Manage Streets,Street Segments page is displayed,,,
+,,,3.0,"Click ""ADD""",Add/Update Street Segment page is displayed,,,
+,,,4.0,"Fill in all required fields and click ""Save""",The Street will be successfully created,,,
+,,,5.0,"Select the street you just created from the ""Street Name"" dropdown and click ""Search""",The Street you just created will be displayed showing the Street Segment,,,
+77002.0,Test Case,DM - Districts - Street Segments - Add Street Segment to existing Street,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,2.0,"Navigate to District Management > Districts > Manage Streets
+","Street Segments page is displayed
+",,,
+,,,3.0,"From the ""Street Name"" dropdown select a desired Street",Street selected,,,
+,,,4.0,"Click ""ADD""
+","Add/Update Street Segment page is displayed
+",,,
+,,,5.0,"Fill in all required fields and click ""Save""
+","The Street will be successfully created
+",,,
+,,,6.0,"From the ""Street Name"" dropdown select the Street you just created and Street Segment for and click ""Search""
+","The new Street segment you just created will be displayed alongside the existing segments
+",,,
+77004.0,Test Case,DM - Districts - Street Segments - Edit existing Street Segment,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing Street with Segments","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Manage Streets
+","Street Segments page is displayed
+",,,
+,,,4.0,"From the ""Street Name"" dropdown select a desired Street
+","Street selected
+",,,
+,,,5.0,"Click ""SEARCH""",All Street Segments are displayed for that chosen Street,,,
+,,,6.0,Choose a desired Street Segment and click on the Actions ellipsis ,Options displayed,,,
+,,,7.0,"Click ""Edit""",Add / Update page is displayed,,,
+,,,8.0,Change the Street Segment in any way desired e.g. Postal City,Street Segment changed,,,
+,,,9.0,"Click ""UPDATE""",Street Segment updated,,,
+,,,10.0,"From the ""Street Name"" dropdown select the Street with the Segment you just edited and click ""SEARCH""",Street Segments will be listed and the changes you made will be reflected on the Street Segment you edited,,,
+77005.0,Test Case,DM - Districts - Street Segments - Delete Street Segment,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing Street with Segments
+","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Manage Streets
+","Street Segments page is displayed
+",,,
+,,,4.0,"From the ""Street Name"" dropdown select a desired Street
+","Street selected
+",,,
+,,,5.0,"Click ""SEARCH""
+","All Street Segments are displayed for that chosen Street
+",,,
+,,,6.0,"Choose a desired Street Segment and click on the Actions ellipsis 
+","Options displayed
+",,,
+,,,7.0,"Click ""Delete""",The Street Segment will be deleted (You may have to refresh the page to see this change),,,
+77026.0,Test Case,DM - Districts - Special Address - Add New Business Address,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing Street with Segments
+","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Special Address
+",Special Address page is displayed,,,
+,,,4.0,"From the ""Street Name"" dropdown select a desired Street Name",Street Name selected,,,
+,,,5.0,"From the ""Street Segment"" dropdown select a desired Street Segment",Street Segment selected,,,
+,,,6.0,"Click ""SEARCH""",The Existing Special Addresses area will open and displayed all existing Business Addresses and Healthcare Facilities,,,
+,,,7.0,"Ensure Business Address tab is selected and click ""ADD""",Add Business Address page is displayed,,,
+,,,8.0,"Fill in all required fields and click ""ADD""",A success notification will be displayed and you are taken back to the Special Address page,,,
+,,,9.0,"From the ""Street Name"" dropdown select the Street you created the Business Address under
+",Street selected,,,
+,,,10.0,"From the ""Street Segment"" dropdown select the Street Segment you created the Business Address under
+",Street Segment selected,,,
+,,,11.0,"Click ""SEARCH""",A list of Business Addresses under that Street Segment will be displayed and the newly created Business Address will be there,,,
+77040.0,Test Case,DM - Districts - Special Address - Edit existing Business Address,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing Business Address
+","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Special Address
+","Special Address page is displayed
+",,,
+,,,4.0,"From the ""Street Name"" dropdown select the Street with the existing Business Address
+",Street selected,,,
+,,,5.0,"From the ""Street Segment"" dropdown select the Street Segment with the existing Business Address
+",Street Segment selected,,,
+,,,6.0,"Click ""SEARCH""
+","The Existing Special Addresses area will open and displayed all existing Business Addresses and Healthcare Facilities
+",,,
+,,,7.0,"Ensure Business Address tab is selected
+",Existing Business Address will be displayed,,,
+,,,8.0,"Choose a Business Address and click on the ""Actions"" ellipsis",Options displayed,,,
+,,,9.0,"Click ""Edit""",Business Address page is displayed,,,
+,,,10.0,"Make any change to the Business Address and click ""UPDATE""",A success message will display and you are taken back to the Special Address page,,,
+,,,11.0,"From the ""Street Name"" dropdown select the Street with the Business Address you just changed
+","Street selected
+",,,
+,,,12.0,"From the ""Street Segment"" dropdown select the Street Segment with the Business Address you just changed
+",Street Segment selected,,,
+,,,13.0,"Click ""SEARCH""","A list of Business Addresses under that Street Segment will be displayed and the changes will be reflected on the Segment you edited
+",,,
+77092.0,Test Case,DM - Districts - District Type - Add New District Type,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,2.0,"Navigate to District Management > Districts > District Type
+","District Type page is displayed
+",,,
+,,,3.0,"Click ""ADD""",District Type Add page will be displayed,,,
+,,,4.0,"Fill in all required fields and click ""ADD""",A success message is displayed and you are taken back to the District Type page,,,
+,,,5.0,"From the ""District Type"" dropdown select the District Type you just created and click ""SEARCH""",The District Type you created will be displayed below showing the correct details,,,
+77093.0,Test Case,DM - Districts - District Type - Edit existing District Type,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing District Type ","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > District Type
+","District Type page is displayed
+",,,
+,,,4.0,"From the ""District Type"" dropdown select an existing District Type and click ""SEARCH""
+",District Type will be displayed below,,,
+,,,5.0,"Click on the ""Actions"" ellipsis",Options are displayed,,,
+,,,6.0,"Click on ""Edit""",District Type Edit page will be displayed,,,
+,,,7.0,"Make any desired changes and click ""UPDATE""","A success message is displayed and you are taken back to the District Type page
+",,,
+,,,8.0,"From the ""District Type"" dropdown select the District Type you just changed and click ""SEARCH""
+","The District Type you edited will be displayed below showing the reflected changes
+",,,
+77151.0,Test Case,DM - Districts - District - Add New District,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing District Type ","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > District
+",Maintain Voting Districts page will be displayed,,,
+,,,4.0,"From the ""District Type"" dropdown select a District Type",District Type selected,,,
+,,,5.0,"Fill in the ""Value"" and ""Description"" fields",Fields filled in,,,
+,,,6.0,"Click ""ADD""",A success notification will display and the newly created will be shown in the list below,,,
+77156.0,Test Case,DM - Districts - District - Edit existing District,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing District
+","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > District
+","Maintain Voting Districts page will be displayed
+",,,
+,,,4.0,"Choose a District and click on the ""Actions"" ellipsis",Options displayed,,,
+,,,5.0,"Click ""Edit""",Update Voting District page is displayed,,,
+,,,6.0,Make any desired change,Change made,,,
+,,,7.0,"Click ""UPDATE""",A success notification is displayed and the user is taken back to the Maintain Voting Districts page,,,
+,,,8.0,Check list below,The District you just edited should reflect the changes you made,,,
+77158.0,Test Case,DM - Districts - District - Delete District,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing District that is not assigned to anything
+","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > District
+","Maintain Voting Districts page will be displayed
+",,,
+,,,4.0,"Choose a District and click on the ""Actions"" ellipsis
+","Options displayed
+",,,
+,,,5.0,"Click ""Delete""",A success notification will be displayed and the District will be removed from the list (You may need to refresh the page to see this change),,,
+78327.0,Test Case,77526 - DM - District - Precinct Split - Add/Delete and Update,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing Precinct ","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Precinct
+","Precincts page will be displayed
+",,,
+,,,4.0,"Find the existing Precinct and click in the ""Actions"" ellipsis",Options displayed,,,
+,,,5.0,"Click ""Edit""",Update Precinct page is displayed,,,
+,,,6.0,"Under the Precinct Assignments section click on the ""Precinct Splits"" tab",Precincts Splits section will be displayed,,,
+,,,7.0,"Click ""Split Precinct""",Precinct Split page will be displayed,,,
+,,,8.0,"Fill in the ""Name"" and ""Code"" required fields",Fields filled in,,,
+,,,9.0,"Click ""Save""",A success message will be displayed and the Precinct Split is saved,,,
+,,,10.0,"Go back to the main existing Precinct by clicking ""Cancel""",Update Precinct page is displayed,,,
+,,,11.0,"Under the Precinct Assignments section click on the ""Precinct Splits"" tab
+","Precincts Splits section will be displayed and the newly created Precinct Split will be listed
+",,,
+,,,12.0,"Click on the ""Actions"" ellipsis",Options displayed,,,
+,,,13.0,"Click ""Update""",Update Precinct Split page is displayed,,,
+,,,14.0,Change the Name of the Precinct Split,Name changed,,,
+,,,15.0,"Click ""Update""","A success message will be displayed and the Precinct Split will be updated
+",,,
+,,,16.0,"Under the Precinct Assignments section click on the ""Precinct Splits"" tab
+",The changes you made to the Precinct Split will be reflected here,,,
+,,,17.0,"Click on the ""Actions"" ellipsis
+","Options displayed
+",,,
+,,,18.0,"Click ""Delete""",The Precinct Split will be removed from the list and will no longer be part of the main Precinct,,,
+78343.0,Test Case,77530 - DM - District - Precinct Street Segment - Add/Delete,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisites:
+- Have an existing Precinct
+- Have an existing Street Segment
+","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Precinct
+","Precincts page will be displayed
+",,,
+,,,4.0,"Find the existing Precinct and click in the ""Actions"" ellipsis
+","Options displayed
+",,,
+,,,5.0,"Click ""Edit""
+","Update Precinct page is displayed
+",,,
+,,,6.0,"Under the Precinct Assignments section ensure that the ""Street Segments"" tab is selected
+",Street Segments section is displayed,,,
+,,,7.0,"Click ""Add""",Precinct Street Segment page is displayed,,,
+,,,8.0,Select a Street Name for the existing Street Segment you have,Street Name selected,,,
+,,,9.0,Select the existing Street Segment,Street Segment selected,,,
+,,,10.0,"Click ""Save""",A success message will be displayed and the Street Segment will be saved to the Precinct,,,
+,,,11.0,"Click on the ""Actions"" ellipsis for the newly assigned Street Segment",Options displayed,,,
+,,,12.0,"Click ""Delete""",The Street Segment will be removed and no longer assigned to the Precinct,,,
+78544.0,Test Case,77528 - DM - District - Precinct Split - Add/Delete Street Segment,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisites:
+- Have an existing Precinct
+- Have an existing Street Segment
+","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Precinct
+","Precincts page will be displayed
+",,,
+,,,4.0,"Find the existing Precinct and click in the ""Actions"" ellipsis
+","Options displayed
+",,,
+,,,5.0,"Click ""Edit""
+","Update Precinct page is displayed
+",,,
+,,,6.0,"Under the Precinct Assignments section click on the ""Precinct Splits"" tab
+","Precincts Splits section will be displayed
+",,,
+,,,7.0,"Click ""Split Precinct""
+","Precinct Split page will be displayed
+",,,
+,,,8.0,"Fill in the ""Name"" and ""Code"" required fields
+","Fields filled in
+",,,
+,,,9.0,"Click ""Save""
+","A success message will be displayed and the Precinct Split will be saved, the user is taken to the Precinct Split Update page
+",,,
+,,,10.0,"Under the Precinct Assignments section ensure that the ""Street Segments"" tab is selected
+","Street Segments section is displayed
+",,,
+,,,11.0,"Click ""Add""
+","Precinct Street Segment page is displayed
+",,,
+,,,12.0,"Select a Street Name for the existing Street Segment you have
+","Street Name selected
+",,,
+,,,13.0,"Select the existing Street Segment
+","Street Segment selected
+",,,
+,,,14.0,"Click ""Save""
+","A success message will be displayed and the Street Segment will be saved to the Precinct Split
+",,,
+,,,15.0,"Click on the ""Actions"" ellipsis for the newly assigned Street Segment
+","Options displayed
+",,,
+,,,16.0,"Click ""Delete""
+","The Street Segment will be removed and no longer assigned to the Precinct Split
+",,,
+78548.0,Test Case,77527 - DM - District - Precinct Split - Add/Delete District,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisites:
+- Have an existing Precinct
+- Have an existing District
+","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Precinct
+","Precincts page will be displayed
+",,,
+,,,4.0,"Find the existing Precinct and click in the ""Actions"" ellipsis
+","Options displayed
+",,,
+,,,5.0,"Click ""Edit""
+","Update Precinct page is displayed
+",,,
+,,,6.0,"Under the Precinct Assignments section click on the ""Precinct Splits"" tab
+","Precincts Split section will be displayed
+",,,
+,,,7.0,"Click ""Split Precinct""
+","Precinct Split page will be displayed
+",,,
+,,,8.0,"Fill in the ""Name"" and ""Code"" required fields
+","Fields filled in
+",,,
+,,,9.0,"Click ""Save""
+","A success message will be displayed and the Precinct Split will be saved, the user is taken to the Precinct Split Update page
+",,,
+,,,10.0,"Under the Precinct Assignments section click on the ""Districts"" tab
+","Districts section is displayed
+",,,
+,,,11.0,"Click ""Add""
+","Precinct District page is displayed
+",,,
+,,,12.0,"Select a District Type for the existing District you have
+",District Type selected,,,
+,,,13.0,"Select the existing District
+","District selected
+",,,
+,,,14.0,"Click ""Save""
+","A success message will be displayed and the District will be saved to the Precinct Split
+",,,
+,,,15.0,"Click on the ""Actions"" ellipsis for the newly assigned District
+","Options displayed
+",,,
+,,,16.0,"Click ""Delete""
+","The District will be removed and no longer assigned to the Precinct Split
+",,,
+78839.0,Test Case,71255 - DM - District - Special Address - Add/Maintain Health Care Facilities,,,,SG\Elections\Java\EMS\DM,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing Street Segment","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Special Address
+","Special Address page will be displayed
+",,,
+,,,4.0,Select the Street Name of the existing Street Segment,Street Name selected,,,
+,,,5.0,Select the existing Street Segment ,Street Segment selected,,,
+,,,6.0,"Click ""Search""",Existing Special Addresses section is displayed,,,
+,,,7.0,"Click on the ""Healthcare Facility"" tab",Healthcare Facility selected,,,
+,,,8.0,"Click ""Add""",Add Healthcare Facility page is displayed,,,
+,,,9.0,Fill in all required fields,Fields filled in,,,
+,,,10.0,"Click ""Add""",A success message is displayed and the Healthcare Facility has been added as a Special Address under that Street Segment,,,
+,,,11.0,"Select the Street Name of the existing Street Segment you just added a Healthcare Facility to
+","Street Name selected
+",,,
+,,,12.0,"Select the existing Street Segment you just added a Healthcare Facility to
+","Street Segment selected
+",,,
+,,,13.0,"Click ""Search""
+","Existing Special Addresses section is displayed
+",,,
+,,,14.0,"Click on the ""Healthcare Facility"" tab
+","Healthcare Facility section is displayed and the Healthcare Facility you just created is listed here with the correct information showing
+",,,
+,,,15.0,"Click on the ""Actions"" ellipsis next to the Healthcare Facility you added",Options displayed,,,
+,,,16.0,"Click on ""Edit""",Update Healthcare Facility page is displayed,,,
+,,,17.0,"Make any desired changes and click ""Update""",A success message is displayed and the Healthcare Facility will be updated,,,
+,,,18.0,"Select the Street Name of the existing Street Segment you just updated the Healthcare Facility for
+","Street Name selected
+",,,
+,,,19.0,"Select the existing Street Segment you just updated the Healthcare Facility for
+","Street Segment selected
+",,,
+,,,20.0,"Click ""Search""
+","Existing Special Addresses section is displayed
+",,,
+,,,21.0,"Click on the ""Healthcare Facility"" tab
+","Healthcare Facility section is displayed and the Healthcare Facility you just updated is listed here with the correct information showing
+",,,
+,,,22.0,"Click on the ""Actions"" ellipsis next to the Healthcare Facility you just updated
+","Options displayed
+",,,
+,,,23.0,"Click ""Delete"" ",A success message is displayed and the Healthcare Facility will be removed ,,,
+,,,24.0,"Select the Street Name of the existing Street Segment you just deleted the Healthcare Facility for
+","Street Name selected
+",,,
+,,,25.0,"Select the existing Street Segment you just deleted the Healthcare Facility for
+","Street Segment selected
+",,,
+,,,26.0,"Click ""Search""
+","Existing Special Addresses section is displayed
+",,,
+,,,27.0,"Click on the ""Healthcare Facility"" tab
+","Healthcare Facility section is displayed and the Healthcare Facility you just deleted will not be listed
+",,,
+78933.0,Test Case,76996 - DM - District - Action 3 Delete: DM - Delete Voting District,,,,SG\Elections\Java\EMS\DM,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisites:
+- Have an existing District that is not assigned to anything
+- Have an existing District that is assigned to a Street Segment
+- Have an existing District that is assigned to a Precinct
+- Have an existing District that is assigned to an Office","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > District
+","Voting Districts page will be displayed
+",,,
+,,,4.0,"Find the existing District that is not assigned to anything and click on the ""Actions"" ellipsis",Options displayed,,,
+,,,5.0,"Click ""Delete""",A success message will be displayed and the District will be removed from the list,,,
+,,,6.0,"Find the existing District that is assigned to a Street Segment and click on the ""Actions"" ellipsis","Options displayed
+",,,
+,,,7.0,"Click ""Delete""","A notification will display saying ""District is Mapped to Segment"" and the District will not be removed ",,,
+,,,8.0,"Find the existing District that is assigned to a Precinct and click on the ""Actions"" ellipsis
+","Options displayed
+",,,
+,,,9.0,"Click ""Delete""
+","A notification will display saying ""District is Mapped to Precinct"" and the District will not be removed 
+",,,
+,,,10.0,"Find the existing District that is assigned to an Office and click on the ""Actions"" ellipsis
+","Options displayed
+",,,
+,,,11.0,"Click ""Delete""
+","A notification will display saying ""District is Mapped to Office"" and the District will not be removed 
+",,,
+80211.0,Test Case,"78347 DM - District - Update 'Precinct Assignments' to display ""Street Name"", and ""Street Segment""",,,,SG\Elections\Java\EMS\DM,Michael Gallo <mgallo@gocivix.com>,Ready
+,,,1.0,"Navigate to 'Precinct Assignments' (DM>Districts>Precinct
+>Edit existing precinct) page.","Verify: 'Id Street Segment' no longer appears as a column
+Verify: 'Street Name' appears, and displays the full name of entered street.
+Verify: 'Street Segment' contains the specific segment of street previously entered.",,,
+,,,2.0,Click 'Add' button,"
+",,,
+,,,3.0,Land on 'Precinct Street Segment',Verify: 'Street Name' and 'Street Segment' fields appear,,,
+,,,4.0,Select a Street Name and Street Segment,"
+",,,
+,,,5.0,Click  'Save',"Land on the 'Precinct Assignments' page, and verify the selected 'Street Name' and 'Street Segment' appear in the list as previously selected.",,,
+80220.0,Test Case,DM - Precinct-Precinct Assignments Table - District Type and District Name columns,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"
+
+  Navigate to DM - District - Search Precincts Page
+","
+
+  Search Precincts page must be displayed
+",,,
+,,,2.0,"
+
+  In the search results click on ""Actions"" ->Edit on
+a record
+","
+
+  Update Precinct Page must be displayed
+",,,
+,,,3.0,"
+
+  Verify Precinct Assignments -> Districts section
+","
+
+  District Type and Name must be added to the 
+Precinct Assignment table 
+",,,
+,,,4.0,Verify ID district field is removed,"ID district should not be displayed in Districts
+",,,
+,,,5.0,"
+
+  Add a new district type, district and precinct 
+","
+
+  New district type, district and precinct must be 
+ added successfully
+",,,
+,,,6.0,"
+
+  Verify Update Precinct Page-Precinct Assignment
+ table-Districts section
+","
+
+  Added district type and district name must be displayed in Districts
+",,,
+,,,7.0,"
+","
+",,,
+80222.0,Test Case,DM - Precinct Assignments - Duplicate District Types Error Validation,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Pre-requisite:District type with multiple districts assigned,"
+",,,
+,,,2.0,"Navigate to DM - District - Search Precincts Page
+","Search Precincts page must be displayed
+
+  
+
+",,,
+,,,3.0," Click on ""Add""",Add Precincts page must be displayed,,,
+,,,4.0,"Add a district type and district to a precinct 
+",Precinct must be added successfully,,,
+,,,5.0,"Add a district of the same district type as earlier to the
+same precinct","
+
+  ""District type already assigned to Precinct"" message
+ must be displayed on Add Precinct Page
+",,,
+80375.0,Test Case,DM-Precinct-Create a New Split Precinct,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Navigate to DM - District -  Precinct,Search Precincts page must be displayed,,,
+,,,2.0,"Click on ""ADD""","Add Precincts page must be displayed
+
+",,,
+,,,3.0,"Select valid precinct type,Region,Enter a name and code in the text box and click on ""SAVE""","Added precinct must be saved successfully
+",,,
+,,,4.0,"Navigate to Search Precincts page and select the newly created precinct and click on ""Edit""",Update Precinct page must be displayed,,,
+,,,5.0,"Click on ""ADD"" in Street segments tab","Add Precinct street segment page must be displayed
+",,,
+,,,6.0,"Select streen name and segment from the respective drop down values and click on ""SAVE""","1.Newly added street segment information must be added successfully and displayed in street segments tab accordingly
+2.Street name and Street segment columns must be displayed in street segments tab",,,
+,,,7.0,"Click on Districts tab and click on ""ADD""","Add Precinct district page must be displayed
+",,,
+,,,8.0,"Select district type and district from the respective drop down values and click on ""SAVE""","1.Newly added district information must be displayed in districts tab accordingly
+2.District type and District Name must be displayed in Districts tab",,,
+,,,9.0,"Click on Precinct Splits tab and click on ""CREATE PRECINCT SPLIT""","1.Maintain Precinct Split page must be displayed
+2.Name and code fields must be prepopulated and editable",,,
+,,,10.0,Verify the split Precinct name format,"First precinct split name must be ""parentname""-1/2
+Second precinct split name must be ""parentname""-2/2",,,
+,,,11.0,Verify the split Precinct code format,"First precinct split name must be ""parentcode""-1/2
+Second precinct split name must be ""parentcode""-2/2",,,
+,,,12.0,Edit split precinct name,"Must allow special characters such as /, -, (,  ), & and _",,,
+,,,13.0,Edit split precinct code,"Must allow special characters such as /, -, (,  ), & and _",,,
+,,,14.0,Verify first precinct split and second precinct split are displayed in precinct splits tab,Both the precincts must be displayed,,,
+,,,15.0,Click on Actions->Update on the first precinct split,"Update Precinct disctrict page must be displayed
+",,,
+,,,16.0,Verify all the districts on the parent precinct are automatically copied on first split precinct.,All the districts on the parent precinct must automatically copied on first split precinct.,,,
+,,,17.0,Verify all the street segments on the parent precinct are automatically copied on first split precinct.,All the street segments on the parent precinct must automatically copied on first split precinct.,,,
+,,,18.0,Verify all the districts on the parent precinct are automatically copied on second split precinct.,All the districts on the parent precinct must automatically copied on second split precinct.,,,
+,,,19.0,Verify all the street segments on the parent precinct are not copied on second split precinct.,street segments should not be copied to second split precinct.,,,
+80616.0,Test Case,"79410 - DM - District - Add/Maintain Special Addresses - Match chosen street and segment ""SIDE"" with error handling",,,,SG\Elections\Java\EMS\DM,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing ALL side Street Segment
+- Have an existing ODD side Street Segment
+- Have an existing EVEN side Street Segment","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Special Address
+","Special Address page will be displayed
+",,,
+,,,4.0,From the Street Name dropdown select the Street Name of the existing ALL side Street Segment,Street Name selected,,,
+,,,5.0,From the Street Segment dropdown select the existing ALL side Street Segment,Street Segment Selected,,,
+,,,6.0,"Click ""SEARCH""",Existing Special Addresses area will open showing all existing Business Addresses and Healthcare Facilities,,,
+,,,7.0,"Ensure Business Address is selected and click ""ADD""",Add Business Address page is displayed,,,
+,,,8.0,Check page,"The following fields will be pre-filled and read only:
+- Street Name
+- Street Segments
+- Side",,,
+,,,9.0,Enter any Low and High range,Low and High ranges entered,,,
+,,,10.0,Fill in all other required fields,Fields filled in,,,
+,,,11.0,"Click ""ADD""",Business Address will be added successfully,,,
+,,,12.0,"From the Street Name dropdown select the Street Name of the existing ODD side Street Segment
+","Street Name selected
+",,,
+,,,13.0,"From the Street Segment dropdown select the existing ODD side Street Segment
+","Street Segment Selected
+",,,
+,,,14.0,"Click ""SEARCH""
+","Existing Special Addresses area will open showing all existing Business Addresses and Healthcare Facilities
+",,,
+,,,15.0,"Ensure Business Address is selected and click ""ADD""
+","Add Business Address page is displayed
+",,,
+,,,16.0,"Check page
+","The following fields will be pre-filled and read only:
+- Street Name
+- Street Segments
+- Side
+",,,
+,,,17.0,"Enter a Low and High range that are EVEN numbers 
+","Low and High ranges entered
+",,,
+,,,18.0,"Fill in all other required fields
+","Fields filled in
+",,,
+,,,19.0,"Click ""ADD""
+",An error message will be displayed and the Business Address will not be added,,,
+,,,20.0,Change the Low and High ranges to ODD numbers,"Low and High ranges changed
+",,,
+,,,21.0,"Click ""ADD""
+","Business Address will be added successfully
+",,,
+,,,22.0,"From the Street Name dropdown select the Street Name of the existing EVEN side Street Segment
+","Street Name selected
+",,,
+,,,23.0,"From the Street Segment dropdown select the existing EVEN side Street Segment
+","Street Segment Selected
+",,,
+,,,24.0,"Click ""SEARCH""
+","Existing Special Addresses area will open showing all existing Business Addresses and Healthcare Facilities
+",,,
+,,,25.0,"Ensure Business Address is selected and click ""ADD""
+","Add Business Address page is displayed
+",,,
+,,,26.0,"Check page
+","The following fields will be pre-filled and read only:
+- Street Name
+- Street Segments
+- Side
+",,,
+,,,27.0,"Enter a Low and High range that are ODD numbers 
+","Low and High ranges entered
+",,,
+,,,28.0,"Click ""ADD""
+","An error message will be displayed and the Business Address will not be added
+",,,
+,,,29.0,"Change the Low and High ranges to EVEN numbers
+","Low and High ranges changed
+",,,
+,,,30.0,"Click ""ADD""
+","Business Address will be added successfully
+",,,
+,,,31.0,Repeat all steps this time with Healthcare Facilities instead of Business Addresses,Both Business Addresses and Healthcare Facilities work as expected ,,,
+80753.0,Test Case,Verify deletion of a street segment not assigned to a precinct,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Home > Search Street Segments,"Street segment is successfully deleted
+",,,
+80754.0,Test Case,Validate deletion attempt of a street segment assigned to a precinct,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Home > Search Street Segments,"An error message is displayed: ""Street segment is mapped to Precinct.""
+",,,
+80755.0,Test Case,Validate deletion attempt of a street segment with special addresses,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Home > Street Segment search screen,An error message must be displayed.,,,
+,,,2.0,,,,,
+80756.0,Test Case,Validate deletion attempt of a street segment assigned to a voter,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Home > Street Segment Search page,"An error message must be displayed.
+",,,
+80757.0,Test Case,Verify that the deleted segment no longer appears in the search screen,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Home > Street Segment search screen,"The deleted street segment should not be displayed in the search screen
+",,,
+80815.0,Test Case,68726-DM - District - Precinct - Verify Precinct Split Functionality,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Prerequisite: Valid Precinct wit Street segments and Districts assigned,"
+",,,
+,,,2.0,Navigate to DM - District - Precinct,Precincts Page must be displayed ,,,
+,,,3.0,"Select a valid precinct and click ""Actions""->Edit","Precincts Assignments Page must be displayed 
+",,,
+,,,4.0,"Navigate to Precinct Splits and click on ""CREATE PRECINCT SPLIT""",Two splits must be successfully generated,,,
+,,,5.0,Verify the Precinct split name format,"'Parent precinct name'-1/2 
+'Parent precinct name'-2/2 
+",,,
+,,,6.0,"Verify the Precinct split code format
+","'Codename'-1/2
+'Codename'-2/2",,,
+,,,7.0,"Validate Precinct name is auto generated, editable and allows
+  special characters","Precinct name must be auto generated ,editable and allow  special characters such as /, -, (,  ), & and _ 
+",,,
+,,,8.0,"Validate Precinct code is auto generated, editable and allows special characters
+","Precinct code must be auto generated, editable and allow special characters such as /, -, (,  ), & and _
+",,,
+,,,9.0,Verify if Parent street segments are copied on split 1/2,Street segments must be copied on split 1/2,,,
+,,,10.0,"Verify if Parent street segments are not copied on split 2/2
+","Street segments should not be copied on split 2/2
+",,,
+,,,11.0,Verify if all district assignments must be copied on 1/2 and 2/2,District assignments must be copied on 1/2 and 2/2,,,
+,,,12.0,Add new street segment and district to 1/2,System must allow to modify,,,
+,,,13.0,"Add new street segment and district to 2/2
+","System must allow to modify
+",,,
+,,,14.0,,,,,
+81254.0,Test Case,68728 - DM - District - Precinct Split - Validation Rules for Precinct Splits (P3),,,,SG\Elections\Java\EMS\DM,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisites:
+- Have at least 2 existing District Types
+- Have at least 2 existing Districts that are under different District Types
+- Have at least 2 existing Street Segments","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > Precincts
+","Precinct page will be displayed
+",,,
+,,,4.0,"Click ""ADD""",Add Precincts page is displayed,,,
+,,,5.0,Fill in all required fields,Fields filled,,,
+,,,6.0,"Click ""SAVE""",Precinct created and Precinct Assignments section is opened,,,
+,,,7.0,"Click on the ""Precinct Splits"" tab",The Precinct Splits section is displayed,,,
+,,,8.0,"Click ""CREATE PRECINCT SPLIT""",Confirm Precinct Split Creation box will display,,,
+,,,9.0,"Click ""Ok""","The Precinct will not be split and a message will be displayed saying ""Cannot Create a Split without Segment & Districts Assigned""",,,
+,,,10.0,"Click on the ""Street Segments"" tab and click ""ADD""",Precinct Street Segment page is displayed,,,
+,,,11.0,Select the Street Name of the existing Street Segment,Street Name selected,,,
+,,,12.0,Select the existing Street Segment,Street Segment selected,,,
+,,,13.0,"Click ""SAVE""",The Street Segment will be assigned to the Precinct,,,
+,,,14.0,"Click on the ""Districts"" tab and click ""ADD""",Precinct District page is displayed,,,
+,,,15.0,"Select the District Type of the existing District
+",District Type selected,,,
+,,,16.0,Select the existing District,District selected,,,
+,,,17.0,"Click ""SAVE""",The District will be assigned to the District,,,
+,,,18.0,"Click on the ""Precinct Splits"" tab and then click ""CREATE PRECINCT SPLIT""","Confirm Precinct Split Creation box will display
+",,,
+,,,19.0,"Click ""Ok""
+","Precinct Split will be successful and two Precinct Splits will be created, the user will be taken to the second Precinct Split page",,,
+,,,20.0,Under the Street Segments area add the same Street Segment you used before,Street Segment added,,,
+,,,21.0,Under the Districts area delete the existing District and add a different one that wasn't used before,Existing District was removed and different District is added,,,
+,,,22.0,"Click ""SAVE""","The Precinct Split will not be updated and a message will be displayed to the user saying ""Segment Mapping Should be Unique""",,,
+,,,23.0,Under the Street Segments area delete the existing Street Segment and then add a new one that hasn't already been used,Existing Street Segment deleted and different Street Segment is added,,,
+,,,24.0,Under the Districts area delete the existing District and add the original District that was first used to create the parent Precinct,Existing District is deleted and original District is added,,,
+,,,25.0,"Click ""SAVE""
+","The Precinct Split will not be updated and a message will be displayed to the user saying ""District Mapping Should be Unique""
+",,,
+,,,26.0,Under the Districts area keep the existing District and then add another District that hasn't been used,Existing District remains and an additional different District is added ,,,
+,,,27.0,"Click ""SAVE""
+",The Precinct Split will be updated successfully and the user will receive a success message,,,
+81268.0,Test Case,80617 - DM - Conversion - Data model updates for District Precinct,,,,SG\Elections\Java\EMS\DM,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,2.0,"Navigate to District Management > Districts > Precincts
+","Precinct page will be displayed
+",,,
+,,,3.0,"Click ""ADD""
+","Add Precincts page is displayed
+",,,
+,,,4.0,"Fill in all required fields and select any Region
+",Fields filled and Region slected,,,
+,,,5.0,"Click ""SAVE""","Precinct created and Precinct Assignments section is opened
+",,,
+,,,6.0,"Click ""UPDATE""",The precinct is saved and the user is taken back to the Precinct search page,,,
+,,,7.0,From the Region search criteria dropdown select the Region you used to create the Precinct,Region selected,,,
+,,,8.0,"Click ""SEARCH""","Only the Precincts that have the Region you elected are displayed, the Precinct you created will also be shown",,,
+81316.0,Test Case,68730-Validate Split Precincts have assigned Street segments,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Navigate to DM - District -  Precinct,Search Precincts page must be displayed,,,
+,,,2.0,"Click on ""ADD""","Add Precincts page must be displayed
+
+",,,
+,,,3.0,"Select valid precinct type,Region,Enter a name and code in the text box and click on ""SAVE""","Added precinct must be saved successfully
+",,,
+,,,4.0,"Navigate to Search Precincts page and select the newly created precinct and click on ""Edit""",Update Precinct page must be displayed,,,
+,,,5.0,"Click on Districts tab and click on ""ADD""","Add Precinct district page must be displayed
+",,,
+,,,6.0,"Select district type and district from the respective drop down values and click on ""SAVE""","1.Newly added district information must be displayed in districts tab accordingly
+2.District type and District Name must be displayed in Districts tab",,,
+,,,7.0,"Click on Precinct Splits tab and click on ""CREATE PRECINCT SPLIT""","1.System must display the second precinct split page
+2. “Cannot Save: Each split precinct must have at least one assigned street segment"" message must be displayed",,,
+,,,8.0,"
+","
+",,,
+82308.0,Test Case,"69011 - DM - Standardized Search - Implement partial search, and wildcard on TOWN/REGION/COUNTY screens",,,,SG\Elections\Java\EMS\DM\District,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing TOWN
+- Have an existing REGION
+- Have an existing COUNTY","
+",,,
+,,,2.0,Navigate to District Management > Districts > Town,Search Towns page is displayed,,,
+,,,3.0,"In the Name field, enter the first few characters of the existing Town Name followed by ""%"" (e.g. TH%)",Data entered,,,
+,,,4.0,"Click ""Search""",Only the Towns beginning with those first few characters entered will displayed and your existing Town will also be shown,,,
+,,,5.0,"Click ""Reset""",The search criteria is cleared,,,
+,,,6.0,"In the Name field, enter ""%"" followed by the last few characters of the existing Town Name (e.g. TE%)",Data entered,,,
+,,,7.0,"Click ""Search""",Only the Towns ending with those last few characters entered will displayed and your existing Town will also be shown,,,
+,,,8.0,"Click ""Reset""",The search criteria is cleared,,,
+,,,9.0,"In the Name search field, enter ""%"" and then any few characters of the existing Town name followed by another ""%"" (e.g. %EC%)",Data entered,,,
+,,,10.0,"Click ""Search""",Only the Towns with those few characters entered (in that order) will be displayed and your existing Town will also be shown,,,
+,,,11.0,"Click ""Reset""",The search criteria is cleared,,,
+,,,12.0,"In the Name search field, enter the first few characters of the existing Town Name followed by ""%"" and then any few characters that the name contains, followed by another ""%"" (e.g. T%PL%)",Data entered,,,
+,,,13.0,"Click ""Search""",Only the Towns that begin with those characters and contain those characters entered will be displayed and your existing Town will also be shown,,,
+,,,14.0,"Click ""Reset""",The search criteria is cleared,,,
+,,,15.0,"In the Name search field, enter ""%"" and then any few characters of the existing Town Name followed by another ""%"" and then the last few characters of the Town Name (e.g. %CT%E)",Date entered,,,
+,,,16.0,"Click ""Search""",Only the Towns that finish with those characters and contain those characters entered will be displayed and your existing Town will also be shown,,,
+,,,17.0,Repeat steps 2 to 16 for Region and County areas,Region and County searches work as expected,,,
+83298.0,Test Case,"69205 - DM - Verify navigation to ""ADD REGION"" screen",,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,DM > Districts > Region > Add,"""ADD REGION"" screen opens with an empty ""Name"" field
+",,,
+83299.0,Test Case,"69205 - DM - Check required ""Name"" field	",,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"DM > Districts > Region > Add and leave Name field empty
+",Validation message: Region missing required fields. must be displayed.,,,
+83301.0,Test Case,"69205 - DM - Validate input format for ""Name"" field",,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"DM > Districts > Region > Add and enter Texas 123 in name field
+","Acceptable format, no error must be displayed
+",,,
+83303.0,Test Case,69205 - DM - Test valid entry for unique region,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"DM > Districts > Region > Add and enter input data
+","Save successfully, confirmation message: ""Region added successfully.""
+",,,
+83305.0,Test Case,69205 - DM - 	Test duplicate entry prevention,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"DM > Districts > Region > Add and a duplicate data
+","Error message: ""Region name already exists. Please choose a different name.""
+",,,
+83306.0,Test Case,69205 - DM - Verify cancel operation,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"DM > Districts > Region > Add and input data and click Cancel.
+","Returns to REGION Search screen without adding a record
+",,,
+83307.0,Test Case,69205 - DM - Confirm successful save reflects in REGION Search,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"DM > Districts > Region
+","New region added appears in REGION Search screen
+",,,
+83308.0,Test Case,69205 - DM - Check sorting functionality with new record,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"DM > Districts > Region
+","New record appears in the correct sorted order
+",,,
+83309.0,Test Case,69205 - DM - Verify pagination is unaffected after adding region,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"DM > Districts > Region
+","New record must be added, pagination remains functional
+",,,
+83310.0,Test Case,69205 - DM - Test search functionality after adding new region,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"DM > Districts > Region
+","New record ""Texas"" found in the search results
+",,,
+83407.0,Test Case,69208 - DM - Verify DELETE button is present for each REGION entry,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user is on the Region search page and check the Actions column for each REGION entry.,"""DELETE"" button is visible for each REGION entry.
+",,,
+83409.0,Test Case,69208 - DM - Confirm DELETE button triggers confirmation prompt,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"Given user is on the Region search page and click the ""Delete"" button for a specific region.","Confirmation prompt appears: ""Are you sure you want to delete this region? This action cannot be undone.""
+",,,
+83412.0,Test Case,69208 - DM - Validate deletion of a region not in use,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user is on Regions search page and clicks on Delete followed by confirming the deletion in prompt.,"Region is deleted successfully. Confirmation message displayed: ""Region deleted successfully.""
+",,,
+83413.0,Test Case,69208 - DM - Validate error message for region currently in use,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user is on the Region search page and click delete and  Confirm the deletion in the prompt.,"Error message displayed: ""This region is currently in use and cannot be deleted.""
+",,,
+83415.0,Test Case,69208 - DM - Ensure search screen updates post-deletion,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user is on Region page and Delete a region that is not in use. Observe the REGION Search screen.,"Deleted region is removed from the REGION Search screen.
+",,,
+83788.0,Test Case,"DM - County - Add new county, Assign towns, Edit County",,,,SG\Elections\Java,Michael Gallo <mgallo@gocivix.com>,Ready
+,,,1.0,"
+Navigate to 'County' screen
+District Management > Districts > County ","
+",,,
+,,,2.0,Click 'Add',"Land on 'Add/Update County' screen
+'Add/Update County' area appears containing: 'County Name' field, 'Save' and 'Cancel' buttons. 'County assignments' area appears.
+ ",,,
+,,,3.0,Click 'Cancel',Land back on 'County' screen,,,
+,,,4.0,Click 'Add',"
+",,,
+,,,5.0,"Click into 'County Name' field and enter a county name that is already in use
+ ",Land on 'Add/Update County' screen,,,
+,,,6.0,Click 'Save','County name already exists. Please choose a different name.' message appears,,,
+,,,7.0,Clear the 'County Name' field and enter a new (unique/unused) county name ,"
+",,,
+,,,8.0,Click Save,"'County added successfully' message appears
+ ",,,
+,,,9.0,Click 'Add' below 'Towns' in 'County Assignments',Land on 'County Town Link',,,
+,,,10.0,Click 'Cancel',Land on 'Add/Update County' screen,,,
+,,,11.0,Click 'Add' below 'Towns' in 'County Assignments',Land on 'County Town Link',,,
+,,,12.0,Click 'Town Name' dropdown,Available towns populate the dropdown,,,
+,,,13.0,Select a town from the dropdown,Dropdown closes and selection now populates the 'Town Name' field,,,
+,,,14.0,Click 'Save',"Land on 'Add/Update County' screen
+Selected town now appears in 'County Assignments area, in the 'Town Name' column.",,,
+,,,15.0,Navigate to the 'County' screen,"
+",,,
+,,,16.0,Search for the County that was just created,"The County appears in the 'County Name' column
+The county has been assigned a number in the 'County ID' Column - Take note of this ID for edit verification",,,
+,,,17.0,"Click the actions menu to the left of the county name 
+
+","
+",,,
+,,,18.0,Click 'Edit',"Land on the 'Add/Update County' screen
+The previously added town is displayed in the 'County Assignments' area beneath 'Town Name'",,,
+,,,19.0,Click 'Add' button beneath 'Towns',"Land on 'County Town Link' screen
+ ",,,
+,,,20.0,Click 'Town Name' dropdown,Available towns populate the dropdown,,,
+,,,21.0,Select a town from the dropdown,Dropdown closes and selection now populates the 'Town Name' field,,,
+,,,22.0,Click 'Save',"Land on 'Add/Update County' screen
+New town selection, and original selection both appear in 'County Assignments area, in the 'Town Name' column
+",,,
+,,,23.0,Click into the 'County Name' field and edit the county name,"
+",,,
+,,,24.0,Click 'Update',"Land on 'County' screen
+'County Updated Successfully' message displayed",,,
+,,,25.0,Search for the County that was just updated by either the 'Search' or paging over as necessary,"The updated 'County Name' is displayed in the  'County Name' column.
+The ID previously assigned to the 'County ID' column remains the same an has not changed to a new value.",,,
+,,,26.0,"Click the actions menu to the left of the county name 
+","
+",,,
+,,,27.0,Click 'Edit',"Land on the 'Add/Update County' screen
+Previously saved towns have been retained and display properly
+
+",,,
+83859.0,Test Case,DM - Add new region then assign County/Town,,,,SG\Elections\Java\EMS\DM\District,Michael Gallo <mgallo@gocivix.com>,Ready
+,,,1.0,"Navigate to 'Region' Screen
+District Management > Districts > Region","
+",,,
+,,,2.0,Click 'Add',Land on 'Add Region' screen,,,
+,,,3.0,Click into the 'Name' field and enter a region name,"
+",,,
+,,,4.0,Click 'Save',"Land on 'Add / Update Region' screen
+ A region is created with the entered name, and an ID is automatically assigned to the region. 
+'Region Added successfully' message displayed to user.
+",,,
+,,,5.0,Click  'Add' beneath 'County',Land on 'Assign County' screen,,,
+,,,6.0,Select a county name from the drop down,"
+",,,
+,,,7.0,Click Save,"Land on 'Add/Update Region' screen
+'County assigned to region successfully' message is displayed
+The added county appears in the gridbeneath 'Assign Role & Permissions'
+ ",,,
+,,,8.0,Click  'Add' beneath 'County',Land on 'Assign County' screen,,,
+,,,9.0,Select a county name from the drop down,"
+",,,
+,,,10.0,Click Save,'Only one county can be assigned to a region' message is displayed.,,,
+,,,11.0,Click 'Cancel',"Land on 'Add/Update Region' screen 
+The created region is still retained and displayed beneath 'Add / Update Region' ",,,
+,,,12.0,Click the 'Town' tab in the 'Assign Role & Permissions' area,'Town' tab is displayed in grid,,,
+,,,13.0,Click the 'Add' button beneath 'Town',Land on 'Assign Town' screen,,,
+,,,14.0,Click the 'Town Name' field,Dropdown opens,,,
+,,,15.0,Select a town from the list,"Dropdown closes, field shows selection",,,
+,,,16.0,Click 'Save' button,"Land on 'Add / Update Region' screen
+ 'Town assigned to region successfully' message is displayed
+ ",,,
+,,,17.0,Click 'Town' tab in the 'Assign Role & Permissions' area,"'Town' tab is displayed in grid
+The town selected in step 15 is displayed in the grid",,,
+,,,18.0,Click the 'Add' button beneath 'Town',Land on 'Assign Town' screen,,,
+,,,19.0,Click the 'Town Name' field,Dropdown opens,,,
+,,,20.0,Select a town from the list,"Dropdown closes, field shows selection",,,
+,,,21.0,Click 'Save' button,'Only one town can be assigned to a region' message is displayed.,,,
+,,,22.0,Click 'Cancel',"Land on 'Add / Update' region screen
+The created region is still retained and displayed beneath 'Add / Update Region",,,
+,,,23.0,"Use the previous steps to create a new region, and navigate to 'Assign Town' screen by clicking the 'Add' button","
+",,,
+,,,24.0,Click the 'Town Name' field,Dropdown opens,,,
+,,,25.0,"Choose the Town previously selected, and click save",'Town is already assigned to another region. Please select a different town' message is displayed.,,,
+84226.0,Test Case,69214-DM - Districts - District - Delete County,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing County that is not assigned to anything
+","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > County
+","Search Counties page will be displayed
+",,,
+,,,4.0,"Choose a County and click on the ""Actions"" 
+","Edit and Delete options must be displayed
+",,,
+,,,5.0,"Click ""Delete""","""Are you sure you want to delete county? This action cannot be undone"" message must be displayed""",,,
+,,,6.0,"Click on ""OK""","1.County must be deleted successfully and should not be displayed in grid results.
+2.Successfully deleted message must be displayed",,,
+,,,7.0,,,,,
+84498.0,Test Case,69214-DM - Districts - District - Delete County (unsuccessful),,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"Pre-requisite:
+- Have an existing County that is in use
+","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,"Navigate to District Management > Districts > County
+","Search Counties page will be displayed
+",,,
+,,,4.0,"Choose a County and click on the ""Actions"" 
+","Edit and Delete options must be displayed
+",,,
+,,,5.0,"Click ""Delete""","""Are you sure you want to delete county? This action cannot be undone"" message must be displayed""",,,
+,,,6.0,"Click on ""OK""","1.""This County is currently in use and cannot be deleted"" message must be displayed
+2.County should not be deleted and must display in the grid results",,,
+,,,7.0,"
+","
+",,,
+86285.0,Test Case,69328-Region User Verify District Type Button Access,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Navigate to SM->Login as Region,Login as Region page must be displayed,,,
+,,,2.0,"Select a Region from the drop down and click on ""Login as Region""",The user must be logged into a specific selected region,,,
+,,,3.0,Navigate to District Type and verify the District type drop down values,"Must display only ""COUNTY' and ""MUNICIPAL/LOCAL""",,,
+,,,4.0,Click on Reset button and Verify the search results grid displays ,"Must display only  ""COUNTY' and ""MUNICIPAL/LOCAL"" District category ",,,
+,,,5.0,"Click on ""ADD"" and verify District Type drop down values on 
+ Add District Type page","Must display only  ""COUNTY' and ""MUNICIPAL/LOCAL"" District category ",,,
+,,,6.0,"
+","
+",,,
+86289.0,Test Case,71846-Region User -Ensure Only Region-Specific Precincts Are Visible,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Navigate to SM->Login as Region,Login as Region page must be displayed,,,
+,,,2.0,"Select a Region from the drop down and click on ""Login as Region""",The user must be logged into a specific selected region,,,
+,,,3.0,Navigate to DM->Precinct,"1.Precincts Page must be displayed 
+2.The Region dropdown should be prepopulated with the selected region and non-editable",,,
+,,,4.0,Click on Reset button and Verify the search results grid displays ,The search results should display precincts only within the selected region. ,,,
+,,,5.0,"Click on ""ADD"" and verify District Type drop down values on 
+ Add District Type page","1.The Region dropdown should be prepopulated with the selected region and non-editable
+ 2. Add a new precinct and verify that the newly added precinct appears in the search results grid on the  Search Precincts page.",,,
+,,,6.0,"
+","
+",,,
+87258.0,Test Case,DM - Districts -Search Street Segments- Validate Street search functionality,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Pre-requisite: Have an existing street and a voter assigned to that street segment ,"
+",,,
+,,,2.0,Access EMS,Dashboard is displayed ,,,
+,,,3.0,Navigate to District Management > Districts > Search Street segments,Search Street segments page must be displayed,,,
+,,,4.0,Select a Region and enter street name with spaces,Street name must be included in the dropdown options,,,
+,,,5.0,Enter a partial street name in the  street name ,Corresponding values must be displayed in the drop down,,,
+,,,6.0,Verify the search results update dynamically in real-time as the user enters a street name.,Corresponding values must be dynamically displayed in the drop down,,,
+87593.0,Test Case,"81998 - ES - Restrict Access to the System Management | External Interfaces | ""External Interfaces"" Screens for Region Users",,,,SG\Elections\Java\EMS\ESC(EMS System Common)\System,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,Log into the EMS system as a State User,State User logged in,,,
+,,,2.0,Navigate to System Management > Features,System Management screen is displayed,,,
+,,,3.0,Check page,"The ""External Interfaces"" button should be available",,,
+,,,4.0,Click on the External Interfaces button,External Interfaces page is displayed,,,
+,,,5.0,Copy the URL,URL copied ,,,
+,,,6.0,Log in as a Region User,Region User logged in,,,
+,,,7.0,Navigate to System Management > Features,System Management screen is displayed,,,
+,,,8.0,Check page,"The ""External Interfaces"" button should not be available",,,
+,,,9.0,"Paste the URL into the search bar at the top of the screen and press ""Enter""",The user will be taken to the Landing page for the system and a pop-up window will be displayed telling the user that they do not have access,,,
+87594.0,Test Case,71881 - ES - Restrict Access to the System Management | System Settings | Reference Data Screen for Region Users,,,,SG\Elections\Java\EMS\ESC(EMS System Common)\System,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,Log into the EMS system as a State User,State User logged in,,,
+,,,2.0,Navigate to System Management > Features,System Management screen is displayed,,,
+,,,3.0,Check page,"The ""Reference Data"" button should be available",,,
+,,,4.0,Click on the Reference Data button,Reference Data page is displayed,,,
+,,,5.0,Copy the URL,URL copied ,,,
+,,,6.0,Log in as a Region User,Region User logged in,,,
+,,,7.0,Navigate to System Management > Features,System Management screen is displayed,,,
+,,,8.0,Check page,"The ""Reference Data"" button should not be available",,,
+,,,9.0,"Paste the URL into the search bar at the top of the screen and press ""Enter""",The user will be taken to the Landing page for the system and a pop-up window will be displayed telling the user that they do not have access,,,

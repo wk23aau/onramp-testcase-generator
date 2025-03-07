@@ -1,0 +1,85 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+83083.0,Test Case, VM - Batch Scan - Index Scanned Documents,,,,SG\Elections\Java\EMS\VM\Voter,Michael Gallo <mgallo@gocivix.com>,Ready
+,,,1.0,"Navigate to 'Batch Scan'
+VM >'Batch Scan' > 'Scan' > 'Start New Batch'
+ ","Land on ' Batch Scan' screen
+ ",,,
+,,,2.0,"Select a source and click 'Start New Scan' 
+",'Error: Missing Required fields' message is displayed,,,
+,,,3.0,"Select a 'Document Name', 'Document Type'","
+",,,
+,,,4.0,"'Click 'Start New Scan' to scan document(s)
+
+*Alternatively you can use the 'Load Local File' if you do not have a scanner to test with.","Upon completion of scan (or upload) all document(s)/page(s) appear in the 'Unindexed' list'
+The previously selected 'Document Name' and 'Document Type' are retained in the dropdowns, but can be changed if desired",,,
+,,,5.0,Click 'Voter ID' field and enter an invalid ID number,'Voter Not Found' warning displayed,,,
+,,,6.0,"Click 'Voter ID' field and enter a valid ID number
+Click 'Search'","The Name, registration date, and date of birth associated with the voter appear beneath the search field and button.",,,
+,,,7.0,"Select  file(s) from the 'Unindexed' area, then click 'Assign to voter' button","The selected files are moved to the 'Indexed' area, and have been assigned to the voter (verified by the voter ID now appearing in front of the filename) 
+The selected voter is no longer displayed beneath the search and the field has been cleared",,,
+,,,8.0,"
+","
+",,,
+83093.0,Test Case,VM - Batch Scan - Commit and Attach Batch Scan Documents,,,,SG\Elections\Java\EMS\VM\Voter,Michael Gallo <mgallo@gocivix.com>,Ready
+,,,1.0,"Navigate to 'Batch Scan' Screen
+Voter Management >  'Batch Scan' > 'Scan'",Land on 'BatchScanning' Screen,,,
+,,,2.0,Click 'Start New Batch',"Land on '/createBatchScan' page
+
+",,,
+,,,3.0,"Select a Source and click 'Start New Scan"" 
+*Note: If you do not have a scanner - Use 'Load Local File' instead.
+To do this you will first choose your 'Document Name' and 'Document Type'
+and then click 'Load Local File'. Choose your file(s) in the explorer window,
+Then click 'Open' 
+For this test scan/load multiple files
+ 
+","Files appear in 'Unindexed' after successful scan
+OR
+Files appear in 'Unindexed' after successful loading of local file ",,,
+,,,4.0,Enter a 'ID' in the 'VUID' field beneath ' View Voter Registration' and click 'Search',"The corresponding data(Name, Registration Date, Date Of Birth) matching the entered ID appears beneath the 'VUID' field.",,,
+,,,5.0,Select an unindexed file to assign to the voter,"
+",,,
+,,,6.0,Click ' Assign To Voter' Button,"Success notification is received
+Selected files appear under 'Indexed' and are assigned to the appropriate voter (Denoted by filename - the VUID will always be at the beginning of the indexed files). 
+ 
+
+",,,
+,,,7.0,Enter a different 'ID' in the 'VUID' field beneath ' View Voter Registration' and click 'Search',"The corresponding data(Name, Registration Date, Date Of Birth) matching the entered ID appears beneath the 'VUID' field.",,,
+,,,8.0,Select all remaining unindexed files to assign to the voter,"
+",,,
+,,,9.0,Click ' Assign To Voter' Button,"Success notification is received
+Selected files appear under 'Indexed' and are assigned to the appropriate voter.
+Previously assigned files remain in the 'Indexed' list and are still assigned to the first voter.
+Upon all files being Indexed: User receives notification to commit the batch.",,,
+,,,10.0,"Take note of the 'Batch ID' found in the page URL ('Scan=#'), then
+ Click 'Upload Documents'","Land on the 'Batch Scanning' Page
+The 'Batch ID' is listed beneath 'Closed Batches'",,,
+,,,11.0,"Navigate to the first voter
+Voter Management > Voter > 'Search' > Enter 'ID' > Search >
+'Actions' > View",Land on the 'View Voter History' page for the selected voter,,,
+,,,12.0,Click 'Voter Documents' tab,"'Voter Documents' list is displayed
+The Document assigned and uploaded to the voter via the 'Batch Scan' appear in the 'Voter Documents' list ",,,
+,,,13.0,"Navigate to the second voter
+Voter Management > Voter > 'Search' > Enter 'ID' > Search >
+'Actions' > View","
+",,,
+,,,14.0,Click 'Voter Documents' tab,"'Voter Documents' list is displayed
+All Documents assigned and uploaded to the voter via the 'Batch Scan' appear in the 'Voter Documents' list ",,,
+89360.0,Test Case,88442-VM - Batch Scan -Validate Voter Ballot dropdown functionality,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Design
+,,,1.0,Precondition: Voter with a ballot and valid DOB,"
+",,,
+,,,2.0,"Navigate to 'Batch Scan'
+VM >'Batch Scan' > 'Scan' > 'Start New Batch'
+","Land on ' Create Batch Scan' screen
+",,,
+,,,3.0,Select 'Voter ballot ' in 'Document Name' dropdown,"Voter ballot dropdown must be displayed below voter id field
+",,,
+,,,4.0,"Continue with selecting a 'Document Type' ,'Ballot Return Method' , valid 'Voter id' and click on Search button","1.Voter ballots drop must display the ballots associated with the Voter id
+2.The Name, registration date, and date of birth associated with the voter appear beneath the search field and button",,,
+,,,5.0,Click on Load local file button and upload png or jpeg document,"Document must be uploaded successfully
+Upon completion of  upload all document(s)/page(s) appear in the 'Unindexed' list'",,,
+,,,6.0,"Select  file(s) from the 'Unindexed' area, then click 'Assign to voter' button","1.The selected files are moved to the 'Indexed' area, and have been assigned to the voter (verified by the voter ID now appearing in front of the filename) 
+2.""Successfully  indexed voter id"" message is displayed
+",,,
+,,,7.0,"Select  file(s) from the 'Indexed' area, then click 'Upload Documents' button","""File Uploaded successfully"" message id displayed on the Page.
+",,,

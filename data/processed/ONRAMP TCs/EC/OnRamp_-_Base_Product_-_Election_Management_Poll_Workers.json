@@ -1,0 +1,52 @@
+[
+  {
+    "ID": 80212,
+    "Work Item Type": "Test Case",
+    "Title": "68981-EM - Add District-Based Search to Election Measures Search Page",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite: Valid District (State or Federal only)with a election measure added to it\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "\\nNavigate to EM - Elections- Public Measures-Election Measures\\nSearch\\n\\n\\n\\n",
+        "Step Expected": "\\n\u00a0Election Measures Search Page must be displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "\\n\\n  Verify District drop down is added to the search fields\\n",
+        "Step Expected": "\\n\\n  District drop down must be added to the Election Measures Search\\nPage\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "\\n\\n  Select a district from the \"District\" drop down and\\n click \"Search\"\\n",
+        "Step Expected": "\\n\\n  Corresponding records must be displayed\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "\\n\\n  Select a record from the search results and click on the \"Action\" button\\n",
+        "Step Expected": "\\n\\n  View,Edit and Delete options must be displayed\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "\\n\\n  Click on view\\n",
+        "Step Expected": "\\n\\n  View Election Measure Page must be displayed\\n"
+      },
+      {
+        "Step": 7,
+        "Step Action": "\\n\\n  Click on Edit\\n",
+        "Step Expected": "\\n\\n  View Election Measure Page must be editable\\n"
+      },
+      {
+        "Step": 8,
+        "Step Action": "\\n\\n  Click on Delete\\n",
+        "Step Expected": "\\n\\n  \\n  Are you sure to delete the Election Measure ?Click \\nok to continue Otherwise click Cancel\u00a0 button \\nmessage must be displayed2.Cancel and OK buttons must be displayed on the \\n\u00a0pop up message\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  }
+]

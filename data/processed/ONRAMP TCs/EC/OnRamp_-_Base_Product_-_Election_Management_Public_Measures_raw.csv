@@ -1,0 +1,98 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+80208.0,Test Case,78842 EM - Update Add Measure Screen,,,,SG\Elections\Java\EMS\EM,Michael Gallo <mgallo@gocivix.com>,Ready
+,,,1.0,Navigate to 'Public Measures' page,"
+",,,
+,,,2.0,Click 'Add' button,"
+",,,
+,,,3.0,Land on 'Maintain Election Measure' page,"Verify: New field 'Ballot Measure Status' appears, can be interacted with, and the options 'Pending', 'Rejected', and 'Approved' can be seen and selected.
+ 
+Verify: New field ""Ballot Measure Status Reason' appears and can be interacted with. No functional options to select in this menu exist at this time.
+
+Verify: The 'Measure description, long(ballot)*' is unchanged and works as expected.
+
+Verify: 'Response Type' Is unchanged and can be interacted with.
+
+Verify: 'Ballot Measure Order' Can be interacted with, and a number entered in the field.",,,
+,,,4.0,"
+","
+",,,
+80468.0,Test Case,79696-EM-Verify Single District Assignment Per Measure,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"Navigate to EM-Elections-Public Measures-Add
+",Maintain Election Measure page is displayed,,,
+,,,2.0,"Enter the mandatory fields and  select a valid district and 
+verify that system prevents selection of multiple districts for a measure
+","User can select only one district from the drop  down
+",,,
+,,,3.0,"Enter all the mandatory fields and ""Save""",Measure must be saved successfully,,,
+88655.0,Test Case,EM - Elections - Manage Measures End - to - End Scenario,,,,SG\Elections\Java\EMS,Fadwa Toumi Toumi Ben Chekroun <ftoumi@gocivix.com>,Ready
+,,,1.0,Manage Measures,"
+",,,
+,,,2.0,"
+1. Navigate to 'Search Election Measures' page from Election component 2. Enter Election Date Name3. Select one of the search criteria Election Type, Election Category, District Type, and District4. Click 'Search'
+","
+Election measures matching the search criteria are displayed
+",,,
+,,,3.0,"
+1. Navigate to 'Add Election Measure' page 2. Enter Election Date Name, Election Type, and Election Category3. Select Response Type, Region, District Type, and Districts 4. Enter Measure Pass Rate and Ballot Measure details 5. Click 'Save'
+","
+New election measure is successfully added and displayed in the system
+",,,
+,,,4.0,"
+1. Search for an existing election measure from the search election measures page 2. Modify details such as Measure Pass Rate, Ballot Measure Status, Order, and Description3. Click 'Save'
+","
+Changes are successfully saved and reflected in the system
+",,,
+,,,5.0,"
+1. Search for an existing election measure2. Modify details3. Click ""Cancel""
+
+","
+Changes are discarded, and previous values remain unchanged
+",,,
+,,,6.0,"
+1. Attempt to save an election measure without filling required fields like Public Measure Title or Ballot Measure Description2. Click 'Save'
+","
+System displays appropriate validation messages
+",,,
+,,,7.0,"
+1. Search for an existing election measure2. Click 'Delete'3. Confirm deletion
+","
+Measure is removed from the system
+",,,
+,,,8.0,"
+","
+",,,
+88680.0,Test Case,78844-EM - Add/Maintain Measures - Permissions-State User,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"Prerequisite:Login as State User 
+
+","
+",,,
+,,,2.0,Navigate to Search Election Page and click on ADD,Maintain Election Page must be dsiplayed,,,
+,,,3.0,Enter all the mandatory fields and click Save,Election must be saved successfully,,,
+,,,4.0,Login as Region User Ex:Adair,"
+",,,
+,,,5.0,"Navigate to Search Election Page and click on Actions->Manage Election Precincts
+Add valid districts and precincts","
+Election district link must be updated successfully",,,
+,,,6.0,Navigate to Elections->Public Measures and click on Add,Maintain election measure page must be displayed,,,
+,,,7.0,Verify Election Added as a State User (in step 3) ,Added election must display in Election date name drop down values,,,
+,,,8.0,Select the election and enter all the mandatory fields and click on Save,Election Measure must be saved successfully,,,
+,,,9.0,Log out and then log back in as a State User,"
+",,,
+,,,10.0,Navigate to Elections->Public Measures ->Election measure search page and verify the measure added as region User (Step 8)is displayed in the search results ,Added measure should not be visible to the State User,,,
+88681.0,Test Case,78844-EM - Add/Maintain Measures - Permissions-Region User,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Design
+,,,1.0,"Prerequisite:Login as State User 
+
+","
+",,,
+,,,2.0,Navigate to Search Election Page and click on ADD,Maintain Election Page must be dsiplayed,,,
+,,,3.0,Enter all the mandatory fields and click Save,Election must be saved successfully,,,
+,,,4.0,Login as Region User Ex:Adair,"
+",,,
+,,,5.0,"Navigate to Search Election Page and click on Actions->Manage Election Precincts
+Add valid districts and precincts","
+Election district link must be updated successfully",,,
+,,,6.0,Navigate to Elections->Public Measures and click on Add,Maintain election measure page must be displayed,,,
+,,,7.0,Select the election and enter all the mandatory fields and click on Save,Election Measure must be saved successfully,,,
+,,,8.0,Log out and then log back in as a State User,"
+",,,
+,,,9.0,Navigate to Elections->Public Measures ->Election measure search page and verify the measure added as region User (Step 8)is displayed in the search results ,Added measure and election should not be visible to the State User,,,

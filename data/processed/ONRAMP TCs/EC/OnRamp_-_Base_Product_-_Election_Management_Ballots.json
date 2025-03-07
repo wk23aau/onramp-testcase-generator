@@ -1,0 +1,42 @@
+[
+  {
+    "ID": 81248,
+    "Work Item Type": "Test Case",
+    "Title": "Verify Absentee ballot details appear in the new tab",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Home > Search for voter > Actions > View Voter Information page> Absentee Ballot History tab.",
+        "Step Expected": "Absentee ballot details are displayed in the Voter Details tab.\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 88656,
+    "Work Item Type": "Test Case",
+    "Title": "Manage Ballots - Absentee Ballot Processing",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given the user is on Landing page, VM > Voter Ballot > Manage Absentee Ballots > Absentee Ballot Processing",
+        "Step Expected": "User should be on Absentee Ballot Records page"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Select an Election Date Name field value and also the Ballot status field value followed by clicking Search",
+        "Step Expected": "System displays the buckets (number followed by date) available for the given search criteria"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Click on any one of the bucket",
+        "Step Expected": "System will display the scanned ballot along with all the Voter information. And at the bottom of the screen, there are Zoom In and Zoom Out buttons"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Jorge Taveras <jtaveras@gocivix.com>",
+    "State": "Design"
+  }
+]

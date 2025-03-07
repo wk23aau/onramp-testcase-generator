@@ -1,0 +1,31 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+74118.0,Test Case,EM - Add Polling Place: EM - Polling Place - Add Polling Place - Save Voting Details and Contacts,,,,SG\Elections\Java\EMS,Kartheek Pachi <kpachi@gocivix.com>,Design
+,,,1.0,"Login to application with valid credentials
+","User should successfully login to application
+",,,
+,,,2.0,"Navigate to Polling Places under Election Management Tab
+","User should land into Election Polling Place Management page
+",,,
+,,,3.0,"Click on the ""Search Polling Place"" button
+","User should navigate to ""Polling Place Search"" page
+",,,
+,,,4.0,"Click on ""Add"" button
+","User should navigate to ""Polling Place Screen"" page
+",,,
+,,,5.0,Scroll down to look for Voter details,Voter details with Voting districts Districts/Precincts  to be displayed.,,,
+,,,6.0,Scroll down for Contact ,Contact details fields to be displayed.,,,
+,,,7.0,Click on Add another contact ,Contact details fields to be displayed ,,,
+,,,8.0,"Click on Add another contact another time 
+",Contact details fields to be displayed and Add another contact button to be disappeared,,,
+75779.0,Test Case,VM - Voter - Voter Search - Previous Name or Address,,,,SG\Elections\Java\EMS,Kartheek Pachi <kpachi@gocivix.com>,Design
+,,,1.0,"Login to application with valid credentials
+","User should successfully login to application
+",,,
+,,,2.0,"Navigate to Voter under Voter Management Tab
+",User should land on to Voter Management page,,,
+,,,3.0,Click on Voter search button,User should land on the Voter search page,,,
+,,,4.0,User selects the Previous Name radio button,Date of Birth field is removed from the screen,,,
+,,,5.0,"User can search with the first, last name fields to fetch the previous records of that voter","Previous name search should find records in the previous name table. The search will be narrowed down based on the Name History
+",,,
+,,,6.0,User can search previous records using the address fields,"Previous address search should find records in the previous address table The search will be narrowed down based on the Previous Address History
+",,,

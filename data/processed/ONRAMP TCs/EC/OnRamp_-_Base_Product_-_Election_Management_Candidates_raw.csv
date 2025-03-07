@@ -1,0 +1,465 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+80185.0,Test Case,68786-EM-Add/Maintain Candidate-New Candidate registration with Non-registered Voter							,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"Navigate to Election Management->Candidates->Search Candidates
+
+  
+
+  
+  
+
+","
+  Search Candidates screen must be displayed 
+ successfully",,,
+,,,2.0,"Enter the Last Name and click on the ""Search"" 
+","
+  Search results must be displayed 
+ successfully",,,
+,,,3.0,"Click on ""Add""
+","
+  Add new Candidate screen must be displayed",,,
+,,,4.0,"Click on ""Use entered search criteria""
+","
+  Maintain Candidate screen must be displayed 
+ successfully",,,
+,,,5.0,"Enter all the mandatory fields and click on Save button
+","
+  Candidate added successfully message must be 
+ displayed",,,
+,,,6.0,"Click on the ""Search""
+","User must navigate to Search candidate screen
+",,,
+,,,7.0,"Search with the newly added candidate last name
+","Corresponding record must be displayed in the search results
+",,,
+,,,8.0,"Click on the Actions ""Edit""
+","Maintain Candidate screen must be displayed successfully
+",,,
+,,,9.0,"Verify Party drop down is removed from Election & Office section
+","Party drop down must be displayed in Candidate information section
+",,,
+,,,10.0,"Verify Districts/Precinct label is displayed above Voting District in the Voting details section 
+","Districts/Precinct label must be displayed above Voting District section
+",,,
+,,,11.0,"Verify below fields are displayed in the Candidate information section
+
+ 
+
+ 
+ 
+  This Candidate is Write-In Candidate -Checkbox
+ 
+ 
+  Last Name 
+  
+  
+  
+ 
+ 
+  First Name
+  
+  
+  
+ 
+ 
+  Middle Name
+  
+  
+  
+ 
+ 
+  Suffix
+  
+  
+  
+  
+ 
+ 
+  Date Of Birth
+  
+  
+  
+ 
+ 
+  Voter registration
+  
+  
+  
+ 
+ 
+  Age
+  
+  
+  
+  
+ 
+ 
+  Party-Dropdown
+  
+  
+  
+ 
+ 
+  Status
+  
+  
+  
+  
+ 
+ 
+  Home county
+  
+  
+  
+ 
+ 
+  Precinct-Text box
+  
+  
+  
+ 
+ 
+  Override-Button
+  
+  
+  
+ ","All the fields must be displayed appropriately
+",,,
+,,,12.0,"
+","
+",,,
+80186.0,Test Case,68786-EM-Add/Maintain Candidate-New Candidate registration with Existing Voter,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"Navigate to Election Management->Candidates->Search Candidates
+","Search Candidates screen must be displayed successfully
+",,,
+,,,2.0,"Enter existing voter details and click on ""Search""
+","Search results must be displayed successfully
+",,,
+,,,3.0,"Click on ""Add""
+","Add new Candidate screen must be displayed
+",,,
+,,,4.0,"Click on ""Search the registered voter database""
+","
+  Candidate voter search screen must be displayed",,,
+,,,5.0,"Enter existing voter details and click on ""Search""
+","Corresponding records must be displayed in the search results
+",,,
+,,,6.0,"Click on the Actions ""Add"" 
+","Maintain Candidate screen must be displayed successfully
+",,,
+,,,7.0,"Enter all the mandatory fields and click on ""Save""
+","Candidate added successfully message must be displayed
+",,,
+,,,8.0,"
+  Click on the ""Search""","User must navigate to Search candidate screen
+",,,
+,,,9.0,"Search with the newly added candidate last name
+","Corresponding record must be displayed in the search results
+",,,
+,,,10.0,"Click on the Actions ""Edit"" 
+","Maintain Candidate screen must be displayed successfully
+",,,
+,,,11.0,"Verify Party drop down is removed from Election & Office section
+","Party drop down must be displayed in Candidate information section
+",,,
+,,,12.0,"Verify Districts/Precinct label is displayed above Voting District in the Voting details section
+","Districts/Precinct label must be displayed above Voting District section
+",,,
+,,,13.0,"Verify below fields are displayed in the Candidate information section
+
+
+ 
+ 
+  This Candidate is Write-In Candidate -Checkbox
+ 
+ 
+  Last Name 
+  
+  
+  
+ 
+ 
+  First Name
+  
+  
+  
+ 
+ 
+  Middle Name
+  
+  
+  
+ 
+ 
+  Suffix
+  
+  
+  
+  
+ 
+ 
+  Date Of Birth
+  
+  
+  
+ 
+ 
+  Voter registration
+  
+  
+  
+ 
+ 
+  Age
+  
+  
+  
+  
+ 
+ 
+  Party-Dropdown
+  
+  
+  
+ 
+ 
+  Status
+  
+  
+  
+  
+ 
+ 
+  Home county
+  
+  
+  
+ 
+ 
+  Precinct-Text box
+  
+  
+  
+ 
+ 
+  Override-Button
+  
+  
+  
+ ","All the fields must be displayed appropriately
+",,,
+80187.0,Test Case,68786-EM-Add/Maintain Candidate-Update Existing Candidate					,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"Navigate to Election Management->Candidates->Search Candidates
+","
+
+  Search Candidates screen must be displayed 
+",,,
+,,,2.0,"Enter the Last Name and click on the ""Search""
+","Search results must be displayed
+",,,
+,,,3.0,"
+
+  Click on the Actions ""Edit""
+","Maintain Candidate screen must be displayed
+",,,
+,,,4.0,"Update the Party drop down value and click on save button 
+","Candidate updated successfully message must be displayed on the Maintain candidate screen
+",,,
+,,,5.0,"Click on the ""Search""
+","User must navigate to Search candidate screen
+",,,
+,,,6.0,"Search with the previously updated candidate details
+","
+",,,
+,,,7.0,"Click on the Actions ""Edit""
+","
+",,,
+,,,8.0,"Verify Party drop down is displayed in Candidate information section and updated correctly
+","1.Party drop down must display the updated value 2. Must be displayed in Candidate information section
+ 3. Must be removed from Election & Office section.
+",,,
+,,,9.0,"Verify Districts/Precinct label is displayed above Voting District in the Voting details section
+"," Districts/Precinct label must be displayed above Voting District section
+",,,
+,,,10.0,"Verify below fields are displayed in the Candidate information section
+
+ 
+
+ 
+ 
+  This Candidate is Write-In Candidate -Checkbox
+ 
+ 
+  Last Name 
+  
+  
+  
+ 
+ 
+  First Name
+  
+  
+  
+ 
+ 
+  Middle Name
+  
+  
+  
+ 
+ 
+  Suffix
+  
+  
+  
+  
+ 
+ 
+  Date Of Birth
+  
+  
+  
+ 
+ 
+  Voter registration
+  
+  
+  
+ 
+ 
+  Age
+  
+  
+  
+  
+ 
+ 
+  Party-Dropdown
+  
+  
+  
+ 
+ 
+  Status
+  
+  
+  
+  
+ 
+ 
+  Home county
+  
+  
+  
+ 
+ 
+  Precinct-Text box
+  
+  
+  
+ 
+ 
+  Override-Button
+  
+  
+  
+ ","
+ 
+ 
+  All the fields must be displayed appropriately
+ 
+ 
+  
+  
+  
+  
+  
+ ",,,
+80207.0,Test Case,EM - Scan Screen Behavior and Button Update,,,,SG\Elections\Java\EMS\EM,Michael Gallo <mgallo@gocivix.com>,Ready
+,,,1.0,Navigate to 'Candidate Search' page,"
+",,,
+,,,2.0,Search for any user,"
+",,,
+,,,3.0,Click on the 'Actions' button,'Scan' option appears as an action,,,
+,,,4.0,Click the 'Scan' option,"
+",,,
+,,,5.0,Land on the 'Single Scan' page,"Verify 'Document Name' is pre-populated with ""Election Management"". Verify 'Candidate Filing Application number' appears and is populated with the candidate number. Verify' Filing Date' appears and contains the application filing date.
+",,,
+,,,6.0,Click the 'Document Type' dropdown,"Verify The options 'Candidate Affidavit', 'TREASURER FORM', and 'other' appear and can be selected.",,,
+,,,7.0,Navigate to the 'Maintain Candidate' confirmation page,'Scan' button is available at the bottom of the page beside 'Search',,,
+,,,8.0,Click 'Scan',Land on 'Single Scan' page.,,,
+,,,9.0,"
+","
+",,,
+80215.0,Test Case,78531-EM - Candidates - Search Candidate - Add district search field to search candidate Page							,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"
+
+  Navigate to  EM -Candidates - Search Candidate Page
+","
+
+  Search Candidate Page must be displayed
+",,,
+,,,2.0,"
+
+  Verify District drop down is added to the search fields
+","
+
+  District drop down must be added to the Search Candidate Page
+",,,
+,,,3.0,"
+
+  Select a district from the ""District"" drop down and
+click ""Search""
+","
+
+  Corresponding records must be displayed
+",,,
+,,,4.0,"
+
+  Add a new district in the District Management module
+","
+
+  Added district must displayed in the ""District""
+dropdown on Search Candidate Page
+",,,
+82093.0,Test Case,EM - Candidate - View Election Management Documents,,,,SG\Elections\Java\EMS\EM\Candidate,Michael Gallo <mgallo@gocivix.com>,Ready
+,,,1.0,Navigate to the 'Search Candidate' screen: EM > Candidates > Search Candidates,Land on the 'Search Candidate' screen,,,
+,,,2.0,Wildcard search OR search for a specific user,Candidate(s) appear in the list,,,
+,,,3.0,Click 'Actions' menu,"'Edit', 'Delete', and 'View/Scan' appear as actions",,,
+,,,4.0,Click 'View/Scan',"Land on the 'Candidate Documents' page. 'Document Name', 'Date of Upload', and 'Actions' appear as grid items.",,,
+,,,5.0,Click 'Scan',Land on the 'View Candidate Registration' page,,,
+,,,6.0,"Choose to 'Start New Scan' OR 'Load Local File', and select a scan/file to add to the index.",File appears in the 'Scanned Documents' Index,,,
+,,,7.0,Click 'Upload Documents',File is successfully uploaded and notification is received.,,,
+,,,8.0,Navigate back to the 'Candidate Documents' page,All uploaded documents are displayed in the list,,,
+,,,9.0,Click 'Actions' for any uploaded document,'View' and 'Delete' appear as actions.,,,
+,,,10.0,Click 'View',The correct document is displayed in popup/modal,,,
+,,,11.0,Close the popup/modal,"
+",,,
+,,,12.0,"Click 'Actions' , then 'Delete'
+(Delete not yet implemented on 10-17, but will be in future) 
+","The document is able to be deleted
+(Update this step with function/notification once impemented)",,,
+88682.0,Test Case,68786-EM-Add/Maintain Candidate-Existing candidate search					,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"Navigate to Election Management->Candidates->Search Candidates
+","Search Candidates screen must be displayed successfully
+",,,
+,,,2.0,"Enter the Last Name and click on ""search""
+
+
+","Search results must be displayed successfully
+",,,
+,,,3.0,"Click on the Actions ""Edit""
+
+","Maintain Candidate screen must be displayed successfully
+",,,
+,,,4.0,"Verify Party drop down is removed from Election & Office section
+","Party drop down must be displayed in Candidate information section
+",,,
+,,,5.0,"Verify Districts/Precinct label is displayed above Voting District in the Voting details section
+","Districts/Precinct label must be displayed above Voting District section
+",,,
+,,,6.0,"Verify below fields are displayed in the Candidate information section.
+ 
+This Candidate is Write-In Candidate -CheckboxLast Name
+First Name 
+Middle Name SuffixDate Of BirthVoter registrationAgeParty-DropdownStatusHome countyPrecinct-Text boxOverride-Button","All the fields must be displayed appropriately
+",,,
