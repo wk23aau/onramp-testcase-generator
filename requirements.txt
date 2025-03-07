@@ -1,4 +1,13 @@
+# GPU-enabled PyTorch packages (for CUDA 11.7)
+torch
+torchvision
+torchaudio
+
+# NLP libraries
+transformers
+datasets
+
+# Data processing libraries
 pandas
-openpyxl
-jupyter
-matplotlib
+numpy
+regex

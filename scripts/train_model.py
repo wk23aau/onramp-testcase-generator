@@ -2,7 +2,13 @@ import os
 import json
 import re
 from datasets import Dataset
-from transformers import T5ForConditionalGeneration, T5TokenizerFast, Trainer, TrainingArguments
+from transformers import (
+    T5ForConditionalGeneration,
+    T5TokenizerFast,
+    Trainer,
+    TrainingArguments,
+    DataCollatorForSeq2Seq
+)
 
 def load_json_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -10,6 +16,12 @@ def load_json_file(file_path):
     return data
 
 def clean_text(text):
+    """
+    Clean text by:
+      - Removing extra whitespace.
+      - Normalizing newlines.
+      - Removing non-printable characters.
+    """
     if not text:
         return ""
     text = re.sub(r'\s+', ' ', text).strip()
@@ -19,24 +31,25 @@ def clean_text(text):
 def prepare_examples(data):
     examples = []
     for item in data:
+        # Clean metadata fields
         title = clean_text(item.get("Title", ""))
         area_path = clean_text(item.get("Area Path", ""))
-        assigned_to = clean_text(item.get("Assigned To", ""))
         state = clean_text(item.get("State", ""))
         
+        # Build an enhanced prompt without the "Assigned To" field
         prompt = (
             f"Test Case Details:\n"
             f"Title: {title}\n"
             f"Area Path: {area_path}\n"
-            f"Assigned To: {assigned_to}\n"
             f"State: {state}\n\n"
-            "Based on the above, generate a detailed, step-by-step test case in the format:\n"
+            "Based on the above, generate a detailed, step-by-step test case in the following format:\n"
             "Step 1: <Step Action> -> Expected: <Step Expected>\n"
             "Step 2: <Step Action> -> Expected: <Step Expected>\n"
             "...\n\n"
             "Test Steps:"
         )
         
+        # Clean and concatenate test steps
         steps = []
         for step in item.get("Test Steps", []):
             step_num = str(step.get("Step", "")).strip()
@@ -53,7 +66,8 @@ def prepare_examples(data):
     return examples
 
 def main():
-    input_json = "data/processed/ONRAMP TCs/EC/merged.json"  # Use the merged JSON file
+    # Update this path to your merged JSON file for the specific system (e.g., EC)
+    input_json = "data/processed/ONRAMP TCs/EC/merged.json"
     data = load_json_file(input_json)
     examples = prepare_examples(data)
     
@@ -66,7 +80,11 @@ def main():
     tokenizer = T5TokenizerFast.from_pretrained(model_name)
     model = T5ForConditionalGeneration.from_pretrained(model_name)
     
+    # Use a data collator for dynamic padding in sequence-to-sequence tasks.
+    data_collator = DataCollatorForSeq2Seq(tokenizer, model=model, padding=True)
+    
     def tokenize_function(example):
+        # Tokenize the prompt and target; no fixed padding here as the collator will handle it.
         model_inputs = tokenizer(example["prompt"], max_length=512, truncation=True)
         with tokenizer.as_target_tokenizer():
             labels = tokenizer(example["target"], max_length=512, truncation=True)
@@ -85,7 +103,6 @@ def main():
         num_train_epochs=3,
         weight_decay=0.01,
         save_total_limit=2,
-        predict_with_generate=True,
         logging_steps=10,
     )
     
@@ -94,6 +111,7 @@ def main():
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
+        data_collator=data_collator,  # using dynamic padding
     )
     
     trainer.train()
