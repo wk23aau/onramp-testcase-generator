@@ -29,6 +29,11 @@ def clean_text(text):
     return text
 
 def prepare_examples(data):
+    """
+    Converts each test case in the JSON data into a training example.
+    The prompt includes key metadata and explicit instructions.
+    The target is a cleaned, concatenated representation of the test steps.
+    """
     examples = []
     for item in data:
         # Clean metadata fields
@@ -36,7 +41,6 @@ def prepare_examples(data):
         area_path = clean_text(item.get("Area Path", ""))
         state = clean_text(item.get("State", ""))
         
-        # Build an enhanced prompt without the "Assigned To" field
         prompt = (
             f"Test Case Details:\n"
             f"Title: {title}\n"
@@ -49,7 +53,6 @@ def prepare_examples(data):
             "Test Steps:"
         )
         
-        # Clean and concatenate test steps
         steps = []
         for step in item.get("Test Steps", []):
             step_num = str(step.get("Step", "")).strip()
@@ -66,11 +69,12 @@ def prepare_examples(data):
     return examples
 
 def main():
-    # Update this path to your merged JSON file for the specific system (e.g., EC)
-    input_json = "data/processed/ONRAMP TCs/EC/merged.json"
+    # Use the merged JSON file from all systems
+    input_json = os.path.join("data", "processed", "ONRAMP TCs", "merged_all.json")
     data = load_json_file(input_json)
     examples = prepare_examples(data)
     
+    # Create a Hugging Face dataset from the examples and split it
     ds = Dataset.from_list(examples)
     ds = ds.train_test_split(test_size=0.1)
     train_dataset = ds["train"]
@@ -80,11 +84,10 @@ def main():
     tokenizer = T5TokenizerFast.from_pretrained(model_name)
     model = T5ForConditionalGeneration.from_pretrained(model_name)
     
-    # Use a data collator for dynamic padding in sequence-to-sequence tasks.
+    # Use DataCollatorForSeq2Seq for dynamic padding
     data_collator = DataCollatorForSeq2Seq(tokenizer, model=model, padding=True)
     
     def tokenize_function(example):
-        # Tokenize the prompt and target; no fixed padding here as the collator will handle it.
         model_inputs = tokenizer(example["prompt"], max_length=512, truncation=True)
         with tokenizer.as_target_tokenizer():
             labels = tokenizer(example["target"], max_length=512, truncation=True)
@@ -111,11 +114,12 @@ def main():
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
-        data_collator=data_collator,  # using dynamic padding
+        data_collator=data_collator,
     )
     
     trainer.train()
     
+    # Save the fine-tuned model and tokenizer
     model.save_pretrained("models/t5_testcase_generator")
     tokenizer.save_pretrained("models/t5_testcase_generator")
     print("Model training complete and saved.")
