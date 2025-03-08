@@ -3,3 +3,4 @@ sentence-transformers
 datasets
 torch
 beautifulsoup4
+transformers[torch]
