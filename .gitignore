@@ -64,16 +64,4 @@ Thumbs.db
 # data/processed/
 
 # Model artifacts (ignore large files but keep configs and tokenizer files)
-models/*/pytorch_model.bin
-models/*/flax_model.msgpack
-models/*/tf_model.h5
-models/*/optimizer.pt
-models/*/scheduler.pt
-models/*/trainer_state.json
-models/*/checkpoint-*/
-
-# You may want to include config and tokenizer files:
-!models/*/config.json
-!models/*/tokenizer_config.json
-!models/*/vocab.txt
-!models/*/merges.txt
+models
