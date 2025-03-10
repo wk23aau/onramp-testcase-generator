@@ -1,0 +1,78 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+77313.0,Test Case,EM-Add-Maintain Offices changes,,,,SG\Elections\Java\EMS\EM,Rina Pilli <rpilli@gocivix.com>,Design
+,,,1.0,"Verify new changes on Add/Maintain office. On SEARCH office screen
+ Office will display ""District Type"" instead of Office Type and 
+District Type as ""District""","New display fields 
+District Type
+District",,,
+,,,2.0,The display result grid should display the District Type next to Office name field and the Single County Office field should be removed from the search results column,"""Office Type"" should be renamed ""District Type"" and moved 
+ Remove ""Single County Office"" ",,,
+,,,3.0,"Regression Test
+Add Office: 
+Click on Election Management and select OFFICES from the dropdown
+Click On ADD button
+Provide the required fields and click on SAVE
+A new Office is added ",User successfully creates a new office when provides all the required fields and Saves. This office is displayed in the list below on the Search office screen.,,,
+,,,4.0,"Regression Test
+Maintain Office:
+Search Office by providing either the name or District Type or District fields and click on Action Items and select EDIT rename the office or change the district type or District and click on Save button
+ ",User successfully updates the office.,,,
+77871.0,Test Case,68937 - EM - Offices - Delete Office,,,,SG\Elections\Java\EMS\EM,Aden Wood <awood@gocivix.com>,Ready
+,,,1.0,"Pre-requisites:
+1. Have an existing Office that is not assigned to anything
+2. Have an existing Non-Election-Template Office that is assigned to an Election
+3. Have an existing Office that is assigned to an Election Template that an Election uses ","
+",,,
+,,,2.0,"Access the EMS system
+","Dashboard displayed
+",,,
+,,,3.0,Navigate to Election Management > Offices > Search,Office Search page is displayed,,,
+,,,4.0,"Find the existing Office that is not assigned to anything and click on the ""Actions"" ellipsis ",Options displayed,,,
+,,,5.0,"Click ""Delete""",A pop-up box will be displayed asking the user if they are sure they want to delete the Office,,,
+,,,6.0,"Click ""Cancel""",The pop-up box will be removed and nothing will happen,,,
+,,,7.0,"Click on the ""Actions"" ellipsis again","Options displayed
+",,,
+,,,8.0,"Click ""Delete""
+","A pop-up box will be displayed asking the user if they are sure they want to delete the Office
+",,,
+,,,9.0,"Click ""Ok""",A success notification is displayed and the Office will be removed from the system,,,
+,,,10.0,"Find the existing Non-Election-Template Office that is assigned to an Election and click on the ""Actions"" ellipsis","Options displayed
+",,,
+,,,11.0,"Click ""Delete""
+","A pop-up box will be displayed asking the user if they are sure they want to delete the Office
+",,,
+,,,12.0,"Click ""Ok""","A notification saying ""Office Name assigned to Election Office Mapping cannot be deleted"" and the office will still exist in the system",,,
+,,,13.0,"Find the existing Office that is assigned to an Election Template that an Election uses and click on the ""Actions"" ellipsis
+","Options displayed
+",,,
+,,,14.0,"Click ""Delete""
+","A pop-up box will be displayed asking the user if they are sure they want to delete the Office
+",,,
+,,,15.0,"Click ""Ok""
+","A notification saying ""Office Name assigned to Election Template cannot be deleted"" and the office will still exist in the system
+",,,
+88531.0,Test Case,EM - Office Holders Search Office Holders - Search page view,,,,SG\Elections\Java\EMS,Fadwa Toumi Toumi Ben Chekroun <ftoumi@gocivix.com>,Ready
+,,,1.0,Navigate to Office Holders from Office,"
+",,,
+,,,2.0,"Log in to the system 
+ 2. Click on Office in the main menu 
+ 3. Select Office Holders from the dropdown",The system should navigate to the Office Holders section,,,
+,,,3.0,"Navigate to Office Holders section 
+ 2. Click on an Office Holder's Name 
+ 3. Click on History",The system should display the history of the selected office holder,,,
+,,,4.0,"1. Navigate to Office Holders - Search page 
+ 2. Enter search criteria (e.g., name, office, term) 
+ 3. Click Search",The system should display matching office holders based on the criteria,,,
+,,,5.0,"1. Navigate to Office Holders - Search page 
+ 2. Ensure all necessary fields (name, office, term, etc.) are displayed 
+ 3. Verify that the search and reset buttons are available",The system should display all relevant fields and functionalities correctly,,,
+88532.0,Test Case,Office Holders Search,,,,SG\Elections\Java\EMS,Rina Pilli <rpilli@gocivix.com>,Design
+,,,1.0,Office holders search,,,,
+88686.0,Test Case,71858-Add/Maintain Office - Verify Number of Seats field is non-editable after creation,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Navigate to EM-> Offices->Search Offices->ADD,Maintain office Page must be displayed,,,
+,,,2.0,"Verify Number of Seats field is clearly highlighted in Red 
+ when skipped",Number of Seats field must be mandatory,,,
+,,,3.0,Try to save the record without entering Number of Seats,"The system should prevent the user from saving without entering the ""Number of Seats"" field",,,
+,,,4.0,"Enter all the mandatory fields and click ""Save""",Office must be saved successfully,,,
+,,,5.0,"Navigate to EM-> Offices->Search Offices->Action->Edit mode
+Verify the ""Number of Seats"" field",Must be disabled and non-editable,,,

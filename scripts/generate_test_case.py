@@ -1,45 +1,48 @@
-import torch
-from transformers import T5ForConditionalGeneration, T5TokenizerFast
+import os
+import json
+import faiss
+from transformers import T5ForConditionalGeneration, T5Tokenizer
+from sentence_transformers import SentenceTransformer
 
-def generate_test_case(prompt, model, tokenizer, max_length=512, num_beams=5):
-    # Encode the prompt into input IDs
-    input_ids = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=max_length).input_ids
-    # Generate output text using beam search
-    output_ids = model.generate(input_ids, max_length=max_length, num_beams=num_beams, early_stopping=True)
-    # Decode and return the generated text
-    generated_text = tokenizer.decode(output_ids[0], skip_special_tokens=True)
-    return generated_text
+class TestCaseGenerator:
+    def __init__(self):
+        self.retrieval_model = SentenceTransformer('all-MiniLM-L6-v2')
+        self.t5_model = T5ForConditionalGeneration.from_pretrained(
+            os.path.join("models", "t5_finetuned")
+        )
+        self.t5_tokenizer = T5Tokenizer.from_pretrained(
+            os.path.join("models", "t5_finetuned")
+        )
 
-def main():
-    # Load the fine-tuned model and tokenizer
-    model_path = "models/t5_testcase_generator"
-    tokenizer = T5TokenizerFast.from_pretrained(model_path)
-    model = T5ForConditionalGeneration.from_pretrained(model_path)
-    
-    # Option 1: Use a hard-coded sample prompt
-    sample_prompt = (
-        "Test Case Details:\n"
-        "Title: EM - Offices - Delete Office\n"
-        "Area Path: SG\\Elections\\Java\\EMS\n"
-        "State: Ready\n\n"
-        "Based on the above, generate a detailed, step-by-step test case in the following format:\n"
-        "Step 1: <Step Action> -> Expected: <Step Expected>\n"
-        "Step 2: <Step Action> -> Expected: <Step Expected>\n"
-        "...\n\n"
-        "Test Steps:"
-    )
-    
-    # Option 2: Allow the user to input a custom prompt
-    user_input = input("Enter a custom prompt (or press Enter to use the sample prompt): ")
-    prompt = user_input if user_input.strip() else sample_prompt
-    
-    print("\nInput Prompt:")
-    print(prompt)
-    
-    # Generate the test case
-    generated = generate_test_case(prompt, model, tokenizer)
-    print("\nGenerated Test Case:")
-    print(generated)
+        data_dir = os.path.join("data", "processed")
+        self.index = faiss.read_index(os.path.join(data_dir, "retrieval_index.faiss"))
+        with open(os.path.join(data_dir, "retrieval_metadata.json"), "r") as f:
+            self.metadata = json.load(f)
 
+    def retrieve(self, user_story_text, top_k=3):
+        query_embedding = self.retrieval_model.encode([user_story_text])
+        _, indices = self.index.search(query_embedding, top_k)
+        return [self.metadata[i] for i in indices[0]]
+
+    def generate(self, user_story):
+        # FIXED: Use "UserStoryDescription" and "TestSteps"
+        retrieved = self.retrieve(user_story["UserStoryDescription"])
+        
+        prompt = f"Generate test case for: {user_story['UserStoryDescription']}\n\n"
+        prompt += "Acceptance Criteria:\n" + user_story["AcceptanceCriteria"].replace('\n', '\n- ')
+        prompt += "\n\nSimilar Test Cases:\n" + "\n".join([tc["TestSteps"] for tc in retrieved])
+
+        inputs = self.t5_tokenizer(prompt, return_tensors="pt", padding=True, truncation=True)
+        outputs = self.t5_model.generate(**inputs, max_length=512)
+        return self.t5_tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+# Example usage
 if __name__ == "__main__":
-    main()
+    generator = TestCaseGenerator()
+    user_story = {
+        "UserStoryTitle": "Sample User Story",
+        "UserStoryDescription": "As a user, I want to reset my password via email.",
+        "AcceptanceCriteria": "Given valid email\nWhen I request a password reset\nThen a confirmation email is sent"
+    }
+    test_case = generator.generate(user_story)
+    print("Generated Test Case:", test_case)

@@ -5,3 +5,8 @@ torch
 beautifulsoup4
 transformers[torch]
 scikit-learn
+numpy
+faiss-cpu  # or faiss-gpu
+sentence-transformers
+tqdm
+sentencepiece

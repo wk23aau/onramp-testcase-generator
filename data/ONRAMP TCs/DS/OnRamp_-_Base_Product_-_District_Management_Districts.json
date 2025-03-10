@@ -1,0 +1,2852 @@
+[
+  {
+    "ID": 76165,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - Streets - Search Streets",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite: Have an existing street and a voter assigned to that street segment ",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access EMS",
+        "Step Expected": "Dashboard is displayed "
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > View Streets",
+        "Step Expected": "Search Streets page is displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Select a Street from the \"Street Name\" dropdown and click \"Search\"",
+        "Step Expected": "All the Street Segments under that Street Name will be listed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Choose a desired Street Segment and click on the Action ellipsis ",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click on \"View\"",
+        "Step Expected": "All the voters that are assigned to that Street Segment will be listed below"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Choose a desired Voter and click on the Action ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click on \"View\"\\n",
+        "Step Expected": "User will be taken to the View Voter screen for that particular Voter"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 76181,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - Street Segments - Add New Street",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Access the EMS system",
+        "Step Expected": "Dashboard displayed"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to District Management > Districts > Manage Streets",
+        "Step Expected": "Street Segments page is displayed"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Click \"ADD\"",
+        "Step Expected": "Add/Update Street Segment page is displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Fill in all required fields and click \"Save\"",
+        "Step Expected": "The Street will be successfully created"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Select the street you just created from the \"Street Name\" dropdown and click \"Search\"",
+        "Step Expected": "The Street you just created will be displayed showing the Street Segment"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77002,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - Street Segments - Add Street Segment to existing Street",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to District Management > Districts > Manage Streets\\n",
+        "Step Expected": "Street Segments page is displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "From the \"Street Name\" dropdown select a desired Street",
+        "Step Expected": "Street selected"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Click \"ADD\"\\n",
+        "Step Expected": "Add/Update Street Segment page is displayed\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Fill in all required fields and click \"Save\"\\n",
+        "Step Expected": "The Street will be successfully created\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "From the \"Street Name\" dropdown select the Street you just created and Street Segment for and click \"Search\"\\n",
+        "Step Expected": "The new Street segment you just created will be displayed alongside the existing segments\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77004,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - Street Segments - Edit existing Street Segment",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing Street with Segments",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Manage Streets\\n",
+        "Step Expected": "Street Segments page is displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "From the \"Street Name\" dropdown select a desired Street\\n",
+        "Step Expected": "Street selected\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"SEARCH\"",
+        "Step Expected": "All Street Segments are displayed for that chosen Street"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Choose a desired Street Segment and click on the Actions ellipsis ",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"Edit\"",
+        "Step Expected": "Add / Update page is displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Change the Street Segment in any way desired e.g. Postal City",
+        "Step Expected": "Street Segment changed"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click \"UPDATE\"",
+        "Step Expected": "Street Segment updated"
+      },
+      {
+        "Step": 10,
+        "Step Action": "From the \"Street Name\" dropdown select the Street with the Segment you just edited and click \"SEARCH\"",
+        "Step Expected": "Street Segments will be listed and the changes you made will be reflected on the Street Segment you edited"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77005,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - Street Segments - Delete Street Segment",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing Street with Segments\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Manage Streets\\n",
+        "Step Expected": "Street Segments page is displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "From the \"Street Name\" dropdown select a desired Street\\n",
+        "Step Expected": "Street selected\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"SEARCH\"\\n",
+        "Step Expected": "All Street Segments are displayed for that chosen Street\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Choose a desired Street Segment and click on the Actions ellipsis \\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"Delete\"",
+        "Step Expected": "The Street Segment will be deleted (You may have to refresh the page to see this change)"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77026,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - Special Address - Add New Business Address",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing Street with Segments\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Special Address\\n",
+        "Step Expected": "Special Address page is displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "From the \"Street Name\" dropdown select a desired Street Name",
+        "Step Expected": "Street Name selected"
+      },
+      {
+        "Step": 5,
+        "Step Action": "From the \"Street Segment\" dropdown select a desired Street Segment",
+        "Step Expected": "Street Segment selected"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"SEARCH\"",
+        "Step Expected": "The Existing Special Addresses area will open and displayed all existing Business Addresses and Healthcare Facilities"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Ensure Business Address tab is selected and click \"ADD\"",
+        "Step Expected": "Add Business Address page is displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Fill in all required fields and click \"ADD\"",
+        "Step Expected": "A success notification will be displayed and you are taken back to the Special Address page"
+      },
+      {
+        "Step": 9,
+        "Step Action": "From the \"Street Name\" dropdown select the Street you created the Business Address under\\n",
+        "Step Expected": "Street selected"
+      },
+      {
+        "Step": 10,
+        "Step Action": "From the \"Street Segment\" dropdown select the Street Segment you created the Business Address under\\n",
+        "Step Expected": "Street Segment selected"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click \"SEARCH\"",
+        "Step Expected": "A list of Business Addresses under that Street Segment will be displayed and the newly created Business Address will be there"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77040,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - Special Address - Edit existing Business Address",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing Business Address\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Special Address\\n",
+        "Step Expected": "Special Address page is displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "From the \"Street Name\" dropdown select the Street with the existing Business Address\\n",
+        "Step Expected": "Street selected"
+      },
+      {
+        "Step": 5,
+        "Step Action": "From the \"Street Segment\" dropdown select the Street Segment with the existing Business Address\\n",
+        "Step Expected": "Street Segment selected"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"SEARCH\"\\n",
+        "Step Expected": "The Existing Special Addresses area will open and displayed all existing Business Addresses and Healthcare Facilities\\n"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Ensure Business Address tab is selected\\n",
+        "Step Expected": "Existing Business Address will be displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Choose a Business Address and click on the \"Actions\" ellipsis",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click \"Edit\"",
+        "Step Expected": "Business Address page is displayed"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Make any change to the Business Address and click \"UPDATE\"",
+        "Step Expected": "A success message will display and you are taken back to the Special Address page"
+      },
+      {
+        "Step": 11,
+        "Step Action": "From the \"Street Name\" dropdown select the Street with the Business Address you just changed\\n",
+        "Step Expected": "Street selected\\n"
+      },
+      {
+        "Step": 12,
+        "Step Action": "From the \"Street Segment\" dropdown select the Street Segment with the Business Address you just changed\\n",
+        "Step Expected": "Street Segment selected"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Click \"SEARCH\"",
+        "Step Expected": "A list of Business Addresses under that Street Segment will be displayed and the changes will be reflected on the Segment you edited\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77092,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - District Type - Add New District Type",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to District Management > Districts > District Type\\n",
+        "Step Expected": "District Type page is displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Click \"ADD\"",
+        "Step Expected": "District Type Add page will be displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Fill in all required fields and click \"ADD\"",
+        "Step Expected": "A success message is displayed and you are taken back to the District Type page"
+      },
+      {
+        "Step": 5,
+        "Step Action": "From the \"District Type\" dropdown select the District Type you just created and click \"SEARCH\"",
+        "Step Expected": "The District Type you created will be displayed below showing the correct details"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77093,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - District Type - Edit existing District Type",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing District Type ",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > District Type\\n",
+        "Step Expected": "District Type page is displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "From the \"District Type\" dropdown select an existing District Type and click \"SEARCH\"\\n",
+        "Step Expected": "District Type will be displayed below"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click on the \"Actions\" ellipsis",
+        "Step Expected": "Options are displayed"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click on \"Edit\"",
+        "Step Expected": "District Type Edit page will be displayed"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Make any desired changes and click \"UPDATE\"",
+        "Step Expected": "A success message is displayed and you are taken back to the District Type page\\n"
+      },
+      {
+        "Step": 8,
+        "Step Action": "From the \"District Type\" dropdown select the District Type you just changed and click \"SEARCH\"\\n",
+        "Step Expected": "The District Type you edited will be displayed below showing the reflected changes\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77151,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - District - Add New District",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing District Type ",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > District\\n",
+        "Step Expected": "Maintain Voting Districts page will be displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "From the \"District Type\" dropdown select a District Type",
+        "Step Expected": "District Type selected"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Fill in the \"Value\" and \"Description\" fields",
+        "Step Expected": "Fields filled in"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"ADD\"",
+        "Step Expected": "A success notification will display and the newly created will be shown in the list below"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77156,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - District - Edit existing District",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing District\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > District\\n",
+        "Step Expected": "Maintain Voting Districts page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Choose a District and click on the \"Actions\" ellipsis",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"Edit\"",
+        "Step Expected": "Update Voting District page is displayed"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Make any desired change",
+        "Step Expected": "Change made"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"UPDATE\"",
+        "Step Expected": "A success notification is displayed and the user is taken back to the Maintain Voting Districts page"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Check list below",
+        "Step Expected": "The District you just edited should reflect the changes you made"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77158,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts - District - Delete District",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing District that is not assigned to anything\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > District\\n",
+        "Step Expected": "Maintain Voting Districts page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Choose a District and click on the \"Actions\" ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"Delete\"",
+        "Step Expected": "A success notification will be displayed and the District will be removed from the list (You may need to refresh the page to see this change)"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 78327,
+    "Work Item Type": "Test Case",
+    "Title": "77526 - DM - District - Precinct Split - Add/Delete and Update",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing Precinct ",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Precinct\\n",
+        "Step Expected": "Precincts page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Find the existing Precinct and click in the \"Actions\" ellipsis",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"Edit\"",
+        "Step Expected": "Update Precinct page is displayed"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Under the Precinct Assignments section click on the \"Precinct Splits\" tab",
+        "Step Expected": "Precincts Splits section will be displayed"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"Split Precinct\"",
+        "Step Expected": "Precinct Split page will be displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Fill in the \"Name\" and \"Code\" required fields",
+        "Step Expected": "Fields filled in"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click \"Save\"",
+        "Step Expected": "A success message will be displayed and the Precinct Split is saved"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Go back to the main existing Precinct by clicking \"Cancel\"",
+        "Step Expected": "Update Precinct page is displayed"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Under the Precinct Assignments section click on the \"Precinct Splits\" tab\\n",
+        "Step Expected": "Precincts Splits section will be displayed and the newly created Precinct Split will be listed\\n"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Click on the \"Actions\" ellipsis",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Click \"Update\"",
+        "Step Expected": "Update Precinct Split page is displayed"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Change the Name of the Precinct Split",
+        "Step Expected": "Name changed"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Click \"Update\"",
+        "Step Expected": "A success message will be displayed and the Precinct Split will be updated\\n"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Under the Precinct Assignments section click on the \"Precinct Splits\" tab\\n",
+        "Step Expected": "The changes you made to the Precinct Split will be reflected here"
+      },
+      {
+        "Step": 17,
+        "Step Action": "Click on the \"Actions\" ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 18,
+        "Step Action": "Click \"Delete\"",
+        "Step Expected": "The Precinct Split will be removed from the list and will no longer be part of the main Precinct"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 78343,
+    "Work Item Type": "Test Case",
+    "Title": "77530 - DM - District - Precinct Street Segment - Add/Delete",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisites:\\n- Have an existing Precinct\\n- Have an existing Street Segment\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Precinct\\n",
+        "Step Expected": "Precincts page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Find the existing Precinct and click in the \"Actions\" ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"Edit\"\\n",
+        "Step Expected": "Update Precinct page is displayed\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Under the Precinct Assignments section ensure that the \"Street Segments\" tab is selected\\n",
+        "Step Expected": "Street Segments section is displayed"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"Add\"",
+        "Step Expected": "Precinct Street Segment page is displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Select a Street Name for the existing Street Segment you have",
+        "Step Expected": "Street Name selected"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Select the existing Street Segment",
+        "Step Expected": "Street Segment selected"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Click \"Save\"",
+        "Step Expected": "A success message will be displayed and the Street Segment will be saved to the Precinct"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click on the \"Actions\" ellipsis for the newly assigned Street Segment",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Click \"Delete\"",
+        "Step Expected": "The Street Segment will be removed and no longer assigned to the Precinct"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 78544,
+    "Work Item Type": "Test Case",
+    "Title": "77528 - DM - District - Precinct Split - Add/Delete Street Segment",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisites:\\n- Have an existing Precinct\\n- Have an existing Street Segment\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Precinct\\n",
+        "Step Expected": "Precincts page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Find the existing Precinct and click in the \"Actions\" ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"Edit\"\\n",
+        "Step Expected": "Update Precinct page is displayed\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Under the Precinct Assignments section click on the \"Precinct Splits\" tab\\n",
+        "Step Expected": "Precincts Splits section will be displayed\\n"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"Split Precinct\"\\n",
+        "Step Expected": "Precinct Split page will be displayed\\n"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Fill in the \"Name\" and \"Code\" required fields\\n",
+        "Step Expected": "Fields filled in\\n"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click \"Save\"\\n",
+        "Step Expected": "A success message will be displayed and the Precinct Split will be saved, the user is taken to the Precinct Split Update page\\n"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Under the Precinct Assignments section ensure that the \"Street Segments\" tab is selected\\n",
+        "Step Expected": "Street Segments section is displayed\\n"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click \"Add\"\\n",
+        "Step Expected": "Precinct Street Segment page is displayed\\n"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Select a Street Name for the existing Street Segment you have\\n",
+        "Step Expected": "Street Name selected\\n"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Select the existing Street Segment\\n",
+        "Step Expected": "Street Segment selected\\n"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click \"Save\"\\n",
+        "Step Expected": "A success message will be displayed and the Street Segment will be saved to the Precinct Split\\n"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Click on the \"Actions\" ellipsis for the newly assigned Street Segment\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Click \"Delete\"\\n",
+        "Step Expected": "The Street Segment will be removed and no longer assigned to the Precinct Split\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 78548,
+    "Work Item Type": "Test Case",
+    "Title": "77527 - DM - District - Precinct Split - Add/Delete District",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisites:\\n- Have an existing Precinct\\n- Have an existing District\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Precinct\\n",
+        "Step Expected": "Precincts page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Find the existing Precinct and click in the \"Actions\" ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"Edit\"\\n",
+        "Step Expected": "Update Precinct page is displayed\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Under the Precinct Assignments section click on the \"Precinct Splits\" tab\\n",
+        "Step Expected": "Precincts Split section will be displayed\\n"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"Split Precinct\"\\n",
+        "Step Expected": "Precinct Split page will be displayed\\n"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Fill in the \"Name\" and \"Code\" required fields\\n",
+        "Step Expected": "Fields filled in\\n"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click \"Save\"\\n",
+        "Step Expected": "A success message will be displayed and the Precinct Split will be saved, the user is taken to the Precinct Split Update page\\n"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Under the Precinct Assignments section click on the \"Districts\" tab\\n",
+        "Step Expected": "Districts section is displayed\\n"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click \"Add\"\\n",
+        "Step Expected": "Precinct District page is displayed\\n"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Select a District Type for the existing District you have\\n",
+        "Step Expected": "District Type selected"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Select the existing District\\n",
+        "Step Expected": "District selected\\n"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click \"Save\"\\n",
+        "Step Expected": "A success message will be displayed and the District will be saved to the Precinct Split\\n"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Click on the \"Actions\" ellipsis for the newly assigned District\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Click \"Delete\"\\n",
+        "Step Expected": "The District will be removed and no longer assigned to the Precinct Split\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 78839,
+    "Work Item Type": "Test Case",
+    "Title": "71255 - DM - District - Special Address - Add/Maintain Health Care Facilities",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing Street Segment",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Special Address\\n",
+        "Step Expected": "Special Address page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Select the Street Name of the existing Street Segment",
+        "Step Expected": "Street Name selected"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Select the existing Street Segment ",
+        "Step Expected": "Street Segment selected"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"Search\"",
+        "Step Expected": "Existing Special Addresses section is displayed"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click on the \"Healthcare Facility\" tab",
+        "Step Expected": "Healthcare Facility selected"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click \"Add\"",
+        "Step Expected": "Add Healthcare Facility page is displayed"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Fill in all required fields",
+        "Step Expected": "Fields filled in"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Click \"Add\"",
+        "Step Expected": "A success message is displayed and the Healthcare Facility has been added as a Special Address under that Street Segment"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Select the Street Name of the existing Street Segment you just added a Healthcare Facility to\\n",
+        "Step Expected": "Street Name selected\\n"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Select the existing Street Segment you just added a Healthcare Facility to\\n",
+        "Step Expected": "Street Segment selected\\n"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Click \"Search\"\\n",
+        "Step Expected": "Existing Special Addresses section is displayed\\n"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click on the \"Healthcare Facility\" tab\\n",
+        "Step Expected": "Healthcare Facility section is displayed and the Healthcare Facility you just created is listed here with the correct information showing\\n"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Click on the \"Actions\" ellipsis next to the Healthcare Facility you added",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Click on \"Edit\"",
+        "Step Expected": "Update Healthcare Facility page is displayed"
+      },
+      {
+        "Step": 17,
+        "Step Action": "Make any desired changes and click \"Update\"",
+        "Step Expected": "A success message is displayed and the Healthcare Facility will be updated"
+      },
+      {
+        "Step": 18,
+        "Step Action": "Select the Street Name of the existing Street Segment you just updated the Healthcare Facility for\\n",
+        "Step Expected": "Street Name selected\\n"
+      },
+      {
+        "Step": 19,
+        "Step Action": "Select the existing Street Segment you just updated the Healthcare Facility for\\n",
+        "Step Expected": "Street Segment selected\\n"
+      },
+      {
+        "Step": 20,
+        "Step Action": "Click \"Search\"\\n",
+        "Step Expected": "Existing Special Addresses section is displayed\\n"
+      },
+      {
+        "Step": 21,
+        "Step Action": "Click on the \"Healthcare Facility\" tab\\n",
+        "Step Expected": "Healthcare Facility section is displayed and the Healthcare Facility you just updated is listed here with the correct information showing\\n"
+      },
+      {
+        "Step": 22,
+        "Step Action": "Click on the \"Actions\" ellipsis next to the Healthcare Facility you just updated\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 23,
+        "Step Action": "Click \"Delete\" ",
+        "Step Expected": "A success message is displayed and the Healthcare Facility will be removed "
+      },
+      {
+        "Step": 24,
+        "Step Action": "Select the Street Name of the existing Street Segment you just deleted the Healthcare Facility for\\n",
+        "Step Expected": "Street Name selected\\n"
+      },
+      {
+        "Step": 25,
+        "Step Action": "Select the existing Street Segment you just deleted the Healthcare Facility for\\n",
+        "Step Expected": "Street Segment selected\\n"
+      },
+      {
+        "Step": 26,
+        "Step Action": "Click \"Search\"\\n",
+        "Step Expected": "Existing Special Addresses section is displayed\\n"
+      },
+      {
+        "Step": 27,
+        "Step Action": "Click on the \"Healthcare Facility\" tab\\n",
+        "Step Expected": "Healthcare Facility section is displayed and the Healthcare Facility you just deleted will not be listed\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\DM",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 78933,
+    "Work Item Type": "Test Case",
+    "Title": "76996 - DM - District - Action 3 Delete: DM - Delete Voting District",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisites:\\n- Have an existing District that is not assigned to anything\\n- Have an existing District that is assigned to a Street Segment\\n- Have an existing District that is assigned to a Precinct\\n- Have an existing District that is assigned to an Office",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > District\\n",
+        "Step Expected": "Voting Districts page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Find the existing District that is not assigned to anything and click on the \"Actions\" ellipsis",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"Delete\"",
+        "Step Expected": "A success message will be displayed and the District will be removed from the list"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Find the existing District that is assigned to a Street Segment and click on the \"Actions\" ellipsis",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"Delete\"",
+        "Step Expected": "A notification will display saying \"District is Mapped to Segment\" and the District will not be removed "
+      },
+      {
+        "Step": 8,
+        "Step Action": "Find the existing District that is assigned to a Precinct and click on the \"Actions\" ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click \"Delete\"\\n",
+        "Step Expected": "A notification will display saying \"District is Mapped to Precinct\" and the District will not be removed \\n"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Find the existing District that is assigned to an Office and click on the \"Actions\" ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click \"Delete\"\\n",
+        "Step Expected": "A notification will display saying \"District is Mapped to Office\" and the District will not be removed \\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\DM",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 80211,
+    "Work Item Type": "Test Case",
+    "Title": "78347 DM - District - Update 'Precinct Assignments' to display \"Street Name\", and \"Street Segment\"",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate to 'Precinct Assignments' (DM>Districts>Precinct\\n>Edit existing precinct)\u00a0page.",
+        "Step Expected": "Verify: 'Id Street Segment' no longer appears as a column\\nVerify: 'Street Name' appears, and displays the full name of entered street.\\nVerify: 'Street Segment' contains the specific segment of street previously entered."
+      },
+      {
+        "Step": 2,
+        "Step Action": "Click 'Add' button",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Land on 'Precinct Street Segment'",
+        "Step Expected": "Verify: 'Street Name' and 'Street Segment' fields appear"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Select a Street Name and Street Segment",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click  'Save'",
+        "Step Expected": "Land on the 'Precinct Assignments' page, and verify the selected 'Street Name' and 'Street Segment' appear in the list as previously selected."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\DM",
+    "Assigned To": "Michael Gallo <mgallo@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 80220,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Precinct-Precinct Assignments Table - District Type and District Name columns",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "\\n\\n  Navigate to DM - District - Search Precincts Page\\n",
+        "Step Expected": "\\n\\n  Search Precincts page must be displayed\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "\\n\\n  In the search results click on \"Actions\" ->Edit on\\na record\\n",
+        "Step Expected": "\\n\\n  Update Precinct Page must be displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "\\n\\n  Verify Precinct Assignments -> Districts section\\n",
+        "Step Expected": "\\n\\n  District Type and Name must be added to the \\nPrecinct Assignment table \\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Verify ID district field is removed",
+        "Step Expected": "ID district should not be displayed in Districts\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "\\n\\n  Add a new district type, district and precinct\u00a0\\n",
+        "Step Expected": "\\n\\n  New district type, district and precinct must be \\n\u00a0added successfully\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "\\n\\n  Verify Update Precinct Page-Precinct Assignment\\n table-Districts section\\n",
+        "Step Expected": "\\n\\n  Added district type and district name must be displayed in Districts\\n"
+      },
+      {
+        "Step": 7,
+        "Step Action": "\\n",
+        "Step Expected": "\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 80222,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Precinct Assignments - Duplicate District Types Error Validation",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:District type with multiple districts assigned",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to DM - District - Search Precincts Page\\n",
+        "Step Expected": "Search Precincts page must be displayed\\n\\n  \\n\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": " Click on \"Add\"",
+        "Step Expected": "Add Precincts page must be displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Add a district type and district to a precinct \\n",
+        "Step Expected": "Precinct must be added successfully"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Add a district of the same district type as earlier to the\\nsame precinct",
+        "Step Expected": "\\n\\n  \"District type already assigned to Precinct\" message\\n must be displayed on Add Precinct Page\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 80375,
+    "Work Item Type": "Test Case",
+    "Title": "DM-Precinct-Create a New Split Precinct",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate to DM - District -  Precinct",
+        "Step Expected": "Search Precincts page must be displayed"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Click on \"ADD\"",
+        "Step Expected": "Add Precincts page must be displayed\\n\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Select valid precinct type,Region,Enter a name and code in the text box and click on \"SAVE\"",
+        "Step Expected": "Added precinct must be saved successfully\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Navigate to Search Precincts page and select the newly created precinct and click on \"Edit\"",
+        "Step Expected": "Update Precinct page must be displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click on \"ADD\" in Street segments tab",
+        "Step Expected": "Add Precinct street segment page must be displayed\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Select streen name and segment from the respective drop down values and click on \"SAVE\"",
+        "Step Expected": "1.Newly added street segment information must be added successfully and displayed in street segments tab accordingly\\n2.Street name and Street segment columns must be displayed in street segments tab"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click on Districts tab and click on \"ADD\"",
+        "Step Expected": "Add Precinct district page must be displayed\\n"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Select district type and district from the respective drop down values and click on \"SAVE\"",
+        "Step Expected": "1.Newly added district information must be displayed in districts tab accordingly\\n2.District type and District Name must be displayed in Districts tab"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click on Precinct Splits tab and click on \"CREATE PRECINCT SPLIT\"",
+        "Step Expected": "1.Maintain Precinct Split page must be displayed\\n2.Name and code fields must be prepopulated and editable"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Verify the split Precinct name format",
+        "Step Expected": "First precinct split name must be \"parentname\"-1/2\\nSecond precinct split name must be \"parentname\"-2/2"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Verify the split Precinct code format",
+        "Step Expected": "First precinct split name must be \"parentcode\"-1/2\\nSecond precinct split name must be \"parentcode\"-2/2"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Edit split precinct name",
+        "Step Expected": "Must allow special characters such as /, -, (,  ), & and _"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Edit split precinct code",
+        "Step Expected": "Must allow special characters such as /, -, (,  ), & and _"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Verify first precinct split and second precinct split are displayed in precinct splits tab",
+        "Step Expected": "Both the precincts must be displayed"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Click on Actions->Update on the first precinct split",
+        "Step Expected": "Update Precinct disctrict page must be displayed\\n"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Verify all the districts on the parent precinct are automatically copied on first split precinct.",
+        "Step Expected": "All the districts on the parent precinct must automatically copied on first split precinct."
+      },
+      {
+        "Step": 17,
+        "Step Action": "Verify all the street segments on the parent precinct are automatically copied on first split precinct.",
+        "Step Expected": "All the street segments on the parent precinct must automatically copied on first split precinct."
+      },
+      {
+        "Step": 18,
+        "Step Action": "Verify all the districts on the parent precinct are automatically copied on second split precinct.",
+        "Step Expected": "All the districts on the parent precinct must automatically copied on second split precinct."
+      },
+      {
+        "Step": 19,
+        "Step Action": "Verify all the street segments on the parent precinct are not copied on second split precinct.",
+        "Step Expected": "street segments should not be copied to second split precinct."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 80616,
+    "Work Item Type": "Test Case",
+    "Title": "79410 - DM - District - Add/Maintain Special Addresses - Match chosen street and segment \"SIDE\" with error handling",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing ALL side Street Segment\\n- Have an existing ODD side Street Segment\\n- Have an existing EVEN side Street Segment",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Special Address\\n",
+        "Step Expected": "Special Address page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "From the Street Name dropdown select the Street Name of the existing ALL side Street Segment",
+        "Step Expected": "Street Name selected"
+      },
+      {
+        "Step": 5,
+        "Step Action": "From the Street Segment dropdown select the existing ALL side Street Segment",
+        "Step Expected": "Street Segment Selected"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"SEARCH\"",
+        "Step Expected": "Existing Special Addresses area will open showing all existing Business Addresses and Healthcare Facilities"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Ensure Business Address is selected and click \"ADD\"",
+        "Step Expected": "Add Business Address page is displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Check page",
+        "Step Expected": "The following fields will be pre-filled and read only:\\n- Street Name\\n- Street Segments\\n- Side"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Enter any Low and High range",
+        "Step Expected": "Low and High ranges entered"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Fill in all other required fields",
+        "Step Expected": "Fields filled in"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click \"ADD\"",
+        "Step Expected": "Business Address will be added successfully"
+      },
+      {
+        "Step": 12,
+        "Step Action": "From the Street Name dropdown select the Street Name of the existing ODD side Street Segment\\n",
+        "Step Expected": "Street Name selected\\n"
+      },
+      {
+        "Step": 13,
+        "Step Action": "From the Street Segment dropdown select the existing ODD side Street Segment\\n",
+        "Step Expected": "Street Segment Selected\\n"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click \"SEARCH\"\\n",
+        "Step Expected": "Existing Special Addresses area will open showing all existing Business Addresses and Healthcare Facilities\\n"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Ensure Business Address is selected and click \"ADD\"\\n",
+        "Step Expected": "Add Business Address page is displayed\\n"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Check page\\n",
+        "Step Expected": "The following fields will be pre-filled and read only:\\n- Street Name\\n- Street Segments\\n- Side\\n"
+      },
+      {
+        "Step": 17,
+        "Step Action": "Enter a Low and High range that are EVEN numbers \\n",
+        "Step Expected": "Low and High ranges entered\\n"
+      },
+      {
+        "Step": 18,
+        "Step Action": "Fill in all other required fields\\n",
+        "Step Expected": "Fields filled in\\n"
+      },
+      {
+        "Step": 19,
+        "Step Action": "Click \"ADD\"\\n",
+        "Step Expected": "An error message will be displayed and the Business Address will not be added"
+      },
+      {
+        "Step": 20,
+        "Step Action": "Change the Low and High ranges to ODD numbers",
+        "Step Expected": "Low and High ranges changed\\n"
+      },
+      {
+        "Step": 21,
+        "Step Action": "Click \"ADD\"\\n",
+        "Step Expected": "Business Address will be added successfully\\n"
+      },
+      {
+        "Step": 22,
+        "Step Action": "From the Street Name dropdown select the Street Name of the existing EVEN side Street Segment\\n",
+        "Step Expected": "Street Name selected\\n"
+      },
+      {
+        "Step": 23,
+        "Step Action": "From the Street Segment dropdown select the existing EVEN side Street Segment\\n",
+        "Step Expected": "Street Segment Selected\\n"
+      },
+      {
+        "Step": 24,
+        "Step Action": "Click \"SEARCH\"\\n",
+        "Step Expected": "Existing Special Addresses area will open showing all existing Business Addresses and Healthcare Facilities\\n"
+      },
+      {
+        "Step": 25,
+        "Step Action": "Ensure Business Address is selected and click \"ADD\"\\n",
+        "Step Expected": "Add Business Address page is displayed\\n"
+      },
+      {
+        "Step": 26,
+        "Step Action": "Check page\\n",
+        "Step Expected": "The following fields will be pre-filled and read only:\\n- Street Name\\n- Street Segments\\n- Side\\n"
+      },
+      {
+        "Step": 27,
+        "Step Action": "Enter a Low and High range that are ODD numbers \\n",
+        "Step Expected": "Low and High ranges entered\\n"
+      },
+      {
+        "Step": 28,
+        "Step Action": "Click \"ADD\"\\n",
+        "Step Expected": "An error message will be displayed and the Business Address will not be added\\n"
+      },
+      {
+        "Step": 29,
+        "Step Action": "Change the Low and High ranges to EVEN numbers\\n",
+        "Step Expected": "Low and High ranges changed\\n"
+      },
+      {
+        "Step": 30,
+        "Step Action": "Click \"ADD\"\\n",
+        "Step Expected": "Business Address will be added successfully\\n"
+      },
+      {
+        "Step": 31,
+        "Step Action": "Repeat all steps this time with Healthcare Facilities instead of Business Addresses",
+        "Step Expected": "Both Business Addresses and Healthcare Facilities work as expected "
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\DM",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 80753,
+    "Work Item Type": "Test Case",
+    "Title": "Verify deletion of a street segment not assigned to a precinct",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Home > Search Street Segments",
+        "Step Expected": "Street segment is successfully deleted\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 80754,
+    "Work Item Type": "Test Case",
+    "Title": "Validate deletion attempt of a street segment assigned to a precinct",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Home > Search Street Segments",
+        "Step Expected": "An error message is displayed: \"Street segment is mapped to Precinct.\"\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 80755,
+    "Work Item Type": "Test Case",
+    "Title": "Validate deletion attempt of a street segment with special addresses",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Home > Street Segment search screen",
+        "Step Expected": "An error message must be displayed."
+      },
+      {
+        "Step": 2,
+        "Step Action": "",
+        "Step Expected": ""
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 80756,
+    "Work Item Type": "Test Case",
+    "Title": "Validate deletion attempt of a street segment assigned to a voter",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Home > Street Segment Search page",
+        "Step Expected": "An error message must be displayed.\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 80757,
+    "Work Item Type": "Test Case",
+    "Title": "Verify that the deleted segment no longer appears in the search screen",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Home > Street Segment search screen",
+        "Step Expected": "The deleted street segment should not be displayed in the search screen\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 80815,
+    "Work Item Type": "Test Case",
+    "Title": "68726-DM - District - Precinct - Verify Precinct Split Functionality",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Prerequisite: Valid Precinct wit Street segments and Districts assigned",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to DM - District - Precinct",
+        "Step Expected": "Precincts Page must be displayed "
+      },
+      {
+        "Step": 3,
+        "Step Action": "Select a valid precinct and click \"Actions\"->Edit",
+        "Step Expected": "Precincts Assignments Page must be displayed \\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Navigate to Precinct Splits and click on \"CREATE PRECINCT SPLIT\"",
+        "Step Expected": "Two splits must be successfully generated"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Verify the Precinct split name format",
+        "Step Expected": "'Parent precinct name'-1/2 \\n'Parent precinct name'-2/2 \\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Verify the Precinct split code format\\n",
+        "Step Expected": "'Codename'-1/2\\n'Codename'-2/2"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Validate Precinct name is auto generated, editable and allows\\n\u00a0 special characters",
+        "Step Expected": "Precinct name must be auto generated ,editable and allow  special characters such as /, -, (,  ), & and _ \\n"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Validate Precinct code is auto generated, editable and allows special characters\\n",
+        "Step Expected": "Precinct code must be auto generated, editable and allow special characters such as /, -, (,  ), & and _\\n"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Verify if Parent street segments are copied on split 1/2",
+        "Step Expected": "Street segments must be copied on split 1/2"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Verify if Parent street segments are not copied on split 2/2\\n",
+        "Step Expected": "Street segments should not be copied on split 2/2\\n"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Verify if all district assignments must be copied on 1/2 and 2/2",
+        "Step Expected": "District assignments must be copied on 1/2 and 2/2"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Add new street segment and district to 1/2",
+        "Step Expected": "System must allow to modify"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Add new street segment and district to 2/2\\n",
+        "Step Expected": "System must allow to modify\\n"
+      },
+      {
+        "Step": 14,
+        "Step Action": "",
+        "Step Expected": ""
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 81254,
+    "Work Item Type": "Test Case",
+    "Title": "68728 - DM - District - Precinct Split - Validation Rules for Precinct Splits (P3)",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisites:\\n- Have at least 2 existing District Types\\n- Have at least 2 existing Districts that are under different District Types\\n- Have at least 2 existing Street Segments",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Precincts\\n",
+        "Step Expected": "Precinct page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Click \"ADD\"",
+        "Step Expected": "Add Precincts page is displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Fill in all required fields",
+        "Step Expected": "Fields filled"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"SAVE\"",
+        "Step Expected": "Precinct created and Precinct Assignments section is opened"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click on the \"Precinct Splits\" tab",
+        "Step Expected": "The Precinct Splits section is displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click \"CREATE PRECINCT SPLIT\"",
+        "Step Expected": "Confirm Precinct Split Creation box will display"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click \"Ok\"",
+        "Step Expected": "The Precinct will not be split and a message will be displayed saying \"Cannot Create a Split without Segment & Districts Assigned\""
+      },
+      {
+        "Step": 10,
+        "Step Action": "Click on the \"Street Segments\" tab and click \"ADD\"",
+        "Step Expected": "Precinct Street Segment page is displayed"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Select the Street Name of the existing Street Segment",
+        "Step Expected": "Street Name selected"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Select the existing Street Segment",
+        "Step Expected": "Street Segment selected"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Click \"SAVE\"",
+        "Step Expected": "The Street Segment will be assigned to the Precinct"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click on the \"Districts\" tab and click \"ADD\"",
+        "Step Expected": "Precinct District page is displayed"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Select the District Type of the existing District\\n",
+        "Step Expected": "District Type selected"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Select the existing District",
+        "Step Expected": "District selected"
+      },
+      {
+        "Step": 17,
+        "Step Action": "Click \"SAVE\"",
+        "Step Expected": "The District will be assigned to the District"
+      },
+      {
+        "Step": 18,
+        "Step Action": "Click on the \"Precinct Splits\" tab and then click \"CREATE PRECINCT SPLIT\"",
+        "Step Expected": "Confirm Precinct Split Creation box will display\\n"
+      },
+      {
+        "Step": 19,
+        "Step Action": "Click \"Ok\"\\n",
+        "Step Expected": "Precinct Split will be successful and two Precinct Splits will be created, the user will be taken to the second Precinct Split page"
+      },
+      {
+        "Step": 20,
+        "Step Action": "Under the Street Segments area add the same Street Segment you used before",
+        "Step Expected": "Street Segment added"
+      },
+      {
+        "Step": 21,
+        "Step Action": "Under the Districts area delete the existing District and add a different one that wasn't used before",
+        "Step Expected": "Existing District was removed and different District is added"
+      },
+      {
+        "Step": 22,
+        "Step Action": "Click \"SAVE\"",
+        "Step Expected": "The Precinct Split will not be updated and a message will be displayed to the user saying \"Segment Mapping Should be Unique\""
+      },
+      {
+        "Step": 23,
+        "Step Action": "Under the Street Segments area delete the existing Street Segment and then add a new one that hasn't already been used",
+        "Step Expected": "Existing Street Segment deleted and different Street Segment is added"
+      },
+      {
+        "Step": 24,
+        "Step Action": "Under the Districts area delete the existing District and add the original District that was first used to create the parent Precinct",
+        "Step Expected": "Existing District is deleted and original District is added"
+      },
+      {
+        "Step": 25,
+        "Step Action": "Click \"SAVE\"\\n",
+        "Step Expected": "The Precinct Split will not be updated and a message will be displayed to the user saying \"District Mapping Should be Unique\"\\n"
+      },
+      {
+        "Step": 26,
+        "Step Action": "Under the Districts area keep the existing District and then add another District that hasn't been used",
+        "Step Expected": "Existing District remains and an additional different District is added "
+      },
+      {
+        "Step": 27,
+        "Step Action": "Click \"SAVE\"\\n",
+        "Step Expected": "The Precinct Split will be updated successfully and the user will receive a success message"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\DM",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 81268,
+    "Work Item Type": "Test Case",
+    "Title": "80617 - DM - Conversion - Data model updates for District Precinct",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to District Management > Districts > Precincts\\n",
+        "Step Expected": "Precinct page will be displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Click \"ADD\"\\n",
+        "Step Expected": "Add Precincts page is displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Fill in all required fields and select any Region\\n",
+        "Step Expected": "Fields filled and Region slected"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"SAVE\"",
+        "Step Expected": "Precinct created and Precinct Assignments section is opened\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"UPDATE\"",
+        "Step Expected": "The precinct is saved and the user is taken back to the Precinct search page"
+      },
+      {
+        "Step": 7,
+        "Step Action": "From the Region search criteria dropdown select the Region you used to create the Precinct",
+        "Step Expected": "Region selected"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click \"SEARCH\"",
+        "Step Expected": "Only the Precincts that have the Region you elected are displayed, the Precinct you created will also be shown"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\DM",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 81316,
+    "Work Item Type": "Test Case",
+    "Title": "68730-Validate Split Precincts have assigned Street segments",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate to DM - District -  Precinct",
+        "Step Expected": "Search Precincts page must be displayed"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Click on \"ADD\"",
+        "Step Expected": "Add Precincts page must be displayed\\n\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Select valid precinct type,Region,Enter a name and code in the text box and click on \"SAVE\"",
+        "Step Expected": "Added precinct must be saved successfully\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Navigate to Search Precincts page and select the newly created precinct and click on \"Edit\"",
+        "Step Expected": "Update Precinct page must be displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click on Districts tab and click on \"ADD\"",
+        "Step Expected": "Add Precinct district page must be displayed\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Select district type and district from the respective drop down values and click on \"SAVE\"",
+        "Step Expected": "1.Newly added district information must be displayed in districts tab accordingly\\n2.District type and District Name must be displayed in Districts tab"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click on Precinct Splits tab and click on \"CREATE PRECINCT SPLIT\"",
+        "Step Expected": "1.System must display the second precinct split page\\n2. \u201cCannot Save: Each split precinct must have at least one assigned street segment\" message must be displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "\\n",
+        "Step Expected": "\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 82308,
+    "Work Item Type": "Test Case",
+    "Title": "69011 - DM - Standardized Search - Implement partial search, and wildcard on TOWN/REGION/COUNTY screens",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing TOWN\\n- Have an existing REGION\\n- Have an existing COUNTY",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to District Management > Districts > Town",
+        "Step Expected": "Search Towns page is displayed"
+      },
+      {
+        "Step": 3,
+        "Step Action": "In the Name field, enter the first few characters of the existing Town Name followed by \"%\" (e.g. TH%)",
+        "Step Expected": "Data entered"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Click \"Search\"",
+        "Step Expected": "Only the Towns beginning with those first few characters entered will displayed and your existing Town will also be shown"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"Reset\"",
+        "Step Expected": "The search criteria is cleared"
+      },
+      {
+        "Step": 6,
+        "Step Action": "In the Name field, enter \"%\" followed by the last few characters of the existing Town Name (e.g. TE%)",
+        "Step Expected": "Data entered"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"Search\"",
+        "Step Expected": "Only the Towns ending with those last few characters entered will displayed and your existing Town will also be shown"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click \"Reset\"",
+        "Step Expected": "The search criteria is cleared"
+      },
+      {
+        "Step": 9,
+        "Step Action": "In the Name search field, enter \"%\" and then any few characters of the existing Town name followed by another \"%\" (e.g. %EC%)",
+        "Step Expected": "Data entered"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Click \"Search\"",
+        "Step Expected": "Only the Towns with those few characters entered (in that order) will be displayed and your existing Town will also be shown"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click \"Reset\"",
+        "Step Expected": "The search criteria is cleared"
+      },
+      {
+        "Step": 12,
+        "Step Action": "In the Name search field, enter the first few characters of the existing Town Name followed by \"%\" and then any few characters that the name contains, followed by another \"%\" (e.g. T%PL%)",
+        "Step Expected": "Data entered"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Click \"Search\"",
+        "Step Expected": "Only the Towns that begin with those characters and contain those characters entered will be displayed and your existing Town will also be shown"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click \"Reset\"",
+        "Step Expected": "The search criteria is cleared"
+      },
+      {
+        "Step": 15,
+        "Step Action": "In the Name search field, enter \"%\" and then any few characters of the existing Town Name followed by another \"%\" and then the last few characters of the Town Name (e.g. %CT%E)",
+        "Step Expected": "Date entered"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Click \"Search\"",
+        "Step Expected": "Only the Towns that finish with those characters and contain those characters entered will be displayed and your existing Town will also be shown"
+      },
+      {
+        "Step": 17,
+        "Step Action": "Repeat steps 2 to 16 for Region and County areas",
+        "Step Expected": "Region and County searches work as expected"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\DM\\District",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 83298,
+    "Work Item Type": "Test Case",
+    "Title": "69205 - DM - Verify navigation to \"ADD REGION\" screen",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "DM > Districts > Region > Add",
+        "Step Expected": "\"ADD REGION\" screen opens with an empty \"Name\" field\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83299,
+    "Work Item Type": "Test Case",
+    "Title": "69205 - DM - Check required \"Name\" field\t",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "DM > Districts > Region > Add and leave Name field empty\\n",
+        "Step Expected": "Validation message: Region missing required fields. must be displayed."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83301,
+    "Work Item Type": "Test Case",
+    "Title": "69205 - DM - Validate input format for \"Name\" field",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "DM > Districts > Region > Add and enter Texas 123 in name field\\n",
+        "Step Expected": "Acceptable format, no error must be displayed\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83303,
+    "Work Item Type": "Test Case",
+    "Title": "69205 - DM - Test valid entry for unique region",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "DM > Districts > Region > Add and enter input data\\n",
+        "Step Expected": "Save successfully, confirmation message: \"Region added successfully.\"\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83305,
+    "Work Item Type": "Test Case",
+    "Title": "69205 - DM - \tTest duplicate entry prevention",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "DM > Districts > Region > Add and a duplicate data\\n",
+        "Step Expected": "Error message: \"Region name already exists. Please choose a different name.\"\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83306,
+    "Work Item Type": "Test Case",
+    "Title": "69205 - DM - Verify cancel operation",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "DM > Districts > Region > Add and input data and click Cancel.\\n",
+        "Step Expected": "Returns to REGION Search screen without adding a record\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83307,
+    "Work Item Type": "Test Case",
+    "Title": "69205 - DM - Confirm successful save reflects in REGION Search",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "DM > Districts > Region\\n",
+        "Step Expected": "New region added appears in REGION Search screen\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83308,
+    "Work Item Type": "Test Case",
+    "Title": "69205 - DM - Check sorting functionality with new record",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "DM > Districts > Region\\n",
+        "Step Expected": "New record appears in the correct sorted order\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83309,
+    "Work Item Type": "Test Case",
+    "Title": "69205 - DM - Verify pagination is unaffected after adding region",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "DM > Districts > Region\\n",
+        "Step Expected": "New record must be added, pagination remains functional\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83310,
+    "Work Item Type": "Test Case",
+    "Title": "69205 - DM - Test search functionality after adding new region",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "DM > Districts > Region\\n",
+        "Step Expected": "New record \"Texas\" found in the search results\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83407,
+    "Work Item Type": "Test Case",
+    "Title": "69208 - DM - Verify DELETE button is present for each REGION entry",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the Region search page and check the Actions column for each REGION entry.",
+        "Step Expected": "\"DELETE\" button is visible for each REGION entry.\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83409,
+    "Work Item Type": "Test Case",
+    "Title": "69208 - DM - Confirm DELETE button triggers confirmation prompt",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the Region search page and click the \"Delete\" button for a specific region.",
+        "Step Expected": "Confirmation prompt appears: \"Are you sure you want to delete this region? This action cannot be undone.\"\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83412,
+    "Work Item Type": "Test Case",
+    "Title": "69208 - DM - Validate deletion of a region not in use",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on Regions search page and clicks on Delete followed by confirming the deletion in prompt.",
+        "Step Expected": "Region is deleted successfully. Confirmation message displayed: \"Region deleted successfully.\"\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83413,
+    "Work Item Type": "Test Case",
+    "Title": "69208 - DM - Validate error message for region currently in use",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the Region search page and click delete and  Confirm the deletion in the prompt.",
+        "Step Expected": "Error message displayed: \"This region is currently in use and cannot be deleted.\"\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83415,
+    "Work Item Type": "Test Case",
+    "Title": "69208 - DM - Ensure search screen updates post-deletion",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on Region page and Delete a region that is not in use. Observe the REGION Search screen.",
+        "Step Expected": "Deleted region is removed from the REGION Search screen.\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 83788,
+    "Work Item Type": "Test Case",
+    "Title": "DM - County - Add new county, Assign towns, Edit County",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "\\nNavigate to 'County' screen\\nDistrict Management > Districts > County ",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Click 'Add'",
+        "Step Expected": "Land on 'Add/Update County' screen\\n'Add/Update County' area appears containing:\u00a0'County Name' field, 'Save' and 'Cancel' buttons. 'County assignments' area appears.\\n\u00a0"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Click 'Cancel'",
+        "Step Expected": "Land back on 'County' screen"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Click 'Add'",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click into 'County Name' field and enter a county name that is already in use\\n\u00a0",
+        "Step Expected": "Land on 'Add/Update County' screen"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click 'Save'",
+        "Step Expected": "'County name already exists. Please choose a different name.' message appears"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Clear the 'County Name' field and enter a new (unique/unused) county name ",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click Save",
+        "Step Expected": "'County added successfully' message appears\\n\u00a0"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click 'Add' below 'Towns' in 'County Assignments'",
+        "Step Expected": "Land on 'County Town Link'"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Click 'Cancel'",
+        "Step Expected": "Land on 'Add/Update County' screen"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click 'Add' below 'Towns' in 'County Assignments'",
+        "Step Expected": "Land on 'County Town Link'"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Click 'Town Name' dropdown",
+        "Step Expected": "Available towns populate the dropdown"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Select a town from the dropdown",
+        "Step Expected": "Dropdown closes and selection now populates the 'Town Name' field"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click 'Save'",
+        "Step Expected": "Land on 'Add/Update County' screen\\nSelected town now appears in 'County Assignments area, in the 'Town Name' column."
+      },
+      {
+        "Step": 15,
+        "Step Action": "Navigate to the 'County' screen",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Search for the County that was just created",
+        "Step Expected": "The County appears in the 'County Name' column\\nThe county has been assigned a number in the 'County ID' Column - Take note of this ID for edit verification"
+      },
+      {
+        "Step": 17,
+        "Step Action": "Click the actions menu to the left of the county name \\n\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 18,
+        "Step Action": "Click 'Edit'",
+        "Step Expected": "Land on the 'Add/Update County' screen\\nThe previously added town is displayed in the 'County Assignments' area beneath 'Town Name'"
+      },
+      {
+        "Step": 19,
+        "Step Action": "Click 'Add' button beneath 'Towns'",
+        "Step Expected": "Land on 'County Town Link' screen\\n\u00a0"
+      },
+      {
+        "Step": 20,
+        "Step Action": "Click 'Town Name' dropdown",
+        "Step Expected": "Available towns populate the dropdown"
+      },
+      {
+        "Step": 21,
+        "Step Action": "Select a town from the dropdown",
+        "Step Expected": "Dropdown closes and selection now populates the 'Town Name' field"
+      },
+      {
+        "Step": 22,
+        "Step Action": "Click 'Save'",
+        "Step Expected": "Land on 'Add/Update County' screen\\nNew town selection, and original selection both appear in 'County Assignments area, in the 'Town Name' column\\n"
+      },
+      {
+        "Step": 23,
+        "Step Action": "Click into the 'County Name' field and edit the county name",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 24,
+        "Step Action": "Click 'Update'",
+        "Step Expected": "Land on 'County' screen\\n'County Updated Successfully' message displayed"
+      },
+      {
+        "Step": 25,
+        "Step Action": "Search for the County that was just updated by either the 'Search' or paging over as necessary",
+        "Step Expected": "The updated 'County Name' is displayed in the  'County Name' column.\\nThe ID previously assigned to the 'County ID' column remains the same an has not changed to a new value."
+      },
+      {
+        "Step": 26,
+        "Step Action": "Click the actions menu to the left of the county name \\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 27,
+        "Step Action": "Click 'Edit'",
+        "Step Expected": "Land on the 'Add/Update County' screen\\nPreviously saved towns have been retained and display properly\\n\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Michael Gallo <mgallo@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 83859,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Add new region then assign County/Town",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate to 'Region' Screen\\nDistrict Management > Districts > Region",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Click 'Add'",
+        "Step Expected": "Land on 'Add Region' screen"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Click into the 'Name' field and enter a region name",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Click 'Save'",
+        "Step Expected": "Land on 'Add / Update Region' screen\\n\u00a0A region is created with the entered name, and an ID is automatically assigned to the region. \\n'Region Added successfully' message displayed to user.\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click  'Add' beneath 'County'",
+        "Step Expected": "Land on 'Assign County' screen"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Select a county name from the drop down",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click Save",
+        "Step Expected": "Land on 'Add/Update Region' screen\\n'County assigned to region successfully' message is displayed\\nThe added county appears in the gridbeneath 'Assign Role & Permissions'\\n\u00a0"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click  'Add' beneath 'County'",
+        "Step Expected": "Land on 'Assign County' screen"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Select a county name from the drop down",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Click Save",
+        "Step Expected": "'Only one county can be assigned to a region' message is displayed."
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click 'Cancel'",
+        "Step Expected": "Land on 'Add/Update Region' screen \\nThe created region is still retained and displayed beneath 'Add / Update Region'\u00a0"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Click the 'Town' tab in the 'Assign Role & Permissions' area",
+        "Step Expected": "'Town' tab is displayed in grid"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Click the 'Add' button beneath 'Town'",
+        "Step Expected": "Land on 'Assign Town' screen"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click the 'Town Name' field",
+        "Step Expected": "Dropdown opens"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Select a town from the list",
+        "Step Expected": "Dropdown closes, field shows selection"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Click 'Save' button",
+        "Step Expected": "Land on 'Add / Update Region' screen\\n\u00a0'Town assigned to region successfully' message is displayed\\n\u00a0"
+      },
+      {
+        "Step": 17,
+        "Step Action": "Click 'Town' tab in the 'Assign Role & Permissions' area",
+        "Step Expected": "'Town' tab is displayed in grid\\nThe town selected in step 15 is displayed in the grid"
+      },
+      {
+        "Step": 18,
+        "Step Action": "Click the 'Add' button beneath 'Town'",
+        "Step Expected": "Land on 'Assign Town' screen"
+      },
+      {
+        "Step": 19,
+        "Step Action": "Click the 'Town Name' field",
+        "Step Expected": "Dropdown opens"
+      },
+      {
+        "Step": 20,
+        "Step Action": "Select a town from the list",
+        "Step Expected": "Dropdown closes, field shows selection"
+      },
+      {
+        "Step": 21,
+        "Step Action": "Click 'Save' button",
+        "Step Expected": "'Only one town can be assigned to a region' message is displayed."
+      },
+      {
+        "Step": 22,
+        "Step Action": "Click 'Cancel'",
+        "Step Expected": "Land on 'Add / Update' region screen\\nThe created region is still retained and displayed beneath 'Add / Update Region"
+      },
+      {
+        "Step": 23,
+        "Step Action": "Use the previous steps to create a new region, and navigate to 'Assign Town' screen by clicking the 'Add' button",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 24,
+        "Step Action": "Click the 'Town Name' field",
+        "Step Expected": "Dropdown opens"
+      },
+      {
+        "Step": 25,
+        "Step Action": "Choose the Town previously selected, and click save",
+        "Step Expected": "'Town is already assigned to another region. Please select a different town' message is displayed."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\DM\\District",
+    "Assigned To": "Michael Gallo <mgallo@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 84226,
+    "Work Item Type": "Test Case",
+    "Title": "69214-DM - Districts - District - Delete County",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing County that is not assigned to anything\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > County\\n",
+        "Step Expected": "Search Counties page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Choose a County and click on the \"Actions\" \\n",
+        "Step Expected": "Edit and Delete options must be displayed\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"Delete\"",
+        "Step Expected": "\"Are you sure you want to delete county? This action cannot be undone\" message must be displayed\""
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click on \"OK\"",
+        "Step Expected": "1.County must be deleted successfully and should not be displayed in grid results.\\n2.Successfully deleted message must be displayed"
+      },
+      {
+        "Step": 7,
+        "Step Action": "",
+        "Step Expected": ""
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 84498,
+    "Work Item Type": "Test Case",
+    "Title": "69214-DM - Districts - District - Delete County (unsuccessful)",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing County that is in use\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > County\\n",
+        "Step Expected": "Search Counties page will be displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Choose a County and click on the \"Actions\" \\n",
+        "Step Expected": "Edit and Delete options must be displayed\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click \"Delete\"",
+        "Step Expected": "\"Are you sure you want to delete county? This action cannot be undone\" message must be displayed\""
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click on \"OK\"",
+        "Step Expected": "1.\"This County is currently in use and cannot be deleted\" message must be displayed\\n2.County should not be deleted and must display in the grid results"
+      },
+      {
+        "Step": 7,
+        "Step Action": "\\n",
+        "Step Expected": "\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 86285,
+    "Work Item Type": "Test Case",
+    "Title": "69328-Region User Verify District Type Button Access",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate to SM->Login as Region",
+        "Step Expected": "Login as Region page must be displayed"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Select a Region from the drop down and click on \"Login as Region\"",
+        "Step Expected": "The user must be logged into a specific selected region"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Type and verify the District type drop down values",
+        "Step Expected": "Must display only \"COUNTY' and \"MUNICIPAL/LOCAL\""
+      },
+      {
+        "Step": 4,
+        "Step Action": "Click on Reset button and Verify the search results grid displays ",
+        "Step Expected": "Must display only  \"COUNTY' and \"MUNICIPAL/LOCAL\" District category "
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click on \"ADD\" and verify District Type drop down values on \\n\u00a0Add District Type page",
+        "Step Expected": "Must display only  \"COUNTY' and \"MUNICIPAL/LOCAL\" District category "
+      },
+      {
+        "Step": 6,
+        "Step Action": "\\n",
+        "Step Expected": "\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 86289,
+    "Work Item Type": "Test Case",
+    "Title": "71846-Region User -Ensure Only Region-Specific Precincts Are Visible",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate to SM->Login as Region",
+        "Step Expected": "Login as Region page must be displayed"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Select a Region from the drop down and click on \"Login as Region\"",
+        "Step Expected": "The user must be logged into a specific selected region"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to DM->Precinct",
+        "Step Expected": "1.Precincts Page must be displayed \\n2.The Region dropdown should be prepopulated with the selected region and non-editable"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Click on Reset button and Verify the search results grid displays ",
+        "Step Expected": "The search results should display precincts only within the selected region. "
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click on \"ADD\" and verify District Type drop down values on \\n\u00a0Add District Type page",
+        "Step Expected": "1.The Region dropdown should be prepopulated with the selected region and non-editable\\n\u00a02. Add a new precinct and verify that the newly added precinct appears in the search results grid on the  Search Precincts page."
+      },
+      {
+        "Step": 6,
+        "Step Action": "\\n",
+        "Step Expected": "\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 87258,
+    "Work Item Type": "Test Case",
+    "Title": "DM - Districts -Search Street Segments- Validate Street search functionality",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite: Have an existing street and a voter assigned to that street segment ",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access EMS",
+        "Step Expected": "Dashboard is displayed "
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to District Management > Districts > Search Street segments",
+        "Step Expected": "Search Street segments page must be displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Select a Region and enter street name with spaces",
+        "Step Expected": "Street name must be included in the dropdown options"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Enter a partial street name in the  street name ",
+        "Step Expected": "Corresponding values must be displayed in the drop down"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Verify the search results update dynamically in real-time as the user enters a street name.",
+        "Step Expected": "Corresponding values must be dynamically displayed in the drop down"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 87593,
+    "Work Item Type": "Test Case",
+    "Title": "81998 - ES - Restrict Access to the System Management | External Interfaces | \"External Interfaces\" Screens for Region Users",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Log into the EMS system as a State User",
+        "Step Expected": "State User logged in"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to System Management > Features",
+        "Step Expected": "System Management screen is displayed"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Check page",
+        "Step Expected": "The \"External Interfaces\" button should be available"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Click on the External Interfaces button",
+        "Step Expected": "External Interfaces page is displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Copy the URL",
+        "Step Expected": "URL copied "
+      },
+      {
+        "Step": 6,
+        "Step Action": "Log in as a Region User",
+        "Step Expected": "Region User logged in"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Navigate to System Management > Features",
+        "Step Expected": "System Management screen is displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Check page",
+        "Step Expected": "The \"External Interfaces\" button should not be available"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Paste the URL into the search bar at the top of the screen and press \"Enter\"",
+        "Step Expected": "The user will be taken to the Landing page for the system and a pop-up window will be displayed telling the user that they do not have access"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\ESC(EMS System Common)\\System",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 87594,
+    "Work Item Type": "Test Case",
+    "Title": "71881 - ES - Restrict Access to the System Management | System Settings | Reference Data Screen for Region Users",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Log into the EMS system as a State User",
+        "Step Expected": "State User logged in"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to System Management > Features",
+        "Step Expected": "System Management screen is displayed"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Check page",
+        "Step Expected": "The \"Reference Data\" button should be available"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Click on the Reference Data button",
+        "Step Expected": "Reference Data page is displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Copy the URL",
+        "Step Expected": "URL copied "
+      },
+      {
+        "Step": 6,
+        "Step Action": "Log in as a Region User",
+        "Step Expected": "Region User logged in"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Navigate to System Management > Features",
+        "Step Expected": "System Management screen is displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Check page",
+        "Step Expected": "The \"Reference Data\" button should not be available"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Paste the URL into the search bar at the top of the screen and press \"Enter\"",
+        "Step Expected": "The user will be taken to the Landing page for the system and a pop-up window will be displayed telling the user that they do not have access"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\ESC(EMS System Common)\\System",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  }
+]

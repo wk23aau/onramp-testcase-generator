@@ -1,0 +1,1372 @@
+[
+  {
+    "ID": 77254,
+    "Work Item Type": "Test Case",
+    "Title": "VM - Purge Voter",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing Voter ",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to Voter Management > Voter > Search",
+        "Step Expected": "Voter Search page is displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Use the search criteria to search for that voter",
+        "Step Expected": "Voter is displayed below"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click on the \"Actions\" ellipsis",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"Purge\"",
+        "Step Expected": "A pop-up box will display asking the user if they want to Purge the Voter"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"Cancel\"",
+        "Step Expected": "The pop-up box will close and the Voter is not Purged "
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click on the \"Actions\" ellipsis again",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click \"View\"",
+        "Step Expected": "View Information page is displayed"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Scroll down to the bottom of the page",
+        "Step Expected": "\"Purge\" button will be present"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click \"Purge\"",
+        "Step Expected": "A pop-up box will display asking the user if they want to Purge the Voter\\n"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Click \"Ok\"",
+        "Step Expected": "A success notification will be displayed and the user is taken back to the Search Voter page"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Use the search criteria to search for that Voter again",
+        "Step Expected": "Page will display no results"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\VM",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77309,
+    "Work Item Type": "Test Case",
+    "Title": "77170 - VM - Edit Voter - Unable to edit any voter",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing Voter\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Voter Search page is displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Use the search criteria to search for that voter\\n",
+        "Step Expected": "Voter is displayed below\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click on the \"Actions\" ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"Edit\"",
+        "Step Expected": "Voter Registration page is displayed"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Make no changes to the voter",
+        "Step Expected": "No changes made"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Scroll down to the bottom and click \"NEXT\"",
+        "Step Expected": "The Review screen is displayed"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Check page",
+        "Step Expected": "There are no changes between Voter Details and Updated Voter Details"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Select a Change Reason and click \"UPDATE REGISTRATION\"",
+        "Step Expected": "A success notification is displayed and the user is taken to the Final Screen"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Check page",
+        "Step Expected": "No changes have been made to the Voter's details"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Voter Search page is displayed\\n"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Use the search criteria to search for that same voter\\n",
+        "Step Expected": "Voter is displayed below\\n"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click on the \"Actions\" ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Click \"Edit\"\\n",
+        "Step Expected": "Voter Registration page is displayed\\n"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Make any desired changes to the voter\\n",
+        "Step Expected": "Changes made"
+      },
+      {
+        "Step": 17,
+        "Step Action": "Scroll down to the bottom and click \"NEXT\"\\n",
+        "Step Expected": "The Review screen is displayed\\n"
+      },
+      {
+        "Step": 18,
+        "Step Action": "Check page\\n",
+        "Step Expected": "The changes you made will be reflected on this page and highlighted in green (Only certain main fields are on this page so not all changes will be visible here e.g. Phone Number)"
+      },
+      {
+        "Step": 19,
+        "Step Action": "Select a Change Reason and click \"UPDATE REGISTRATION\"\\n",
+        "Step Expected": "A success notification is displayed and the user is taken to the Final Screen\\n"
+      },
+      {
+        "Step": 20,
+        "Step Action": "Check page\\n",
+        "Step Expected": "The changes you made will be reflected on this page (Only certain main fields are on this page so not all changes will be visible here e.g. Phone Number)\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 77392,
+    "Work Item Type": "Test Case",
+    "Title": "72373 - VM - Single Scan - Wireframe",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisite:\\n- Have an existing Voter\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Voter Search page is displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Use the search criteria to search for that voter\\n",
+        "Step Expected": "Voter is displayed below\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click on the \"Actions\" ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"Scan And Print\"",
+        "Step Expected": "Scan/Print Process page is displayed"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click \"Scan\"",
+        "Step Expected": "Single Scan page is displayed and the user will get a pop-up box asking them to download a driver if they haven't already"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click \"Download\"",
+        "Step Expected": "Driver software will download"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Install the Driver",
+        "Step Expected": "Driver installed"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Click on the link within the pop-up box to verify the installed driver",
+        "Step Expected": "Driver verified"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Check page",
+        "Step Expected": "The following fields will be present:\\n- Document Name \\n- Document Type\\n- Voter ID\\n- Selection Source\\n- Start New Scan (Button)\\n- Load Local File (Button)\\n- Indexed\\n- Delete (Button)\\n- Upload Indexed (Button)\\n- Create Crop Copy (Signature) (Tick box)\\n- Cropping Tools\\n- Save Crop (Original) (Button)\\n- Save Crop (Signature)"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Check this page on different screen sizes and browsers\\n",
+        "Step Expected": "The screen/UI looks good and fits on various screen sizes and browsers without issues\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\VM",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 78404,
+    "Work Item Type": "Test Case",
+    "Title": "69476 - VM - Voter's Preferred Language Selection",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Voter Search page will be displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Click \"Search\" and then click \"Add\"",
+        "Step Expected": "Voter Registration page is displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Fill in all required fields",
+        "Step Expected": "Fields filled"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Under the Voter Details section click on the \"Preferred Language\" dropdown",
+        "Step Expected": "The dropdown will open with the following options (Possibility of more options in the future):- English\\n- Spanish\\n- Vietnamese\\n- Mandarin\\n"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Select a Preferred Language",
+        "Step Expected": "Language selected"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Scroll down and click \"Next\"",
+        "Step Expected": "Review Screen will be displayed and the Preferred Language will be shown"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Scroll down and click \"Register Voter\"",
+        "Step Expected": "Final Screen is displayed and the Preferred Language will be shown here too"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Voter Search page will be displayed\\n"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Use the search criteria to find the voter you just created",
+        "Step Expected": "Voter listed"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click on the \"Actions\" ellipsis next to the Voter",
+        "Step Expected": "Options listed"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Click \"View\"",
+        "Step Expected": "View Voter Registration page is displayed"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Check page",
+        "Step Expected": "Preferred Language will be shown here"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Voter Search page will be displayed\\n"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Use the search criteria to find the same voter\\n",
+        "Step Expected": "Voter listed\\n"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Click on the \"Actions\" ellipsis next to the Voter\\n",
+        "Step Expected": "Options listed\\n"
+      },
+      {
+        "Step": 17,
+        "Step Action": "Click \"Edit\"",
+        "Step Expected": "Update Voter page is displayed"
+      },
+      {
+        "Step": 18,
+        "Step Action": "Under the Voter Details section select a different Preferred Language",
+        "Step Expected": "Different Language selected"
+      },
+      {
+        "Step": 19,
+        "Step Action": "Scroll down and click \"Next\"",
+        "Step Expected": "Review Screen is displayed and the updated Preferred Language is shown"
+      },
+      {
+        "Step": 20,
+        "Step Action": "Scroll down and click \"Register Voter\"\\n",
+        "Step Expected": "Final Screen is displayed and the updated Preferred Language will be shown here too\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\VM",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 81420,
+    "Work Item Type": "Test Case",
+    "Title": "69301 - VM - Participation - Voter Participation Add/Maintain",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisites:\\n- Have an existing Active Voter",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Search Voter page is displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Use the search criteria to find your existing Voter",
+        "Step Expected": "Voter found"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click on the \"Actions\" ellipsis next to the existing voter",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click \"View\"",
+        "Step Expected": "View Voter page is displayed"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click on the \"Participation History\" tab",
+        "Step Expected": "Participation History area is displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click \"ADD\"",
+        "Step Expected": "The Add Participation page is displayed and the following fields are present in this order:\\n\\n\u00a0- Election Date (required field)\\n\\n\u00a0- Election Name (Required field)\\n\\n\u00a0- Party (Primary Only)\\n\\n\u00a0- Method of Request (required dropdown: choices to be Election Day, Absentee, UOCAVA, Vote Center)\\n\\n\u00a0- Request Location (required dropdown: dependent on Method of Request like a specific polling location)\\n\\n\u00a0- Ballot Sent Date (Required)\\n\\n\u00a0- Ballot Received Date (Required)\\n\\n\u00a0- Ballot Return Method (Required dropdown, dependent on method of request)\\n\\n\u00a0- Ballot Status (Required)\\n\\n\u00a0- Ballot Status Reason (required, dropdown dependent on Ballot Status)\\n\\n\u00a0- Checkbox for \"Provisional\" ballot (optional)\\n\\n\u00a0- If Provisional is checked then the below should display\\n*Provisional Status (Required)\\n*Provisional Status Reason (Optional)\\n\\n\u00a0- Comments text box\\n"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click \"CANCEL\"",
+        "Step Expected": "The user is taken back to the Participation History list and the record is not created"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Click \"ADD\"",
+        "Step Expected": "The Add Participation page is displayed\\n"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click \"CREATE\"",
+        "Step Expected": "The record will not be created and all required fields will show as red"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Fill in all required fields",
+        "Step Expected": "Fields filled in"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Click \"CREATE\"",
+        "Step Expected": "The record will be successfully created and the user is taken back to the Participation History list where they can see the new record they just created"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click on the \"Actions\" ellipsis next to the Participation History record you created ",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Click \"Edit\"",
+        "Step Expected": "Maintain Participation History page is displayed"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Make any desired change and click \"UPDATE\"",
+        "Step Expected": "The record will be updated successfully and you will be able to see the changes reflected in the Participation History list "
+      },
+      {
+        "Step": 17,
+        "Step Action": "Click on the \"Actions\" ellipsis next to the Participation History record you just updated\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 18,
+        "Step Action": "Click \"Delete\"",
+        "Step Expected": "A confirmation box is displayed"
+      },
+      {
+        "Step": 19,
+        "Step Action": "Click \"Cancel\"",
+        "Step Expected": "The record will not be deleted"
+      },
+      {
+        "Step": 20,
+        "Step Action": "Click on the \"Actions\" ellipsis again\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 21,
+        "Step Action": "Click \"Delete\"\\n",
+        "Step Expected": "A confirmation box is displayed\\n"
+      },
+      {
+        "Step": 22,
+        "Step Action": "Click \"Ok\"",
+        "Step Expected": "The record will be deleted successfully"
+      },
+      {
+        "Step": 23,
+        "Step Action": "In the navigation tabs click on \"Audit History\"",
+        "Step Expected": "All Participation History actions will be displayed here:\\n- Add\\n- Update\\n- Delete"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\VM",
+    "Assigned To": "Cesar Pereira <cpereira@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 81706,
+    "Work Item Type": "Test Case",
+    "Title": "75350 - VM - Voter Registration - Business Rules for Business Address provided as the Residential Address",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-requisites:\\n- Have an existing Street Segment\\n- Have an existing Business Address\\n",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Search Voter page is displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Click SEARCH and then click ADD",
+        "Step Expected": "Create Voter page is displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Scroll down to Residential Address and search for the street segment that the Business Address is on",
+        "Step Expected": "Street segments listed"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Select the street segment and then click SELECT",
+        "Step Expected": "Street segment selected"
+      },
+      {
+        "Step": 7,
+        "Step Action": "In the \"Street No.\" fields enter a street number that is outside the business address range",
+        "Step Expected": "Street number entered"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click SUBMIT",
+        "Step Expected": "Address will be accepted"
+      },
+      {
+        "Step": 9,
+        "Step Action": "In the \"Street No.\" fields enter a street number that is inside the business address range\\n",
+        "Step Expected": "Street number entered\\n"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Click SUBMIT\\n",
+        "Step Expected": "The address will not be submitted and a message will display to the user stating that business addresses are not acceptable"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\VM\\Voter",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 81724,
+    "Work Item Type": "Test Case",
+    "Title": "69396 - VM - View Voter - Order of Tabs and add a New Tab for Notes",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Access the EMS system\\n",
+        "Step Expected": "Dashboard displayed\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Search Voter page is displayed\\n"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Click SEARCH and then click ADD\\n",
+        "Step Expected": "Create Voter page is displayed\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Fill in all required fields",
+        "Step Expected": "Fields filled in"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click NEXT",
+        "Step Expected": "Review screen is displayed"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Scroll down to the bottom",
+        "Step Expected": "Notes section is displayed"
+      },
+      {
+        "Step": 7,
+        "Step Action": "In the \"Note\" field enter any text e.g. \"Test Note\"",
+        "Step Expected": "Text entered"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Click REGISTER VOTER",
+        "Step Expected": "Final screen is displayed and Voter has been created"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Search Voter page is displayed\\n"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Use the search criteria to find the voter you just created",
+        "Step Expected": "Voter found"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Next to the voter click the Actions ellipsis",
+        "Step Expected": "Options displayed"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Click \"View\"",
+        "Step Expected": "View Voter page is displayed"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Check page",
+        "Step Expected": "The navigation tabs will be displayed in the following order:\\n- Voter Information\\n- Absentee Ballots\\n- Participation\\n- Petition\\n- Correspondence\\n- Audit History\\n- Notes\\n- Voter Documents"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Click on the Notes tab",
+        "Step Expected": "Maintain Notes History page is displayed"
+      },
+      {
+        "Step": 15,
+        "Step Action": "Check page",
+        "Step Expected": "The note you made during voter registration will be displayed here"
+      },
+      {
+        "Step": 16,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Search Voter page is displayed\\n"
+      },
+      {
+        "Step": 17,
+        "Step Action": "Use the search criteria to find the voter you just created\\n",
+        "Step Expected": "Voter found\\n"
+      },
+      {
+        "Step": 18,
+        "Step Action": "Next to the voter click the Actions ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 19,
+        "Step Action": "Click \"Update\"",
+        "Step Expected": "Update Voter page is displayed"
+      },
+      {
+        "Step": 20,
+        "Step Action": "Make any desired changes and click NEXT",
+        "Step Expected": "Review screen is displayed"
+      },
+      {
+        "Step": 21,
+        "Step Action": "Scroll down to the bottom\\n",
+        "Step Expected": "Notes section is displayed\\n"
+      },
+      {
+        "Step": 22,
+        "Step Action": "In the \"Note\" field enter any text e.g. \"Test Note\"\\n",
+        "Step Expected": "Text entered\\n"
+      },
+      {
+        "Step": 23,
+        "Step Action": "Choose a Change Reason and click UPDATE REGISTRATION",
+        "Step Expected": "Final screen is displayed and Voter has been updated"
+      },
+      {
+        "Step": 24,
+        "Step Action": "Navigate to Voter Management > Voter > Search\\n",
+        "Step Expected": "Search Voter page is displayed\\n"
+      },
+      {
+        "Step": 25,
+        "Step Action": "Use the search criteria to find the voter you just created\\n",
+        "Step Expected": "Voter found\\n"
+      },
+      {
+        "Step": 26,
+        "Step Action": "Next to the voter click the Actions ellipsis\\n",
+        "Step Expected": "Options displayed\\n"
+      },
+      {
+        "Step": 27,
+        "Step Action": "Click \"View\"\\n",
+        "Step Expected": "View Voter page is displayed\\n"
+      },
+      {
+        "Step": 28,
+        "Step Action": "Click on the Notes tab\\n",
+        "Step Expected": "Maintain Notes History page is displayed\\n"
+      },
+      {
+        "Step": 29,
+        "Step Action": "Check page\\n",
+        "Step Expected": "The note you made while updating the voter will be displayed here \\n"
+      },
+      {
+        "Step": 30,
+        "Step Action": "Check listing of notes",
+        "Step Expected": "The notes will be listed by time of creation (newest to oldest) "
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\VM\\Voter",
+    "Assigned To": "Aden Wood <awood@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 82492,
+    "Work Item Type": "Test Case",
+    "Title": "VM - Voter Registration - Signature/No Signature button displays",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate to 'Voter Registration': VM > Search > Search > Click 'Add'",
+        "Step Expected": "land on voter registration"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Complete the registration of a new voter",
+        "Step Expected": "Land on 'Final Activity' screen"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Navigate back to voter search: VM > Search",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Search for the voter that was just created",
+        "Step Expected": "Voter appears in the search results"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Click 'Actions' > 'Update'",
+        "Step Expected": "Land on 'Update Voter' page\\nGrayed out 'No Signature on File' button is displayed\u00a0below voter details"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Navigate back to voter search, and search for the same voter",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Click 'Actions' > 'View'",
+        "Step Expected": "Land on 'View Voter Registration' page"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Scroll down and click 'Scan/print'",
+        "Step Expected": "Land on 'Single Scan' page"
+      },
+      {
+        "Step": 9,
+        "Step Action": "Upload or Scan a file\\nUse the crop tool to crop a signature\\nClick 'Save Cropped Signature'\\nSelect the cropped signature in the index\\nClick 'Upload Documents'",
+        "Step Expected": "Signature is applied to the voter"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Navigate back to voter search, and search the same voter: VM > Search > Voter\\n",
+        "Step Expected": "Voter appears in the search results."
+      },
+      {
+        "Step": 11,
+        "Step Action": "Click 'Actions' > 'Update'\\n",
+        "Step Expected": "Land on 'Update Voter' page\\n'View Signature' appears below voter details\\n'No Signature on File' button no longer appears below voter details\\n\\n"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Click 'View Signature' button",
+        "Step Expected": "Signature Modal/popup appears and displays the voter signature"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\VM\\Voter",
+    "Assigned To": "Michael Gallo <mgallo@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 82675,
+    "Work Item Type": "Test Case",
+    "Title": "69346-Validate View Voter Top card information",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate to VM->Voter->Search->View",
+        "Step Expected": "View Voter registration top card must display below fields\\n1.Name \\n2.Voter ID\\n3.Date of Birth (formatted as MM/DD/YYYY)\\n4.Age\\n5.Residential Address\\n6.Voter Status & Status Reason\\n7.Polling locations\\n8.Identification\\n9.Voter Registration Date\\n10.Eligible to Vote Date & Absentee Status\\n11.Political  Party\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Verify Top Voter Card details ",
+        "Step Expected": "Must be fixed and displayed across all the tabs "
+      },
+      {
+        "Step": 3,
+        "Step Action": "Validate that the details entered during voter registration match the information displayed on the View Voter screen.",
+        "Step Expected": "Voter registration details must match the information displayed on the View Voter screen."
+      },
+      {
+        "Step": 4,
+        "Step Action": "Name",
+        "Step Expected": "Must Display\\nPrefix\\nFirst Name\\nMiddle Name\\nLast Name\\nSuffix\\n\\n"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Voter ID\\n\\n",
+        "Step Expected": "Must display Voter id"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Date of Birth ",
+        "Step Expected": "Date of Birth (formatted as MM/DD/YYYY)"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Age",
+        "Step Expected": "Must be calculated and displayed"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Residential Address",
+        "Step Expected": "Must Display\\nStreet Number\\nStreet Number- Fraction\\nStreet Number- AlphaNumeric\\nStreet Name\\nStreet Line 2\\nUnit Number\\nCity\\nState\\nZip Code "
+      },
+      {
+        "Step": 9,
+        "Step Action": "Voter Status & Status Reason",
+        "Step Expected": "Voter Status\\n Active\\nInactive\\nIncomplete\\nPending\\nCanceled\\nStatus Reason (dependent on status)"
+      },
+      {
+        "Step": 10,
+        "Step Action": "Polling locations",
+        "Step Expected": "Must display assigned polling location based on address"
+      },
+      {
+        "Step": 11,
+        "Step Action": "Identification",
+        "Step Expected": "Must display value entered during voter registration\\n\u00a0SSN \\nState Id"
+      },
+      {
+        "Step": 12,
+        "Step Action": "Voter Registration Date",
+        "Step Expected": "Must display the registration date"
+      },
+      {
+        "Step": 13,
+        "Step Action": "Eligible to Vote Date & Absentee Status\\n\\n",
+        "Step Expected": "Must display value entered during voter registration"
+      },
+      {
+        "Step": 14,
+        "Step Action": "Political  Party\\n\\n",
+        "Step Expected": "Must display value entered during voter registration"
+      },
+      {
+        "Step": 15,
+        "Step Action": "\\n",
+        "Step Expected": "\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 83676,
+    "Work Item Type": "Test Case",
+    "Title": " VM - Display Voter's Polling Location in Registration flow",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate to Voter registration\\nVM > Search > Click 'Search'> Click 'Add'",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Fill all mandatory fields, then assign a valid address that has a valid precinct/polling place",
+        "Step Expected": "After submitting address 'Polling Place' field  appears  in 'Voting Details' area, displaying the appropriate polling place for the precinct the address is tied to."
+      },
+      {
+        "Step": 3,
+        "Step Action": "Click 'Next' ",
+        "Step Expected": "Land on 'Review' screen\\n'Polling Place' field appears in 'Precinct Details Review' area, displaying the appropriate polling place for the precinct the address is tied to."
+      },
+      {
+        "Step": 4,
+        "Step Action": "Fill out any mandatory fields, and click 'Register Voter'",
+        "Step Expected": "Land on ''Final' screen\\nPolling place appears and displays the correct Polling place for the address previously submitted"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS\\VM\\Voter",
+    "Assigned To": "Michael Gallo <mgallo@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 84480,
+    "Work Item Type": "Test Case",
+    "Title": "Verify that the State ID field remains active and required when \"Drivers License/ State ID\" is selected from ID Type dropdown",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given User is on the Voter registration page and select \"Drivers License/ State ID\" from ID Type dropdown",
+        "Step Expected": "State ID field should remain active and required with validation active."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 84482,
+    "Work Item Type": "Test Case",
+    "Title": "Verify that the State ID field is deactivated when \"US Military ID\" is selected from ID Type dropdown",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the Voter Registration page and select \"US Military ID\" from ID Type dropdown",
+        "Step Expected": "State ID field should become greyed-out or disabled and should no longer be required."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 84483,
+    "Work Item Type": "Test Case",
+    "Title": "Verify that the State ID field is deactivated when \"US Passport\" is selected from ID Type dropdown",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the voter registration page and selects \"US Passport\" from ID Type dropdown.",
+        "Step Expected": "State ID field should become greyed-out or disabled and should no longer be required."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 84484,
+    "Work Item Type": "Test Case",
+    "Title": "Verify that the State ID field is deactivated when \"Bank Statement\" is selected from ID Type dropdown",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the voter registration page and select \"Bank Statement\" from ID Type dropdown.",
+        "Step Expected": "State ID field should become greyed-out or disabled and should no longer be required."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 84485,
+    "Work Item Type": "Test Case",
+    "Title": "Verify that the State ID field is deactivated when \"Utility Bill\" is selected from ID Type dropdown",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the voter registration page and select \"Utility Bill\" from ID Type dropdown.",
+        "Step Expected": "State ID field should become greyed-out or disabled and should no longer be required."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 84487,
+    "Work Item Type": "Test Case",
+    "Title": "Verify that the State ID field is deactivated when \"Election ID Card\" is selected from ID Type dropdown",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the voter registration page and select \"Election ID Card\" from ID Type dropdown.",
+        "Step Expected": "State ID field should become greyed-out or disabled and should no longer be required."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 84490,
+    "Work Item Type": "Test Case",
+    "Title": "Verify that the State ID field reactivates when \"Drivers License\" is selected after selecting another ID type",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the voter registration page and select \"US Military ID\" from ID Type dropdown and change selection to \"Drivers License\".",
+        "Step Expected": "State ID field should become active and required with validation active."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 84492,
+    "Work Item Type": "Test Case",
+    "Title": "Verify that the State ID field reactivates when \"State ID\" is selected after selecting another ID type",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the voter registration page and select \"US Passport\" from ID Type dropdown and change selection to \"State ID\". ",
+        "Step Expected": "State ID field should become active and required with validation active."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 84493,
+    "Work Item Type": "Test Case",
+    "Title": "Verify that the ID type selection is stored correctly in voter records and reports",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Given user is on the voter registration page and select any ID type (e.g., \"Drivers License\") and submit form.",
+        "Step Expected": "The selected ID type should be correctly stored in voter records and reflected in reports."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Shreya Nyapati <snyapati@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 84787,
+    "Work Item Type": "Test Case",
+    "Title": "VM - Healthcare Facility Address Indicator",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Pre-Test Data: You will need to locate or enter a 'Special Address' that is setup as a 'Health Care Facility'. This is done through the 'Special Address' screen within District Management. ",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "\\n\u00a0Navigate to 'Voter Registration'\\n\u00a0Voter Management > Search > 'Add'",
+        "Step Expected": "Land on the 'Voter Registration' page"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Scroll down to 'Residential Address' and enter the HCF street in the 'Search Street Name' field. Click 'Search'\\n\\n",
+        "Step Expected": "Search modal appears with correct results"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Select the street from the list within the modal, and click 'Select'",
+        "Step Expected": "Modal closes"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Enter a valid Low-Hi address number for the HCF in the 'Street No' field. Click 'Submit'",
+        "Step Expected": "The address is accepted, and 'Healthcare Facility (HCF)' Is displayed in red text beneath the 'City' field."
+      },
+      {
+        "Step": 6,
+        "Step Action": "Fill all other mandatory fields on the page, then click 'Next'\\n",
+        "Step Expected": "Land on 'Review Screen'\\nHealthcare Facility (HCF)'  appears in red to the right of the residential address field."
+      },
+      {
+        "Step": 7,
+        "Step Action": "Fill all mandatory fields on the page and click 'Register Voter'",
+        "Step Expected": "Land on 'Final Screen'\\n'Healthcare Facility (HCF)'  is displayed in red text in  below the \"address\" field"
+      },
+      {
+        "Step": 8,
+        "Step Action": "Navigate to the ' View Voter Registration' Screen\\nVoter Management > Voter Search > Search for the voter that added in the last step.",
+        "Step Expected": "'Healthcare Facility (HCF)' is displayed beneath the 'Residential Address' field."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Michael Gallo <mgallo@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 86440,
+    "Work Item Type": "Test Case",
+    "Title": "VM-85979-Verify Party Field Appears on Voter Registration Review Screen",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "login as  a Region User->Navigate to Voter search->Add new Voter -> \\nEnter all the mandatory fields and Party information",
+        "Step Expected": " All required fields for voter registration must be filled out"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate to Voter Registration Review Screen and Verify Party Affliation field",
+        "Step Expected": "Party Affliation field must be displayed accurately\\nNote:This field must be displayed only for QA_Base and IOWA should not be displayed in Texas QA"
+      },
+      {
+        "Step": 3,
+        "Step Action": "",
+        "Step Expected": ""
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 87269,
+    "Work Item Type": "Test Case",
+    "Title": "VM- Verify Date of Last Voter-Initiated Activity field-New Voter Registration",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate to 'Voter Registration': VM > Search > Search > Click 'Add'",
+        "Step Expected": "Voter registration Page must be displayed"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Verify Date of Last Voter-Initiated Activity field is displayed on Voter registration section and prepopulates same value as Registration Date",
+        "Step Expected": "Date of Last Voter-Initiated Activity field must be same as Registration Date for new voter registration"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Complete the Registration and navigate to Final Screen ",
+        "Step Expected": "Last Voter-Initiated Activity field must display current date"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Navigate to Voter ->Voter Search->Enter the Registered Voter id ->Actions->Manage",
+        "Step Expected": "1.Date of Last Voter-Initiated Activity field must be displayed on View Voter Registration top card and and Voter information tab\\n2.The \"Date of Last Voter-Initiated Activity\" field must display the current date"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Design"
+  },
+  {
+    "ID": 87271,
+    "Work Item Type": "Test Case",
+    "Title": "VM- Verify Date of Last Voter Initiated Activity field-Transfer Voter -County Clerk",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Precondition-Login as Region User",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate VM-> Voter search->Select state radio button->Select an existing voter\\nfrom a different region->Actions->Update",
+        "Step Expected": "Transfer Voter Page must be displayed"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Verify the Date of Last Voter-Initiated Activity field is displayed for existing voter",
+        "Step Expected": "Date of Last Voter-Initiated Activity field must be displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Continue with the update flow and click on Next",
+        "Step Expected": "Review Screen must be displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Select a change reason as \"County Clerk\" and \"Update Registration\"",
+        "Step Expected": "1.Date of Last Voter-Initiated Activity field must be displayed on Final Screen 2.The \"Date of Last Voter-Initiated Activity\" field should remain unchanged and not be updated."
+      },
+      {
+        "Step": 6,
+        "Step Action": "Navigate to Voter ->Voter Search->Enter the Voter id ->Actions->Manage",
+        "Step Expected": "1.Date of Last Voter-Initiated Activity field must be displayed on View Voter Registration top card and and Voter information tab\\n2.The \"Date of Last Voter-Initiated Activity\" field should remain unchanged and not be updated."
+      },
+      {
+        "Step": 7,
+        "Step Action": "Note: Repeat the same steps by selecting change reason as 'Admin' ensure that the expected result remains the same as \"County Clerk\" ",
+        "Step Expected": "\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 87276,
+    "Work Item Type": "Test Case",
+    "Title": "VM- Verify Date of Last Voter Initiated Activity field-Update Voter ",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate VM-> Voter search->Select a existing voter in the system->\\n\u00a0Actions->Update",
+        "Step Expected": "Update Voter Page must be displayed"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Verify the Date of Last Voter-Initiated Activity field is displayed for existing voter",
+        "Step Expected": "Date of Last Voter-Initiated Activity field must be displayed"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Continue with the update flow and click on Next",
+        "Step Expected": "Review Screen must be displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "select one of the change reasons from the dropdown, excluding \"Clerk\" or \"Admin",
+        "Step Expected": "1.Date of Last Voter-Initiated Activity field must be displayed on Final Screen 2.The \"Date of Last Voter-Initiated Activity\" field must be updated to the current date"
+      },
+      {
+        "Step": 5,
+        "Step Action": "Navigate to Voter ->Voter Search->Enter the Voter id updated in Step 4 ->Actions->Manage",
+        "Step Expected": "1.Date of Last Voter-Initiated Activity field must be displayed on View Voter Registration top card and and Voter information tab\\n2.The \"Date of Last Voter-Initiated Activity\" field must be updated to the current date"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Navigate VM-> Voter search->Enter the Voter id updated in Step 4->\\n\u00a0Actions->Update",
+        "Step Expected": "The \"Date of Last Voter-Initiated Activity\" field must be updated to the current date"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 87279,
+    "Work Item Type": "Test Case",
+    "Title": "VM- Verify Date of Last Voter Initiated Activity field-Trasfer Voter ",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Precondition-Login as Region User",
+        "Step Expected": "\\n"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Navigate VM-> Voter search->Select state radio button->Select an existing voter\\nfrom a different region->Actions->Update",
+        "Step Expected": "Transfer Voter Page must be displayed"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Verify the Date of Last Voter-Initiated Activity field is displayed for existing voter",
+        "Step Expected": "Date of Last Voter-Initiated Activity field must be displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Continue with the update flow and click on Next",
+        "Step Expected": "Review Screen must be displayed"
+      },
+      {
+        "Step": 5,
+        "Step Action": "select one of the change reasons from the dropdown, excluding \"Clerk\" or \"Admin",
+        "Step Expected": "1.Date of Last Voter-Initiated Activity field must be displayed on Final Screen 2.The \"Date of Last Voter-Initiated Activity\" field must be updated to the current date"
+      },
+      {
+        "Step": 6,
+        "Step Action": "Navigate to Voter ->Voter Search->Enter the Voter id updated in Step 4 ->Actions->Manage",
+        "Step Expected": "1.Date of Last Voter-Initiated Activity field must be displayed on View Voter Registration top card and and Voter information tab\\n2.The \"Date of Last Voter-Initiated Activity\" field must be updated to the current date"
+      },
+      {
+        "Step": 7,
+        "Step Action": "Navigate VM-> Voter search->Enter the Voter id updated in Step 4->\\n\u00a0Actions->Update",
+        "Step Expected": "The \"Date of Last Voter-Initiated Activity\" field must be updated to the current date"
+      },
+      {
+        "Step": 8,
+        "Step Action": "",
+        "Step Expected": ""
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 87280,
+    "Work Item Type": "Test Case",
+    "Title": "VM- Verify Date of Last Voter Initiated Activity field-Update Voter -County Clerk",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Navigate VM-> Voter search->Select a existing voter in the system->\\n\u00a0Actions->Update",
+        "Step Expected": "Update Voter Page must be displayed"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Verify the Date of Last Voter-Initiated Activity field is displayed for existing voter",
+        "Step Expected": "Date of Last Voter-Initiated Activity field must be displayed"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Continue with the update flow and click on Next",
+        "Step Expected": "Review Screen must be displayed"
+      },
+      {
+        "Step": 4,
+        "Step Action": "Select a change reason as \"County Clerk\" and \"Update Registration\"",
+        "Step Expected": "1.Date of Last Voter-Initiated Activity field must be displayed on Final Screen 2.The \"Date of Last Voter-Initiated Activity\" field should remain unchanged and not be updated."
+      },
+      {
+        "Step": 5,
+        "Step Action": "Navigate to Voter ->Voter Search->Enter the Voter id ->Actions->Manage",
+        "Step Expected": "1.Date of Last Voter-Initiated Activity field must be displayed on View Voter Registration top card and and Voter information tab\\n2.The \"Date of Last Voter-Initiated Activity\" field should remain unchanged and not be updated."
+      },
+      {
+        "Step": 6,
+        "Step Action": "Note: Repeat the same steps by selecting change reason as 'Admin' ensure that the expected result remains the same as \"County Clerk\" ",
+        "Step Expected": "\\n"
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java",
+    "Assigned To": "Sujatha Yelchuri <syelchuri@gocivix.com>",
+    "State": "Ready"
+  },
+  {
+    "ID": 88219,
+    "Work Item Type": "Test Case",
+    "Title": "EMS - VM - Voter Search",
+    "Test Steps": [
+      {
+        "Step": 1,
+        "Step Action": "Open the application and login as county user and navigate to VM Module",
+        "Step Expected": "VM home page is displayed"
+      },
+      {
+        "Step": 2,
+        "Step Action": "Click on the Voter button",
+        "Step Expected": "Voter Search page is displayed"
+      },
+      {
+        "Step": 3,
+        "Step Action": "Select the search context: State or County from the County or State Search Selector dropdown.",
+        "Step Expected": "User can select State or County. If State is selected, the search queries the entire state; if County is selected, it filters by county."
+      },
+      {
+        "Step": 4,
+        "Step Action": "Fill in one or more search fields: \\n - Last Name \\n - First Name \\n - Date of Birth \\n - Driver's License/State ID \\n - SSN \\n - Street No. \\n - Street Name \\n - Apt/Unit No. \\n - City \\n - Zip Code \\n - Voter Status",
+        "Step Expected": "Fields are filled with appropriate search criteria."
+      },
+      {
+        "Step": 5,
+        "Step Action": "Optionally, use wildcard search in any of the fields (e.g., %Jones, Jo%, %DES%).",
+        "Step Expected": "Wildcard characters are used and partial matches are expected (e.g., %Jones returns \"Jones,\" \"Johnson\")."
+      },
+      {
+        "Step": 6,
+        "Step Action": "Click on the Search button.",
+        "Step Expected": "The system processes the search query and displays results based on the entered search criteria."
+      },
+      {
+        "Step": 7,
+        "Step Action": "Review the search results displayed in the results grid.",
+        "Step Expected": "The following details should be displayed for each voter: \\n - Last Name \\n - First Name \\n - Date of Birth \\n - Street Name \\n - City \\n - Zip Code \\n - Voter Status \\n - County (when logged in as a Region user) \\n - Precinct"
+      },
+      {
+        "Step": 8,
+        "Step Action": "If search results are paginated, use the pagination controls to navigate between pages (e.g., Next, Previous).",
+        "Step Expected": "Pagination should work, allowing users to navigate through multiple pages of search results."
+      },
+      {
+        "Step": 9,
+        "Step Action": "Click the Manage option in the Actions menu next to any voter.",
+        "Step Expected": "Clicking Manage opens the voter details screen for viewing voter information."
+      },
+      {
+        "Step": 10,
+        "Step Action": "Optionally, click Reset to clear all search fields.",
+        "Step Expected": "The search form should reset, clearing all previously entered search criteria."
+      }
+    ],
+    "Area Path": "SG\\\\Elections\\Java\\EMS",
+    "Assigned To": "Jorge Taveras <jtaveras@gocivix.com>",
+    "State": "Design"
+  }
+]

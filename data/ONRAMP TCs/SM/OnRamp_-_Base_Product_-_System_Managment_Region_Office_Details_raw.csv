@@ -1,0 +1,109 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+88412.0,Test Case,Maintain Election Official Information -UI Elements,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Prerequisite:Login as a region,"
+",,,
+,,,2.0,Verifiy the region name is displayed on the top left,The region selected by the user during login should be displayed at the top left corner of the page,,,
+,,,3.0,Verify below fields are displayed in the Maintain Election Information section,"
+",,,
+,,,4.0,Election official title -Drop down,"Must display below values
+1.Clerk
+2.Deputy Assistant Election Supervisor
+3.Election Administrator  
+4.Election Supervisor
+5.Voter Deputy Registrar
+6.Voter Registrar",,,
+,,,5.0,First Name,mandatory text field,,,
+,,,6.0,Middle Name,optional text field,,,
+,,,7.0,Last Name,mandatory text field,,,
+,,,8.0,Verify below fields are displayed in the Contact Information section,"
+",,,
+,,,9.0,Phone,"1.Mandatory text field
+2.Phone number must be formatted correctly
+
+
+",,,
+,,,10.0,Fax,"1.Optional text field
+2.Must be formatted correctly",,,
+,,,11.0,Email,"1.Optional text field
+2.email input field accepts only valid email formats
+3.Verify if the email field is highlighted in red when the ""@"" symbol is missing",,,
+,,,12.0,Public Email,"1.Optional text field
+2.Must be formatted correctly",,,
+,,,13.0,Internal Phone,"1.Optional text field
+2.Must be formatted correctly",,,
+,,,14.0,Public Phone,"1.Optional text field
+2.Must be formatted correctly",,,
+,,,15.0,Verify below fields are displayed in the Last training attended  section,"
+",,,
+,,,16.0,Class name,Optional text field,,,
+,,,17.0,Start Date,"Optional Date field
+Calendar Picker must display on Icon Click",,,
+,,,18.0,Delete Button,Must be enabled,,,
+,,,19.0,Save Button,Must be enabled,,,
+,,,20.0,Copy Button,Must be enabled,,,
+,,,21.0,Add Button,Must be enabled,,,
+,,,22.0,Next Button,Must be enabled,,,
+88414.0,Test Case,Maintain Election Official Information-Add Functionality,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Design
+,,,1.0,As a Region User navigate to System Management > Region Office Details,Maintain Election Official Information page is displayed,,,
+,,,2.0,"Click  ""ADD"" and  Enter all the mandatory fields and click on ""Save""",Election official details must be saved successfully,,,
+,,,3.0,"Click ""Copy"" and select a Region official from the dropdown and click select","
+",,,
+,,,4.0,Verify User Can Add Multiple Election Officials,Newly added record must be displayed at the top,,,
+,,,5.0,Verify User Can Add Same Election Official Title Multiple Times,Newly added Election Official Title must be added on Top ,,,
+,,,6.0,"
+","
+",,,
+,,,7.0,Click on Office Data tab,User navigates to Office Data Page,,,
+,,,8.0,Click on Next button,User navigates to Office Data Page,,,
+88421.0,Test Case,Office Data-U/I,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Login as region User,"
+",,,
+,,,2.0,Navigate to Region Office Details->Office Data ,Office Data page must be displayed,,,
+,,,3.0,"Verify Region Office details drop down displays below values
+1.Clerk
+2.Deputy Assistant Election Supervisor
+3.Election Administrator  
+4.Election Supervisor
+5.Voter Deputy Registrar
+6.Voter Registrar",All the values must be displayed on the dropdown,,,
+,,,4.0,Region name must be defaulted and disabled,The region selected by the user during login should be displayed,,,
+,,,5.0,Verify Add button is displayed at the top right ,"1.The button must be enabled when a 'region office role' selected from the dropdown has not already been added to the office data page
+2.The button must be disabled when a 'region office role' selected from the dropdown is already been added to the office data page",,,
+,,,6.0,Click on ADD button,"Below three radio buttons must be displayed
+1.Physical
+2.Mailing Address
+3.UOCOVA Address",,,
+,,,7.0,Select a radio button option ,The page must display the corresponding address fields based on the selected radio button,,,
+,,,8.0,"Verify the Physical Address displays below fields
+1.Street Number-Mandatory
+2.Street number suffix
+3.Street Name-Mandatory
+4.Suite/unit
+5.Address Line 2
+6.Postal City-Mandatory
+7.State-Mandatory Drop down
+8.Zip code 5-Mandatory
+9.Phone Number
+10.Fax
+11.Internal Email
+12.Public Email
+13.Website URL",All the fields must be displayed under Physical Address,,,
+,,,9.0,"Verify below buttons are displayed 
+Save
+Delete 
+Reset  ",All three buttons must be displayed on the Office Data page,,,
+89789.0,Test Case,Office Data-Add Functionality,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Login as region User,"
+",,,
+,,,2.0,Navigate to Region Office Details->Office Data,Office Data page must be displayed,,,
+,,,3.0,"Select a Region Office Role from the drop-down menu, click the 'ADD' button, and then choose a Mailing address from the available options
+Note: User can select one or more than option , or all three",All relevant data fields must be displayed on the page,,,
+,,,4.0,"Enter all the mandatory fields and click on ""SAVE""",Mailing address must be saved successfully,,,
+,,,5.0,Select UOCAVA Address from the available mailing options,All relevant data fields must be displayed on the page,,,
+,,,6.0,"Enter all the mandatory fields and click on ""SAVE""",UOCOVA address must be saved successfully,,,
+,,,7.0,Select Physical Address from the available mailing options,All relevant data fields must be displayed on the page,,,
+,,,8.0,"Enter all the mandatory fields and click on ""SAVE"" or just select 
+ ""Copy Physical Address""",Physical Address must be saved successfully,,,
+,,,9.0,"After a role is added to the page verify ""ADD"" button",The 'Add' button must be disabled once a role is assigned,,,
+,,,10.0,Repeat the same steps to add more Roles ,"
+",,,

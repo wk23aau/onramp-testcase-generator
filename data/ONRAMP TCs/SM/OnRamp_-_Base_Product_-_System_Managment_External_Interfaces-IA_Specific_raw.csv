@@ -1,0 +1,806 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+90588.0,Test Case,SM - User-External Interface -Export the EPollbook data file,,,,SG\Elections\Java\EMS\VM\Voter,Muniba Nisar <mnisar@gocivix.com>,Design
+,,,1.0,"Precondition:                                                                                                              User is logged in to the system as State UserThere are more than one elections for the selected county                                             In election there is one or more than one polling place associated with precincts.
+There are voters for the selected county
+Precincts are associated with districts and street segments.                                    Voters are associated with street segments which is selected in precincts.
+
+","
+",,,
+,,,2.0,Click on System Management> Features/Users> External Interfaces Search,Schedule button is displayed in the bottom right ,,,
+,,,3.0,Click on Schedule Button,External Interface Programmer page is displayed succesfully,,,
+,,,4.0,In the types of interfaces select ePollbook Export,User gets to see the Parameters,,,
+,,,5.0, Start button,Start button is disabled by default,,,
+,,,6.0,Select county i.e(County1),User gets to see the information selected,,,
+,,,7.0,"Fill in the required information properly:1-Select the Election Date and Name.2-Check all three options:Polling PlaceStreet InformationVoter Information3-Check the checkbox for ""Include 17-year-old voters who will be 18 by.""Enter an invalid date in the ""Age 18 By Date"" field to test validation.",User gets to see the fields selected,,,
+,,,8.0,Click on Start button,"Job ePollBookExportJob launched successfully ,Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status
+",,,
+,,,9.0,"User can Naviagte to the S3 Bucket to download the File , Click on Download ",User gets to see                                                       1.The file in format .zip is downloaded Named as (County_ElectionDate_ElectionName Election Year_)                                                                              3. The file is in .txt format                                   4.The name of the file is                 POLLING_PLACE_DATA.txt                                                               STREET_Data.txt                                                                          VOTER_INFO.txt,,,
+,,,10.0,"
+","
+",,,
+,,,11.0,"
+","
+",,,
+,,,12.0,"
+","
+",,,
+90629.0,Test Case,88540 - SM - Epoll Book Export Voter when User logged as State User IA (not yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,"Preconditions 
+User is logged in to the system as State User
+There are more than one elections for the selected county
+There are voters for the selected county
+Voters have different Precincts assigned
+Voters have different Districts assigned
+Voters have the Party defined","
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Voter Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,//Where is defined the Export Location?,"
+",,,
+,,,7.0,"//Default County should be displayed, how is defined default counties for the user when is logged as State User?","
+",,,
+,,,8.0,Select a County,Elections Date/Name Dropdown is updated with the elections for the selected county,,,
+,,,9.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,10.0,Select Precinct Type ,Precinct Name dropdown is populated with the corresponding data,,,
+,,,11.0,Select Precinct Name,Export Data button is enabled,,,
+,,,12.0,Select District Type,District Name dropdown is populated with the corresponding data,,,
+,,,13.0,Select District Name,Export Data Button is enabled,,,
+,,,14.0,On the Political Party dropdown select the political Party,"
+",,,
+,,,15.0,//Where is defined the Party Organization? On Voters page I only see Political Party,"
+",,,
+,,,16.0,On the Party Organizations select the corresponding Party Organizations,"
+",,,
+,,,17.0,"//Question: When the start button is pressed, User will remain in the same page or will be send back to External Interface Search Page to see job status?","
+",,,
+,,,18.0,Press Start Button,"Following message is displayed ""Export initiated successfully""",,,
+,,,19.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,20.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,21.0,Completed Job,"Following message is displayed ""Export completed successfully""
+Job Grid is updated with the status Completed
+System will add an audit record on DB with the Job Status
+,txt File is generated",,,
+,,,22.0,Navigate to the selected Location,.txt Voters File is there,,,
+,,,23.0,Open .txt file,Confirm there are no headersConfirm data format is equal to the format provided,,,
+,,,24.0,Validate .txt file,Data in the file meets selection criteria,,,
+90630.0,Test Case,88540 - SM - Epoll Book Export Voter when User logged as Region User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,Preconditions User is logged in to the system as Region User. There are more than one elections for the selected county. There are voters for the selected county. Voters have different Precincts assigned. Voters have different Districts assigned. Voters have the Party defined,"
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Voter Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,//Where is defined the Export Location?,"
+",,,
+,,,7.0,County Dropdown is displayed,Value selected is the same where the user is logged in,,,
+,,,8.0,County Dropdown is enabled for change,Elections Date/Name Dropdown is updated with the elections for the selected county,,,
+,,,9.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,10.0,Select Precinct Type ,Precinct Name dropdown is populated with the corresponding data,,,
+,,,11.0,Select Precinct Name,Export Data button is enabled,,,
+,,,12.0,Select District Type,District Name dropdown is populated with the corresponding data,,,
+,,,13.0,Select District Name,Export Data Button is enabled,,,
+,,,14.0,On the Political Party dropdown select the political Party,"
+",,,
+,,,15.0,//Where is defined the Party Organization? On Voters page I only see Political Party,"
+",,,
+,,,16.0,On the Party Organizations select the corresponding Party Organizations,"
+",,,
+,,,17.0,"//Question: When the start button is pressed, User will remain in the same page or will be send back to External Interface Search Page to see job status?","
+",,,
+,,,18.0,Press Start Button,"Following message is displayed ""Export initiated successfully""",,,
+,,,19.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,20.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,21.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,22.0,Navigate to the selected Location,.txt Voter File is there,,,
+,,,23.0,Open .txt file,Confirm there are no headers. Confirm data format is equal to the format provided,,,
+,,,24.0,Validate .txt file,Data in the file meets selection criteria,,,
+90631.0,Test Case,88540 - SM - Epoll Book Export Voter Fields Validation User logged as State User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,"Preconditions User is logged in to the system as State User 
+ There are more than one active elections. 
+ There are voters for more than one county,
+ Voters have different Precincts assigned,
+ Voters have different Districts assigned.
+ Voters have the Party defined","
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Voter Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,Confirm Start button is disabled,"
+",,,
+,,,7.0,Confirm Reset button is enabled,"
+",,,
+,,,8.0,//Where is defined the Export Location?,"
+",,,
+,,,9.0,//What should be the Default County when user is logged as State User?,"
+",,,
+,,,10.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,11.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,12.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,13.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,14.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,15.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,16.0,"Select a specific Precinct Type ""Local""","Precinct Name dropdown is populated only with the Precinct corresponding for the Type ""Local"" for the County Selected",,,
+,,,17.0,Select District Type All,District Name dropdown is populated with all the districts for the County selected,,,
+,,,18.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated with the districts for the District Type selected in the County selected,,,
+,,,19.0,Select District Name,"
+",,,
+,,,20.0,When Precinct or District are selected,Export Data Button is enabled,,,
+,,,21.0,//Will be the Party dropdown loaded based on the Election or based on a Political Party Dictionary?,"
+",,,
+,,,22.0,On the Political Party dropdown select more than one party,System allow select multiple Political Parties,,,
+,,,23.0,//Where is defined the Party Organization? Is this value dependable of the Political Party?,"
+",,,
+,,,24.0,On the Party Organizations select the corresponding Party Organizations,"
+",,,
+,,,25.0,"//Question: When the start button is pressed, User will remain in the same page or will be send back to External Interface Search Page to see job status?","
+",,,
+,,,26.0,Press Reset Button,Confirm all fields are cleared out and restored to the default values,,,
+,,,27.0,//Scenario where only County is selected,"
+",,,
+,,,28.0,Confirm Start button is disabled,"
+",,,
+,,,29.0,Confirm Reset button is enabled,"
+",,,
+,,,30.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,31.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,32.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,33.0,Do not Select an Election,"
+",,,
+,,,34.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,35.0,//Scenario where County and Election is selected but Precinct or District are not selected,"
+",,,
+,,,36.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,37.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,38.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,39.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,40.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,41.0,"//Scenario where County, Election and Precinct are selected but District is not selected","
+",,,
+,,,42.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,43.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,44.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,45.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,46.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,47.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,48.0,Select Precinct Name,"
+",,,
+,,,49.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,50.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,51.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,52.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,53.0,Navigate to the selected Location,.txt File is there,,,
+,,,54.0,Open .txt file,Data in the file meets selected criteria,,,
+,,,55.0,"//Scenario where County, Election and District are selected but Precinct is not selected","
+",,,
+,,,56.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,57.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,58.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,59.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,60.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated only with the districts for the District Type selected in the County selected,,,
+,,,61.0,Select District Name,"
+",,,
+,,,62.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,63.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,64.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,65.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,66.0,Navigate to the selected Location,.txt File is there,,,
+,,,67.0,Open .txt file,Data in the file meets selected criteria,,,
+,,,68.0,"
+","
+",,,
+,,,69.0,"
+","
+",,,
+,,,70.0,"
+","
+",,,
+,,,71.0,"
+","
+",,,
+,,,72.0,"
+","
+",,,
+,,,73.0,"
+","
+",,,
+,,,74.0,"
+","
+",,,
+,,,75.0,"
+","
+",,,
+,,,76.0,"
+","
+",,,
+90632.0,Test Case,88540 - SM - Epoll Book Export Voter Fields Validation User logged as Region User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,"Preconditions 
+ User is logged in to the system as County User
+ There are more than one elections for the selected county.  
+ There are voters for the selected county, 
+ Voters have different Precincts assigned, 
+ Voters have different Districts assigned. 
+ Voters have the Party defined","
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Voter Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,//Where is defined the Export Location?,"
+",,,
+,,,7.0,Look County Dropdown,County Dropdown has as default value the county where user is logged in,,,
+,,,8.0,Click on the County Dropdown,Confirm all Counties are available for selection,,,
+,,,9.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,10.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,11.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,12.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,13.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,14.0,"Select a specific Precinct Type ""Local""","Precinct Name dropdown is populated only with the Precinct corresponding for the Type ""Local"" for the County Selected",,,
+,,,15.0,Select District Type All,District Name dropdown is populated with all the districts for the County selected,,,
+,,,16.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated with the districts for the District Type selected in the County selected,,,
+,,,17.0,Select District Name,"
+",,,
+,,,18.0,When Precinct or District are selected,Export Data Button is enabled,,,
+,,,19.0,//Will be the Party dropdown loaded based on the Election or based on a Political Party Dictionary?,"
+",,,
+,,,20.0,On the Political Party dropdown select more than one party,System allow select multiple Political Parties,,,
+,,,21.0,//Where is defined the Party Organization? Is this value dependable of the Political Party?,"
+",,,
+,,,22.0,On the Party Organizations select the corresponding Party Organizations,"
+",,,
+,,,23.0,"//When the start button is pressed, User will remain in the same page or will be send back to External Interface Search Page to see job status?","
+",,,
+,,,24.0,Press Reset Button,Confirm all fields are cleared out and restored to the default values,,,
+,,,25.0,//Scenario where only County is selected,"
+",,,
+,,,26.0,Look County Dropdown,County Dropdown has as default value the county where user is logged in,,,
+,,,27.0,Click on the County Dropdown,Confirm all Counties are available for selection,,,
+,,,28.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,29.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,30.0,Do not Select an Election,"
+",,,
+,,,31.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,32.0,//Scenario where County and Election is selected but Precinct or District are not selected,"
+",,,
+,,,33.0,Look County Dropdown,County Dropdown has as default value the county where user is logged in,,,
+,,,34.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,35.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,36.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,37.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,38.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,39.0,"//Scenario where County, Election and Precinct are selected but District is not selected","
+",,,
+,,,40.0,Look County Dropdown,County Dropdown has as default value the county where user is logged in,,,
+,,,41.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,42.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,43.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,44.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,45.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,46.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,47.0,Select Precinct Name,"
+",,,
+,,,48.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,49.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,50.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,51.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,52.0,Navigate to the selected Location,.txt File is there,,,
+,,,53.0,Open .txt file,Data in the file meets selected criteria,,,
+,,,54.0,"//Scenario where County, Election and District are selected but Precinct is not selected","
+",,,
+,,,55.0,Look County Dropdown,County Dropdown has as default value the county where user is logged in,,,
+,,,56.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,57.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,58.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,59.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,60.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated only with the districts for the District Type selected in the County selected,,,
+,,,61.0,Select District Name,"
+",,,
+,,,62.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,63.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,64.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,65.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,66.0,Navigate to the selected Location,.txt File is there,,,
+,,,67.0,Open .txt file,Data in the file meets selected criteria,,,
+90633.0,Test Case,88617 - SM - Epoll Book Export Address  User logged as State User IA (No yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,"Preconditions 
+ User is logged in to the system as State User
+ There are more than one elections for the selected county
+The Election has Districts and Precincts","
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Address Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,//Where is defined the Export Location?,"
+",,,
+,,,7.0,"//Default County should be displayed, how is defined default counties for the user when is logged as State User?","
+",,,
+,,,8.0,Select a County,Elections Date/Name Dropdown is updated with the elections for the selected county. Elections are sorted with the latest election first.,,,
+,,,9.0,Select Elections Date / Name,"Precinct Type, Precinct Name District Type and District Name will be populated with the data for the County and Election selected",,,
+,,,10.0,Select Precinct Type ,Precinct Name dropdown is populated with the Precinct for the selected County and Election,,,
+,,,11.0,Select Precinct Name,Confirm Precinct dropdown is loaded with the  Precinct for the selected Precinct Type,,,
+,,,12.0,Select District Type,District Name dropdown is populated with the corresponding data,,,
+,,,13.0,Select District Name,Confirm District Dropdown is loaded with the Districts for the selected District Type,,,
+,,,14.0,"//Question: When the start button is pressed, User will remain in the same page or will be send back to External Interface Search Page to see job status?","
+",,,
+,,,15.0,Press Start Button,"Following message is displayed ""Export initiated successfully""",,,
+,,,16.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,17.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,18.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,19.0,Navigate to the selected Export Location,Address Export .txt File is present,,,
+,,,20.0,Open .txt file,Confirm there are no headersConfirm data format is equal to the format provided,,,
+,,,21.0,Validate .txt file,Data in the file meets selection criteria,,,
+90634.0,Test Case,88617 - SM - Epoll Book Export Address User logged as Region User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,"Preconditions  
+ User is logged in to the system as Region User
+ There are more than one elections for the selected county 
+The Election has Districts and Precincts","
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Address Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,//Where is defined the Export Location?,"
+",,,
+,,,7.0,"//Default County should be displayed, how is defined default counties for the user when is logged as State User?","
+",,,
+,,,8.0,Select a County,Elections Date/Name Dropdown is updated with the elections for the selected county. Elections are sorted with the latest election first.,,,
+,,,9.0,Select Elections Date / Name,"Precinct Type, Precinct Name District Type and District Name will be populated with the data for the County and Election selected",,,
+,,,10.0,Select Precinct Type ,Precinct Name dropdown is populated with the Precinct for the selected County and Election,,,
+,,,11.0,Select Precinct Name,Confirm Precinct dropdown is loaded with the  Precinct for the selected Precinct Type,,,
+,,,12.0,Select District Type,District Name dropdown is populated with the corresponding data,,,
+,,,13.0,Select District Name,Confirm District Dropdown is loaded with the Districts for the selected District Type,,,
+,,,14.0,"//Question: When the start button is pressed, User will remain in the same page or will be send back to External Interface Search Page to see job status?","
+",,,
+,,,15.0,Press Start Button,"Following message is displayed ""Export initiated successfully""",,,
+,,,16.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,17.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,18.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,19.0,Navigate to the selected Export Location,Address Export .txt File is present,,,
+,,,20.0,Open .txt file,"Confirm there are no headers
+Confirm data format is equal to the format provided",,,
+,,,21.0,Validate .txt file,Data in the file meets selection criteria,,,
+90635.0,Test Case,88617- SM - Epoll Book Export Address Fields Validation User logged as State User (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,Preconditions User is logged in to the system as State User  There are more than one active elections.  The Election has Districts and Precincts,"
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Address Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,Confirm Start button is disabled,"
+",,,
+,,,7.0,Confirm Reset button is enabled,"
+",,,
+,,,8.0,//What should be the Default County when user is logged as State User?,"
+",,,
+,,,9.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,10.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,11.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,12.0,Select Elections Date / Name,Precinct Type and District Type will be populated based on County and Elections criteria,,,
+,,,13.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,14.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,15.0,"Select a specific Precinct Type ""Local""","Precinct Name dropdown is populated only with the Precinct corresponding for the Type ""Local"" for the County Selected",,,
+,,,16.0,Select specific Precinct,"
+",,,
+,,,17.0,Select District Type All,District Name dropdown is populated with all the districts for the County selected,,,
+,,,18.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated with the districts for the District Type selected in the County selected,,,
+,,,19.0,Select specific District Name,"
+",,,
+,,,20.0,When Precinct or District are selected,Start Button is enabled,,,
+,,,21.0,Press Reset Button,Confirm all fields are cleared out and restored to the default values,,,
+,,,22.0,//Scenario where only County is selected,"
+",,,
+,,,23.0,Confirm Start button is disabled,"
+",,,
+,,,24.0,Confirm Reset button is enabled,"
+",,,
+,,,25.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,26.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,27.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,28.0,Do not Select an Election,"
+",,,
+,,,29.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,30.0,//Scenario where County and Election is selected but Precinct or District are not selected,"
+",,,
+,,,31.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,32.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,33.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,34.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,35.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,36.0,"//Scenario where County, Election and Precinct are selected but District is not selected","
+",,,
+,,,37.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,38.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,39.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,40.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,41.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,42.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,43.0,Select Precinct Name,"
+",,,
+,,,44.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,45.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,46.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,47.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,48.0,Navigate to the selected Location,.txt File is there,,,
+,,,49.0,Open .txt file,Data in the file meets selected criteria,,,
+,,,50.0,"//Scenario where County, Election and District are selected but Precinct is not selected","
+",,,
+,,,51.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,52.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,53.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,54.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,55.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated only with the districts for the District Type selected in the County selected,,,
+,,,56.0,Select District Name,"
+",,,
+,,,57.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,58.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,59.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,60.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,61.0,Navigate to the selected Location,.txt File is there,,,
+,,,62.0,Open .txt file,Data in the file meets selected criteria,,,
+90636.0,Test Case,88617- SM - Epoll Book Export Address Fields Validation User logged as Region User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,//Preconditions User is logged in to the system as Region User  There are more than one active elections.  The Election has Districts and Precincts,"
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Address Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,Confirm Start button is disabled,"
+",,,
+,,,7.0,Confirm Reset button is enabled,"
+",,,
+,,,8.0,Look County Dropdown,Selected value is the same as the Region user is logged,,,
+,,,9.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,10.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,11.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,12.0,Select Elections Date / Name,Precinct Type and District Type will be populated based on County and Elections criteria,,,
+,,,13.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,14.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,15.0,"Select a specific Precinct Type ""Local""","Precinct Name dropdown is populated only with the Precinct corresponding for the Type ""Local"" for the County Selected",,,
+,,,16.0,Select specific Precinct,"
+",,,
+,,,17.0,Select District Type All,District Name dropdown is populated with all the districts for the County selected,,,
+,,,18.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated with the districts for the District Type selected in the County selected,,,
+,,,19.0,Select specific District Name,"
+",,,
+,,,20.0,Press Reset Button,Confirm all fields are cleared out and restored to the default values,,,
+,,,21.0,//Scenario where only County is selected,"
+",,,
+,,,22.0,Confirm Start button is disabled,"
+",,,
+,,,23.0,Confirm Reset button is enabled,"
+",,,
+,,,24.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,25.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,26.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,27.0,Do not Select an Election,"
+",,,
+,,,28.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,29.0,//Scenario where County and Election is selected but Precinct or District are not selected,"
+",,,
+,,,30.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,31.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,32.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,33.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,34.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,35.0,"//Scenario where County, Election and Precinct are selected but District is not selected","
+",,,
+,,,36.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,37.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,38.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,39.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,40.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,41.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,42.0,Select Precinct Name,"
+",,,
+,,,43.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,44.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,45.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,46.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,47.0,Navigate to the selected Location,.txt File is there,,,
+,,,48.0,Open .txt file,Data in the file meets selected criteria,,,
+,,,49.0,"//Scenario where County, Election and District are selected but Precinct is not selected","
+",,,
+,,,50.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,51.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,52.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,53.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,54.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated only with the districts for the District Type selected in the County selected,,,
+,,,55.0,Select District Name,"
+",,,
+,,,56.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,57.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,58.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,59.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,60.0,Navigate to the selected Location,.txt File is there,,,
+,,,61.0,Open .txt file,Data in the file meets selected criteria,,,
+90637.0,Test Case,88607 - SM - Epoll Book Export Absentee when User logged as State User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,Preconditions User is logged in to the system as State User. There are more than one elections for the selected county. There are voters for the selected county. Voters have different Precincts assigned. Voters have different Districts assigned. Voters have the Party defined,"
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Absentee Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,//Where is defined the Export Location?,"
+",,,
+,,,7.0,"//Default County should be displayed, how is defined default counties for the user when is logged as State User?","
+",,,
+,,,8.0,Select a County,Elections Date/Name Dropdown is updated with the elections for the selected county,,,
+,,,9.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,10.0,Select Precinct Type ,Precinct Name dropdown is populated with the corresponding data,,,
+,,,11.0,Select Precinct Name,Export Data button is enabled,,,
+,,,12.0,Select District Type,District Name dropdown is populated with the corresponding data,,,
+,,,13.0,Select District Name,Export Data Button is enabled,,,
+,,,14.0,On the Political Party dropdown select the political Party,"
+",,,
+,,,15.0,//Where is defined the Party Organization? On Voters page I only see Political Party,"
+",,,
+,,,16.0,On the Party Organizations select the corresponding Party Organizations,"
+",,,
+,,,17.0,"//Question: When the start button is pressed, User will remain in the same page or will be send back to External Interface Search Page to see job status?","
+",,,
+,,,18.0,Press Start Button,"Following message is displayed ""Export initiated successfully""",,,
+,,,19.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,20.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,21.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,22.0,Navigate to the selected Location,.txt Absentee File is there,,,
+,,,23.0,Look .txt file,Confirm there are no headersConfirm data format is equal to the format provided,,,
+,,,24.0,Validate .txt file,Data in the file meets selection criteria,,,
+90638.0,Test Case,88607 - SM - Epoll Book Export Absentee when User logged as Region User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,Preconditions User is logged in to the system as State User. There are more than one elections for the selected county. There are voters for the selected county. Voters have different Precincts assigned. Voters have different Districts assigned. Voters have the Party defined,"
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Absentee Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,"//Default County should be displayed, how is defined default counties for the user when is logged as State User?","
+",,,
+,,,7.0,Look County dropdown,Selected County is the same county that user is logged in,,,
+,,,8.0,Select a County,Elections Date/Name Dropdown is updated with the elections for the selected county,,,
+,,,9.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,10.0,Select Precinct Type ,Precinct Name dropdown is populated with the corresponding data,,,
+,,,11.0,Select Precinct Name,Export Data button is enabled,,,
+,,,12.0,Select District Type,District Name dropdown is populated with the corresponding data,,,
+,,,13.0,Select District Name,Export Data Button is enabled,,,
+,,,14.0,On the Political Party dropdown select the political Party,"
+",,,
+,,,15.0,//Where is defined the Party Organization? On Voters page I only see Political Party,"
+",,,
+,,,16.0,On the Party Organizations select the corresponding Party Organizations,"
+",,,
+,,,17.0,"//Question: When the start button is pressed, User will remain in the same page or will be send back to External Interface Search Page to see job status?","
+",,,
+,,,18.0,Press Start Button,"Following message is displayed ""Export initiated successfully""",,,
+,,,19.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,20.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,21.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,22.0,Navigate to the selected Location,.txt Absentee File is there,,,
+,,,23.0,Look .txt file,Confirm there are no headersConfirm data format is equal to the format provided,,,
+90639.0,Test Case,88607 - SM - Epoll Book Export Absentee Fields Validation User logged as State User (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,"Preconditions User is logged in to the system as State User  There are more than one active elections.  There are voters for more than one county, Voters have different Precincts assigned, Voters have different Districts assigned. Voters have the Party defined","
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Absentee Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,7.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,8.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,9.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,10.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,11.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,12.0,"Select a specific Precinct Type ""Local""","Precinct Name dropdown is populated only with the Precinct corresponding for the Type ""Local"" for the County Selected",,,
+,,,13.0,Select District Type All,District Name dropdown is populated with all the districts for the County selected,,,
+,,,14.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated with the districts for the District Type selected in the County selected,,,
+,,,15.0,Select District Name,"
+",,,
+,,,16.0,//Will be the Party dropdown loaded based on the Election or based on a Political Party Dictionary?,"
+",,,
+,,,17.0,On the Political Party dropdown select more than one party,System allow select multiple Political Parties,,,
+,,,18.0,//Where is defined the Party Organization? Is this value dependable of the Political Party?,"
+",,,
+,,,19.0,On the Party Organizations select the corresponding Party Organizations,"
+",,,
+,,,20.0,Press Reset Button,Confirm all fields are cleared out and restored to the default values,,,
+,,,21.0,//Scenario where only County is selected,"
+",,,
+,,,22.0,Confirm Start button is disabled,"
+",,,
+,,,23.0,Confirm Reset button is enabled,"
+",,,
+,,,24.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,25.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,26.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,27.0,Do not Select an Election,"
+",,,
+,,,28.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,29.0,//Scenario where County and Election is selected but Precinct or District are not selected,"
+",,,
+,,,30.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,31.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,32.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,33.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,34.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,35.0,"//Scenario where County, Election and Precinct are selected but District is not selected","
+",,,
+,,,36.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,37.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,38.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,39.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,40.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,41.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,42.0,Select Precinct Name,"
+",,,
+,,,43.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,44.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,45.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,46.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,47.0,Navigate to the selected Location,.txt File is there,,,
+,,,48.0,Open .txt file,Data in the file meets selected criteria,,,
+,,,49.0,"//Scenario where County, Election and District are selected but Precinct is not selected","
+",,,
+,,,50.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,51.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,52.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,53.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,54.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated only with the districts for the District Type selected in the County selected,,,
+,,,55.0,Select District Name,"
+",,,
+,,,56.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,57.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,58.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,59.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,60.0,Navigate to the selected Location,.txt File is there,,,
+,,,61.0,Open .txt file,Data in the file meets selected criteria,,,
+90640.0,Test Case,88607 - SM - Epoll Book Export Absentee Fields Validation User logged as Region User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,"Preconditions User is logged in to the system as State User  There are more than one active elections.  There are voters for more than one county, Voters have different Precincts assigned, Voters have different Districts assigned. Voters have the Party defined","
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Absentee Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,Look County Dropdown,Value selected is the same county where the user is logged in,,,
+,,,7.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,8.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,9.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,10.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,11.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,12.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,13.0,"Select a specific Precinct Type ""Local""","Precinct Name dropdown is populated only with the Precinct corresponding for the Type ""Local"" for the County Selected",,,
+,,,14.0,Select a Precinct Name,"
+",,,
+,,,15.0,Select District Type All,District Name dropdown is populated with all the districts for the County selected,,,
+,,,16.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated with the districts for the District Type selected in the County selected,,,
+,,,17.0,Select District Name,"
+",,,
+,,,18.0,On the Political Party dropdown select more than one party,System allow select multiple Political Parties,,,
+,,,19.0,On the Party Organizations select the corresponding Party Organizations,"
+",,,
+,,,20.0,Press Reset Button,Confirm all fields are cleared out and restored to the default values,,,
+,,,21.0,//Scenario where only County is selected,"
+",,,
+,,,22.0,Confirm Start button is disabled,"
+",,,
+,,,23.0,Confirm Reset button is enabled,"
+",,,
+,,,24.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,25.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,26.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,27.0,Do not Select an Election,"
+",,,
+,,,28.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,29.0,//Scenario where County and Election is selected but Precinct or District are not selected,"
+",,,
+,,,30.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,31.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,32.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,33.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,34.0,Press Start button if enabled,System should alert the User that Mandatory fields are missed,,,
+,,,35.0,"//Scenario where County, Election and Precinct are selected but District is not selected","
+",,,
+,,,36.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,37.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,38.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,39.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,40.0,Display the Precinct Type,Confirm all precinct types are available,,,
+,,,41.0,"Select Precinct Type ""All""",Precinct Name dropdown is populated with all the precincts for all Precinct types for the County selected,,,
+,,,42.0,Select Precinct Name,"
+",,,
+,,,43.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,44.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,45.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,46.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,47.0,Navigate to the selected Location,.txt File is there,,,
+,,,48.0,Open .txt file,Data in the file meets selected criteria,,,
+,,,49.0,"//Scenario where County, Election and District are selected but Precinct is not selected","
+",,,
+,,,50.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,51.0,Select a County,Elections Date/Name Dropdown is updated with the active elections for the selected county,,,
+,,,52.0,Change County Selected,Elections Date/Name dropdown is updated with the active elections for the selected county,,,
+,,,53.0,Select Elections Date / Name,Precinct Type and District Type will be enabled,,,
+,,,54.0,"Select a specific District Type ""Municipal/Local""",District Name dropdown is populated only with the districts for the District Type selected in the County selected,,,
+,,,55.0,Select District Name,"
+",,,
+,,,56.0,Press Start button,"Following message is displayed ""Export initiated successfully""",,,
+,,,57.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,58.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,59.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,60.0,Navigate to the selected Location,.txt File is there,,,
+,,,61.0,Open .txt file,Data in the file meets selected criteria,,,
+90641.0,Test Case,88624 - SM - Epoll Book Export Felon when User logged as State User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,"Preconditions 
+ User is logged in to the system as State User
+ There are more than one elections for the selected county","
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Felon Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,//Where is defined the Export Location?,"
+",,,
+,,,7.0,"//Default County should be displayed, how is defined default counties for the user when is logged as State User?","
+",,,
+,,,8.0,Select a County,,,,
+,,,9.0,Press Start Button,"Following message is displayed ""Export initiated successfully""",,,
+,,,10.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,11.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,12.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,13.0,Navigate to the selected Location,.txt Felon File is there,,,
+,,,14.0,Open .txt file,Confirm there are no headers. Confirm data format is equal to the format provided,,,
+,,,15.0,Validate .txt file,Data in the file meets selection criteria,,,
+90642.0,Test Case,88624 - SM - Epoll Book Export Felon when User logged as Region User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,Preconditions  User is logged in to the system as State User There are more than one elections for the selected county,"
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Felon Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,//Where is defined the Export Location?,"
+",,,
+,,,7.0,Look County Dropdown,County selected is the same where the user is logged in,,,
+,,,8.0,Press Start Button,"Following message is displayed ""Export initiated successfully""",,,
+,,,9.0,System will add an audit record on DB with the Job Status,Record is added,,,
+,,,10.0,Cron Job starts,Jobs Grid is updated with the process status In Progress,,,
+,,,11.0,Completed Job,"Following message is displayed ""Export completed successfully""Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status,txt File is generated",,,
+,,,12.0,Navigate to the selected Location,.txt Felon File is there,,,
+,,,13.0,Open .txt file,Confirm there are no headers. Confirm data format is equal to the format provided,,,
+,,,14.0,Validate .txt file,Data in the file meets selection criteria,,,
+90643.0,Test Case,88624 - SM - Epoll Book Export Felon Fields Validation User logged as State User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,Preconditions User is logged in to the system as State User  ,"
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Voter Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,Confirm Start button is disabled,"
+",,,
+,,,7.0,Confirm Reset button is enabled,"
+",,,
+,,,8.0,//Where is defined the Export Location?,"
+",,,
+,,,9.0,//What should be the Default County when user is logged as State User?,"
+",,,
+,,,10.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,11.0,Select a different County,"
+",,,
+,,,12.0,Press Reset Button,Confirm all fields are cleared out and restored to the default values,,,
+90644.0,Test Case,88624 - SM - Epoll Book Export Felon Fields Validation User logged as Region User IA (no yet implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,Preconditions User is logged in to the system as Region User  ,"
+",,,
+,,,2.0,Navigate to System Management > Users  ,User options are listed as buttons,,,
+,,,3.0,Click on External Interfaces Button ,External Interfaces Search page is displayed,,,
+,,,4.0,Click on Schedule Button,External Interfaces Scheduler is opened,,,
+,,,5.0,On Interfaces Type Dropdown select Voter Export for Poll Book,Parameters options are displayed,,,
+,,,6.0,Confirm Start button is disabled,"
+",,,
+,,,7.0,Confirm Reset button is enabled,"
+",,,
+,,,8.0,//Where is defined the Export Location?,"
+",,,
+,,,9.0,Look County Dropdown,Selected value is the same that the user is logged in,,,
+,,,10.0,Display County Dropdown,Confirm all Counties for the selected state are available for selection,,,
+,,,11.0,Select a different County,"
+",,,
+,,,12.0,Press Reset Button,Confirm all fields are cleared out and restored to the default values,,,

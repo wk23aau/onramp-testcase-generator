@@ -1,0 +1,315 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+88257.0,Test Case,SM - Correspondence email -Not implemented yet,,,,SG\Elections\Java\EMS,Rina Pilli <rpilli@gocivix.com>,Design
+,,,1.0,Notices should be sent to a voters email address,Emails are sent when email is provided,,,
+88748.0,Test Case,Report - Display and Report on Received Ballots by Mail Batch Status(Not implemented yet),,,,SG\Elections\Java\EMS,Rina Pilli <rpilli@gocivix.com>,Design
+,,,1.0,Report - display and report on received ballots by mail batch status,,,,
+88959.0,Test Case,SM -  Notifications  – Review Notification Before Generation (Not yet Implemented),,,,SG\Elections\Java\EMS,Yahaira Barrios <ybarrios@gocivix.com>,Design
+,,,1.0,Precondition:Login as a County User,"
+",,,
+,,,2.0,Navigate to System management->Notifications->Review Notification Before Generation ,Notification Review -Before Generation page is displayed with the Filter By option and one bucket for each Document Type,,,
+,,,3.0,Click on the Cross-State / In-State / IDLE / NCOA Voters Bucket,Data is displayed on the Grid,,,
+,,,4.0,Mark the checkbox for one or more objects,"
+",,,
+,,,5.0,Press Take Action Button,Notification Review Action Window is opened,,,
+,,,6.0,Click on the Actions button for the Object to review,Preview Modal is opened,,,
+,,,7.0,Select the Notice Send Date and the Notice of Action,"
+",,,
+,,,8.0,Click on Update Button,Successful Update message is displayed. Modal window is closed,,,
+,,,9.0,Having the focus in the Notification Review Action Window. Select same object updated before,Modal is opened with the data saved before,,,
+,,,10.0,// what other action should be performed from here,"
+",,,
+,,,11.0,"
+","
+",,,
+89127.0,Test Case,SM- Add a New Role,,,,SG\Elections\Java,Muniba Nisar <mnisar@gocivix.com>,Ready
+,,,1.0,Precondition: User is logged in to the system and has the necessary permissions to add roles,"
+",,,
+,,,2.0,"Navigate to the ""System Management"" page.","The ""System Management"" page loads successfully.",,,
+,,,3.0,Click on the Features->Maintain Roles.,"The "" Search Roles"" page loads successfully.",,,
+,,,4.0,"Click on the ""Add"" button.","The Add Role form appears with fields: Role Name, Role Code and Role Type are Requried Fields.",,,
+,,,5.0,"Fill in the Required fields
+Test Data
+Role Name:Admin
+Role Code: A001",The fields are filled correctly without errors.,,,
+,,,6.0,"Select a Role Type (e.g., County Role,Sate Role, Jury Role).",The Role Type is selected successfully.,,,
+,,,7.0,"Click the ""SAVE"" button.
+","The new role is saved, and a success message appears.
+A success message ""Role added successfully"" is displayed.
+The new role is listed in the roles table with the selected Role Type.",,,
+89128.0,Test Case,SM-  Maintain Role (update & Assign),,,,SG\Elections\Java,Muniba Nisar <mnisar@gocivix.com>,Ready
+,,,1.0,"Precondition: User is logged in to the system and has the necessary permissions to Maintain roles.
+Have an existing Role.","
+",,,
+,,,2.0,"Navigate to the ""System Management"" page.","The ""System Management"" page loads successfully.",,,
+,,,3.0,Click on Features->Maintain roles.,"The "" Search Roles"" page loads successfully.",,,
+,,,4.0,"Search for the role to be edited (e.g., ""Clerk"").",The role appears in the search results.,,,
+,,,5.0,"Find the role you just searched for and click on the ""Actions"" ellipsis next to it and click on Edit.",The role form appears with the current role details.,,,
+,,,6.0,"Make any desired changes and click ""UPDATE""
+Updated Test Data:
+Role Name: Admin",The fields are updated correctly without errors.,,,
+,,,7.0,"Select Permissions and assign 
+Test Data:
+Region ,Districts 
+Click the ""Update"" button.	
+","The role is updated, and a success message appears.
+A success message ""Role updated successfully"" is displayed.
+The updated role is listed in the roles table with the new details.",,,
+,,,8.0,"Assign role to user:
+Navigate to the ""System Management"" page.","The ""System Management"" page loads successfully.",,,
+,,,9.0,Click to the Users ->Maintain Users.,"The ""Search Users"" page loads successfully.",,,
+,,,10.0,"Search for a user by entering their username or email address.
+Test Data:
+Email:john@gmail.com
+Name:test or joh%(it will be auto-filled with the same initials)",The user appears in the search results.,,,
+,,,11.0,"click on the ""Actions"" ellipsis and then click on Edit.","The user is selected, and the role assignment options appear",,,
+,,,12.0,Assign Role & Permissions section click on ADD,"
+",,,
+,,,13.0,Select the role and click on save.,"The role is successfully assigned, and a success message appears.
+A success message ""User Role assigned successfully"" is displayed.
+		The user's profile reflects the assigned role.",,,
+89129.0,Test Case,SM- Maintain Role (Delete & Cancel),,,,SG\Elections\Java,Muniba Nisar <mnisar@gocivix.com>,Ready
+,,,1.0,"Precondition: User is logged in to the system and has the necessary permissions to Maintain the role.
+Have an existing Role. ","
+",,,
+,,,2.0,"Navigate to the ""System Management"" page.","The ""System Management"" page loads successfully.",,,
+,,,3.0,Click on Features->Maintain roles.,"The "" Search Roles"" page loads successfully.",,,
+,,,4.0,"Search for the role to (e.g., ""Admin"").",The role appears in the search results.,,,
+,,,5.0,"Click on the ""Actions"" ellipsis and and click on Delete.","Dilogaue box is appears.
+Are you sure you want to delete?",,,
+,,,6.0,Click on 'OK',"A success message 'Deleted successfully.' is displayed.
+The role is no longer listed in the roles table.",,,
+,,,7.0,"Cancel Role Creation
+Click to the search users.","The "" Search Roles"" page loads successfully.",,,
+,,,8.0,"Click on the ""Add"" button.","The Add Role form appears with fields: Role Name, Role Code, and Role Type are Required Fields.",,,
+,,,9.0,"Fill in the required fields
+Test Data
+Role Name:Admin
+Role Code: A20",The fields are filled correctly without errors.,,,
+,,,10.0,"Select a Role Type (e.g., County Role, State Role, Jury Role).",The Role Type(State Role) is selected successfully.,,,
+,,,11.0,"Click the ""Cancel"" button.","
+The form is closed without saving the role.
+User is redirected to the Search Roles page.
+No new role is added to the roles table.",,,
+89188.0,Test Case,Voter List Report,,,,SG\Elections\Java\EMS,Aden Wood <awood@gocivix.com>,Design
+,,,1.0,"Pre-requirements:
+- Have an existing Region
+- Have existing Precincts in that Region
+- Have existing Districts assigned to those Precincts
+- Have existing Streets assigned to those Precincts
+- Have a variety of different Voters assigned to those Streets e.g. Voters with different Statuses, Genders, Registration Dates, Parties, FPCA, Mailing Address, Hispanic Surname, etc.
+ 
+NOTE: Refer to the District Management and Voter Management test suites on how to set this data up","
+",,,
+,,,2.0,As a State User navigate to System Management > Reports > Report Run Request,Report Run Request Search page is displayed,,,
+,,,3.0,"Click ""ADD""",Maintain Report Run Request page ,,,
+,,,4.0,"Select ""VOTER-LIST-REPORT"" from the Report Definition ID dropdown",Option selected,,,
+,,,5.0,Click into the Region field and select your existing region,Region selected,,,
+,,,6.0,"From the Voter Status dropdown, select any desired amount of Statuses",Statuses selected,,,
+,,,7.0,"From the Reg Start Date, manually enter a date or select one from the calendar function on the right",Registration Start Date selected,,,
+,,,8.0,"From the Reg End Date, manually enter a date or select one from the calendar function on the right",Registration End Date selected,,,
+,,,9.0,"From the Gender dropdown, select any desired gender",Gender selected,,,
+,,,10.0,"From the Name Range From dropdown, select any desired letter (this will be for the Voter's first name)",Name Range From selected,,,
+,,,11.0,"From the Name Range To dropdown, select any desired letter (this will be for the Voter's first name)",Name Range To selected,,,
+,,,12.0,"From the Show Voter Choice dropdown, select a desired option",Option selected,,,
+,,,13.0,"From the Show Restricted Data dropdown, select a desired option",Option selected,,,
+,,,14.0,"From the Display Mailing Address dropdown, select a desired option",Option selected,,,
+,,,15.0,"From the Display Date Last Voted dropdown, select a desired option",Option selected,,,
+,,,16.0,"From the Display Last Voted Party dropdown, select a desired option",Option selected,,,
+,,,17.0,"From the Display Hispanic Surname dropdown, select a desired option",Option selected,,,
+,,,18.0,"From the Display FPCA Noted dropdown, select a desired option",Option selected,,,
+,,,19.0,"From the Sort By dropdown, select a desired option",Option selected,,,
+,,,20.0,"Scroll back to the top and click on the ""Template"" tab",Template area displayed,,,
+,,,21.0,"From the Output Type dropdown, select a desired option",Option selected,,,
+,,,22.0,"Click ""SAVE""",A success message is displayed and the user is taken back to the Report Run Request Search page ,,,
+,,,23.0,Check the top of the list,"The report you created will be displayed here with the status of ""Pending""",,,
+,,,24.0,"Refresh the page until the report status is set to ""Completed""",Report complete,,,
+,,,25.0,"To download, click on the Report ID link or click on the Actions ellipsis and select ""Download""",Report downloaded,,,
+,,,26.0,Open the download,The Report will be displayed,,,
+,,,27.0,Check the Report to ensure that the data displayed matched the criteria given when creating it,Report data and criteria match,,,
+,,,28.0,Repeat this test case for any other criteria or output types needed,The report result always matches the output type and criteria given,,,
+89375.0,Test Case,SM- Add a User (State User),,,,SG\Elections\Java,Muniba Nisar <mnisar@gocivix.com>,Ready
+,,,1.0,Precondition: User is logged in to the system and has the necessary permissions to add Users,"
+",,,
+,,,2.0,Navigate to System Management >Features->Maintain Users.,"The ""Search users"" page should open successfully",,,
+,,,3.0,Click on ADD,"""The 'Create User' page opens without any errors."".",,,
+,,,4.0,"Verify that mandatory fields are displayed:
+- First Name
+- Email
+- Phone Number
+- Region",All mandatory fields are visible and marked with *.,,,
+,,,5.0,"Fill the form with valid data:
+- First Name: Tood
+- Middle Name: K
+- Last Name: Ford
+- Email: ford@example.com
+- Phone Number: 1234567890
+- Region:Select a valid option (ADIRA)
+-End Date:Enter Valid date(1/30/2025)
+",Data should be entered without errors.,,,
+,,,6.0,"Select the ""State User"" checkbox. (This checkbox must be selected for state users.)","The ""State User"" checkbox is successfully selected.",,,
+,,,7.0,Click on the SAVE button.,"User should be created successfully, and a message 'User added successfully' is displayed.",,,
+89376.0,Test Case,SM- Add a User (County User),,,,SG\Elections\Java,Muniba Nisar <mnisar@gocivix.com>,Ready
+,,,1.0,Precondition: User is logged in to the system and has the necessary permissions to add Users,"
+",,,
+,,,2.0,Navigate to System Management >Features->Maintain Users.,"The ""Search users"" page should open successfully",,,
+,,,3.0,Click on ADD,"""The 'Create User' page opens without any errors."".",,,
+,,,4.0,"Verify that mandatory fields are displayed:
+- First Name
+- Email
+- Phone Number
+- Region",All mandatory fields are visible and marked with *.,,,
+,,,5.0,"Fill the form with valid data:
+- First Name: tom
+- Middle Name: L
+- Last Name: fork
+- Email: tom@example.com
+- Phone Number: 1234567890
+- Region: Select a valid option (ADIRA)
+-End Date:Enter Valid date(1/30/2025)
+",Data should be entered without errors.,,,
+,,,6.0,"Ensure the ""State User"" checkbox is not selected. (This checkbox must remain unchecked for County users.)","The ""State User"" checkbox is successfully unchecked.",,,
+,,,7.0,Click on the SAVE button.,"User should be created successfully, and a message 'User added successfully' is displayed.",,,
+89784.0,Test Case,Maintain Users-Deactivate,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Navigate to System Management > Features> Maintain Users,User Search Screen is displayed,,,
+,,,2.0,Select a valid User in active status and then Click on Actions->Deactivate ,"1.Are you sure you want to Deactivate this user? This action cannot be undone. Click OK ,tocontinue. otherwise click cancel button.
+2. 'OK' and 'Cancel' button must be
+displayed on the pop up window and must be enabled
+",,,
+,,,3.0,Click on Cancel button,User must remain on the User search page.,,,
+,,,4.0,Click on OK,"1.""Operation successful"" message must be displayed 
+2.User status column must be updated to ""Deactivated""
+
+
+",,,
+,,,5.0,Verify the Deactivated User is displayed in the search results grid,Deactivated User must be displayed in the search results grid and cannot be reactivated,,,
+,,,6.0,Try logging to the Election Management System with the Deactivated User ID ,The user should not be able to log in and access the system.,,,
+89785.0,Test Case,Maintain User- Reset Password ,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Precondition; A valid system user with a valid Email address associated with the role,"
+",,,
+,,,2.0,Navigate to System Management > Features> Maintain Users,User Search Page is displayed,,,
+,,,3.0,Click on  Actions->Reset Password,"""A reset password link will be sent to user's e-mail. Click Ok, to continue. Otherwise click Cancel button."" pop-up message must be displayed on the page.
+",,,
+,,,4.0,Click on Cancel Button ,"User continues to stay on ""User Search Page"" ",,,
+,,,5.0,"Click on ""Ok"" Button","1.""Operation Successful"" message is displayed on the Page
+2.The user must receive an email containing a 'Reset Password' link ",,,
+,,,6.0,Click on the 'Reset Password' and enter new password,The Okta system must successfully complete the password reset process,,,
+,,,7.0,Log in to the Elections system using the new password,User must  login successfully with the new password,,,
+,,,8.0,Try Logging to the system with the previous password,User should not have access to login ,,,
+89817.0,Test Case,SM-Region Office Details-Office Data-Add Functionality,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0, As a region User Navigate to Region Office Details->Office Data,Office Data page must be displayed,,,
+,,,2.0,"Select a Region Office Role from the drop-down menu, click the 'ADD' button, and then choose a Mailing address from the available options
+Note: The user can select one or more options, or choose all three",All relevant data fields must be displayed on the page,,,
+,,,3.0,"Enter all the mandatory fields and click on ""SAVE""",Mailing address must be saved successfully,,,
+,,,4.0,Select UOCAVA Address from the available mailing options,All relevant data fields must be displayed on the page,,,
+,,,5.0,"Enter all the mandatory fields and click on ""SAVE""",UOCOVA address must be saved successfully,,,
+,,,6.0,Select Physical Address from the available mailing options,All relevant data fields must be displayed on the page,,,
+,,,7.0,"Enter all the mandatory fields and click on ""SAVE"" or just select 
+ ""Copy Physical Address""",Physical Address must be saved successfully,,,
+,,,8.0,"After a role is added to the page verify ""ADD"" button",The 'Add' button must be disabled once a role is assigned,,,
+,,,9.0,Repeat the same steps to add more Roles ,"
+",,,
+89818.0,Test Case,SM - Region Office Details-Maintain Election Official Information-Add/Copy Functionality,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,As a Region User navigate to System Management > Region Office Details,Maintain Election Official Information page is displayed,,,
+,,,2.0,"Click  ""ADD"" and  Enter all the mandatory fields and click on ""Save""",Election official details must be saved successfully,,,
+,,,3.0,"Click ""Copy"" and select a Region official from the dropdown and click select","Copy button must pre-fill the  fields for thenew official  with the selected official’s
+details excluding Election Official Title
+",,,
+,,,4.0,Click on Office Data tab,User navigates to Office Data Page,,,
+,,,5.0,Click on Next button,User navigates to Office Data Page,,,
+,,,6.0,Click on Delete button,Must delete the Election official record from the page,,,
+,,,7.0,,,,,
+89892.0,Test Case,Maintain Role Privileges(User Access roles not yet implemented),,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Design
+89897.0,Test Case,Maintain Reference Tables - Update sequencing(currently when a user tries to update error is displayed on the page no access to update),,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Design
+,,,1.0,Navigate to SM->Reference data,Config Master Search Page is displayed,,,
+,,,2.0,Search for an existing name ex: political_party,The corresponding results must be displayed on the search results grid,,,
+,,,3.0,"Click on the ""Actions"" ellipsis",Options are displayed,,,
+,,,4.0,"Click on ""Manage""",Manage Config Master page is displayed ,,,
+,,,5.0,"Click on the ""Actions"" ellipsis",Options are displayed,,,
+,,,6.0,"Click on ""Update""",Config Details Page is displayed,,,
+,,,7.0,Enter a value in sequence and click on update,"
+",,,
+89980.0,Test Case,SM ->User profile (Edit & Reset),,,,SG\Elections\Java,Muniba Nisar <mnisar@gocivix.com>,Ready
+,,,1.0,Precondition: User is logged into the system,"
+",,,
+,,,2.0,Navigate to System Management >Features->User Profile,The User Profile page should open successfully,,,
+,,,3.0,Click on Edit,"The ""User Profile"" page should load successfully with all fields displaying their saved values.",,,
+,,,4.0,"The following fields are non-editable
+User ID/Email
+Role",Fields are non editable,,,
+,,,5.0,"Verify that the fields for editing are enabled:
+- First Name
+- Middle Name
+- Last Name
+- Phone Number",Editable fields should be enabled for modification.,,,
+,,,6.0,"Edit the following fields with valid data:
+- First Name: Fodd
+- Last Name: Todd
+- Phone Number: (123) 456-7890",Data should be entered without errors.,,,
+,,,7.0,Click on the SAVE button.,"Changes should be saved successfully, and a message ""User updated successfully""is displayed.
+The page navigates back to the 'User Profile' screen.",,,
+,,,8.0,"Verify Reset functionality:
+Navigate to the User Profile page.
+Click on Edit.
+","The ""User Profile"" page should load successfully with all fields displaying their saved values.",,,
+,,,9.0,"Modify the following fields with new data (but do not click SAVE):
+- First Name: jon
+- Last Name: hen
+- Phone Number: (999) 999-9999",The fields should reflect the newly entered data.,,,
+,,,10.0,Click on Reset,"All fields should revert to their previously saved values:
+- First Name: Fodd
+- Last Name: Todd
+- Phone Number: (123) 456-7890",,,
+89981.0,Test Case,SM ->Features->User Profile (RESET AND UPDATE PASSWORD),,,,SG\Elections\Java,Muniba Nisar <mnisar@gocivix.com>,Ready
+,,,1.0,Precondition: The user is logged into the system.,"
+",,,
+,,,2.0,Navigate to System Management >Features->User Profile.,The User Profile page should open successfully,,,
+,,,3.0,Click on RESET PASSWORD,"A confirmation message (""A reset password link will be sent to user's e-mail. Click Ok, to continue. Otherwise click Cancel button"") should appear.
+Click on OK.",,,
+,,,4.0,Open the registered email account (associated with the profile).,An email from Okta with a password reset link should be received.,,,
+,,,5.0,Verify the email content includes a valid password reset link and instructions.,"The email should contain the reset link, expiration time, and any necessary instructions for the user.",,,
+,,,6.0,Click on the password reset link in the email.,The link should redirect to a secure Okta password reset page.,,,
+,,,7.0,"Enter the new password (e.g., Test@1234) and confirm it.","The Okta system should accept the password and display a success message (e.g., ""Password updated successfully"").",,,
+,,,8.0,Attempt to log in with the new password.,Login should succeed using the updated credentials.,,,
+90197.0,Test Case,SM-  Search  a Role,,,,SG\Elections\Java,Muniba Nisar <mnisar@gocivix.com>,Ready
+,,,1.0,"Navigate to the ""System Management"" page.","The ""System Management"" page loads successfully.",,,
+,,,2.0,Click on Features-> Maintain Roles.,"The ""Search Roles"" page loads successfully.",,,
+,,,3.0,"Enter a valid Role Name (e.g., ""1000N"") in the ""Role Name"" field.",The Role Name is entered correctly without errors.,,,
+,,,4.0,"Enter a valid Role Code (e.g., ""Das12"") in the ""Role Code"" field.",The Role Code is entered correctly without errors.,,,
+,,,5.0,"Select a valid Role Type (e.g., ""County Role"") from the dropdown.",The Role Type is selected successfully.,,,
+,,,6.0,"Click the ""SEARCH"" button.","The system displays the search results matching the criteria. The search results include roles with the specified Role Name, Role Code, and Role Type.",,,
+,,,7.0,"Click the ""RESET"" button.","All search criteria fields (Role Name, Role Code, Role Type) are cleared. The system displays all roles without any filters applied.",,,
+,,,8.0,"If the user enters a non-existent Role Name or Role Code (e.g., ""dens"") in the Role Name or Role Code field.","The message ""No roles found"" is displayed.",,,
+90588.0,Test Case,SM - User-External Interface -Export the EPollbook data file,,,,SG\Elections\Java\EMS\VM\Voter,Muniba Nisar <mnisar@gocivix.com>,Design
+,,,1.0,"Precondition:                                                                                                              User is logged in to the system as State UserThere are more than one elections for the selected county                                             In election there is one or more than one polling place associated with precincts.
+There are voters for the selected county
+Precincts are associated with districts and street segments.                                    Voters are associated with street segments which is selected in precincts.
+
+","
+",,,
+,,,2.0,Click on System Management> Features/Users> External Interfaces Search,Schedule button is displayed in the bottom right ,,,
+,,,3.0,Click on Schedule Button,External Interface Programmer page is displayed succesfully,,,
+,,,4.0,In the types of interfaces select ePollbook Export,User gets to see the Parameters,,,
+,,,5.0, Start button,Start button is disabled by default,,,
+,,,6.0,Select county i.e(County1),User gets to see the information selected,,,
+,,,7.0,"Fill in the required information properly:1-Select the Election Date and Name.2-Check all three options:Polling PlaceStreet InformationVoter Information3-Check the checkbox for ""Include 17-year-old voters who will be 18 by.""Enter an invalid date in the ""Age 18 By Date"" field to test validation.",User gets to see the fields selected,,,
+,,,8.0,Click on Start button,"Job ePollBookExportJob launched successfully ,Job Grid is updated with the status CompletedSystem will add an audit record on DB with the Job Status
+",,,
+,,,9.0,"User can Naviagte to the S3 Bucket to download the File , Click on Download ",User gets to see                                                       1.The file in format .zip is downloaded Named as (County_ElectionDate_ElectionName Election Year_)                                                                              3. The file is in .txt format                                   4.The name of the file is                 POLLING_PLACE_DATA.txt                                                               STREET_Data.txt                                                                          VOTER_INFO.txt,,,
+,,,10.0,"
+","
+",,,
+,,,11.0,"
+","
+",,,
+,,,12.0,"
+","
+",,,
+91824.0,Test Case,Maintain Reference Tables - Add sequencing(currently add button is disabled),,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Design
+,,,1.0,Navigate to SM->Reference data,Config Master Search Page is displayed,,,
+,,,2.0,Search for an existing name ex: political_party,The corresponding results must be displayed on the search results grid,,,
+,,,3.0,"Click on the ""Actions"" ellipsis",Options are displayed,,,
+,,,4.0,"Click on ""Manage""",Manage Config Master page is displayed ,,,
+,,,5.0,"Click on the ""Actions"" ellipsis",Options are displayed,,,
+,,,6.0,"Click on ""Update""",Config Details Page is displayed,,,
+,,,7.0,Enter a value in sequence and click on update,"
+",,,

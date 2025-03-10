@@ -1,0 +1,66 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+81501.0,Test Case,69356-Verify Participation History Page Display and Functionality,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,"Navigate to Voter->Search->Select a voter->Actions->View->
+Participation History","Verify below columns are displayed on the grid.
+Election Date
+Election Name
+Party (Primary Election only)
+Method of Request
+Request Location
+Precinct
+Ballot Sent Date
+Ballot Received Date
+Ballot Return Method
+Ballot Status
+Ballot Status Reason
+Polling Locations",,,
+,,,2.0,"Verify the ""Add"" button is displayed 
+Click  on ""Add""","Add/Maintain Participation screen must be displayed
+",,,
+,,,3.0,"Enter all the  fields and click on ""Create""",Record must be created successfully ,,,
+,,,4.0,"Verify the added record is displayed in the grid on 
+Participation History screen
+",Added record must be displayed and column values must be displayed appropriately.,,,
+,,,5.0,Verify the pagination functionality,Next and previous button must work accordingly,,,
+,,,6.0,Verify the sorting functionality,Sorting functionality must work accordingly,,,
+83008.0,Test Case,Multiple Voter Participation - Verify that the party field dropdown appears when a primary election is selected,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given User is on the Voter Participation page and Select a primary election from the election dropdown.,"The party field dropdown should be visible and enabled and dropdown values should be present and user must be able to select an option.
+",,,
+83009.0,Test Case,Multiple Voter Participation - Ensure that the party field is hidden for non-primary elections,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given User is on the Voter Participation page and Select a non-primary election from the election dropdown.,"The party field should be hidden
+",,,
+83010.0,Test Case,Multiple Voter Participation - Verify that the user cannot proceed without selecting a party in a primary election.,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user is on the Voter Participation page with a primary election selected and attempt to proceed without selecting a party.,"The system should prevent proceeding and display an appropriate error message.
+",,,
+83011.0,Test Case,Multiple Voter Participation - Ensure that the system validates the party selection for primary elections.,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user is on the Voter Participation page with a primary election selected and Select a party from the dropdown followed by proceeding to next step. ,"The system should accept the selection and allow the user to proceed.
+",,,
+83012.0,Test Case,Multiple Voter Participation - Check that the party dropdown options correspond to the election selected.,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user is on the Voter Participation page and select a primary election from the dropdown.,"he party dropdown should display only the parties relevant to the selected primary election.
+",,,
+83017.0,Test Case,Multiple Voter Participation - Verify that the system notifies the user when an invalid voter ID is submitted.,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user is on the Voter Participation page and enter an invalid voter ID in the input field followed by clicking Insert button,"The system should display a notification in the message box indicating that the voter ID is invalid.
+",,,
+83020.0,Test Case,Multiple Voter Participation - Ensure the system notifies the user when a duplicate voter ID is submitted.,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user is on the Voter Participation page with an existing voter ID in the system. Enter the existing (duplicate) voter ID in the input field. Click Insert.,"The system should display a notification in the message box indicating that the voter ID has already been added.
+",,,
+83023.0,Test Case,"Multiple Voter Participation - Verify that a summary confirmation lists all processed voter IDs, highlighting any that failed validation.",,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user has submitted a mix of valid and invalid voter IDs and submit the voter IDs by clicking Insert.,"A summary confirmation should display all submitted IDs, highlighting those that are invalid or duplicates in red.
+",,,
+83024.0,Test Case,Multiple Voter Participation - Ensure users are informed of the reasons for any failed voter IDs.,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user has submitted a mix of valid and invalid voter IDs and click Insert.,"The system should provide specific reasons for each failed ID.
+",,,
+83025.0,Test Case,Multiple Voter Participation - Verify that the system processes valid voter IDs without errors.,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given User is on the Voter Participation page and enter only valid voter IDs in the input fields and click Insert.,"The system should process all valid IDs without any notifications for errors, and a confirmation message should appear.
+",,,
+83026.0,Test Case,"Multiple Voter Participation - Error handling for mix of valid, invalid, and duplicate voter IDs.",,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"Given User is on the Voter Participation page and Enter a combination of valid, invalid, and duplicate voter IDs and click Insert.","The system should notify the user of invalid and duplicate IDs, provide a summary confirmation with the status of each ID, and detail the reasons for any failures.
+",,,
+83028.0,Test Case,Multiple Voter Participation - Verify that a confirmation message displays the number of successfully processed voter IDs.,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given User is on the Voter Participation page and has entered valid voter IDs and enter 5 valid voter IDs and click Insert button.,"A confirmation message appears at the bottom of the page indicating the number of successful entries.
+",,,
+83029.0,Test Case,Multiple Voter Participation - Ensure that the system displays error messages for voter IDs that could not be processed.,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Given user is on the Voter Participation page and has entered a mix of valid and invalid voter IDs. Enter a combination of valid IDs and one invalid ID. Click insert.,"The confirmation message shows the number of successful entries and details the error(s) encountered, including specific messages like:""Cannot update election history details for Voter with Voter ID xxxx because the voter does not exist or is not in the correct status.""",,,
+83030.0,Test Case,Multiple Voter Participation - Verify that the system correctly identifies and reports a duplicate voter history entry.,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,"Given User is on the Voter Participation page and has entered a voter ID that already has history for the selected election. Enter a voter ID with existing election history.Click the ""Insert"" button.
+","The confirmation message includes an error indicating:""Cannot update election history details for Voter with Voter ID xxxx because the voter already has voter history for this election.""",,,

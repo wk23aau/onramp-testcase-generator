@@ -1,0 +1,3 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+89427,Test Case,Maintain Reference Tables-Update,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Design
+89428,Test Case,Maintain Reference Tables-Add Sequencing,,,,SG\Elections\Java\EMS,Sujatha Yelchuri <syelchuri@gocivix.com>,Design

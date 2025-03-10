@@ -1,0 +1,134 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+84633.0,Test Case,68947-Excel Report-District-to-Precinct Mapping Report,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Navigate to System Management->Reports->Report Run Request ,"Report Run Request Search Page must be displayed
+
+",,,
+,,,2.0,"Click on ""Add""","1.Select Report Definition ID 'DISTRICT-PRECINCT-MAPPING-LIST-REPORT'
+
+",,,
+,,,3.0,Select Region and click  on Template,Template parameters must be displayed,,,
+,,,4.0,"Enter the required parameters and select ""MS Excel"" for Output type Click ""SAVE""","""Report run request has been created"" message must be displayed",,,
+,,,5.0,Verify the generated new report request on Report Run Request Search Page,"Must generate a new report request id with status  ""completed""",,,
+,,,6.0,Click on Actions->Download,The MS Excel report must be successfully generated on the local system,,,
+,,,7.0,"Verify below column names are displayed on the report
+County Code
+County Name
+District Type	
+District Code	
+District Name	
+Precinct	
+Total Voters",All the columns must be displayed correctly,,,
+,,,8.0,"Verify all the Column values are displayed correctly on the report
+County Code
+County Name
+District Type	
+District Code	
+District Name	
+Precinct	
+Total Voters",The values displayed in the report must match those shown in the EMS system,,,
+,,,9.0,"Verify  the report data for the selected region correctly displays 
+County Code
+County Name
+District Type	
+District Code	
+District Name	
+Precinct	
+Total Voters",The values displayed in the report must match those shown in the EMS system for the selected region.,,,
+,,,10.0,"
+","
+",,,
+84669.0,Test Case,68947-PDF REPORT-District-to-Precinct Mapping Report,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Navigate to System Management->Reports->Report Run Request ,"Report Run Request Search Page must be displayed
+
+",,,
+,,,2.0,"Click on ""Add""","1.Select Report Definition ID 'DISTRICT-PRECINCT-MAPPING-LIST-REPORT'
+
+",,,
+,,,3.0,Select Region and click  on Template,Template parameters must be displayed,,,
+,,,4.0,"Enter the required parameters and select ""PDF"" for Output type Click ""SAVE""","""Report run request has been created"" message must be displayed",,,
+,,,5.0,Verify the generated new report request on Report Run Request Search Page,"Must generate a new report request id with status  ""completed""",,,
+,,,6.0,Click on Actions->Download,The PDF report must be successfully generated on the local system,,,
+,,,7.0,"Verify below column names are displayed on the report
+	
+District Code	
+District Name	
+Precinct	
+Total Voters",All the columns must be displayed correctly,,,
+,,,8.0,"Verify all the Column values are displayed correctly on the report
+	
+District Code	
+District Name	
+Precinct	
+Total Voters",The values displayed in the report must match those shown in the EMS system,,,
+,,,9.0,"Verify  the report data for the selected region correctly displays 
+	
+District Code	
+District Name	
+Precinct	
+Total Voters",The values displayed in the report must match those shown in the EMS system for the selected region.,,,
+,,,10.0,Ensure the font size and style are consistent ,The font size and style should be consistent throughout the report,,,
+,,,11.0,Verify the alignment of elements in the PDF file,Must match with the sample file format,,,
+84728.0,Test Case,68947-CSV Report-District-to-Precinct Mapping Report,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Navigate to System Management->Reports->Report Run Request ,"Report Run Request Search Page must be displayed
+
+",,,
+,,,2.0,"Click on ""Add""","1.Select Report Definition ID 'DISTRICT-PRECINCT-MAPPING-LIST-REPORT'
+
+",,,
+,,,3.0,Select Region and click  on Template,Template parameters must be displayed,,,
+,,,4.0,"Enter the required parameters and select ""CSV"" for Output type Click ""SAVE""","""Report run request has been created"" message must be displayed",,,
+,,,5.0,Verify the generated new report request on Report Run Request Search Page,"Must generate a new report request id with status  ""completed""",,,
+,,,6.0,Click on Actions->Download,The CSV report must be successfully generated on the local system,,,
+,,,7.0,"Verify below column names are displayed on the report
+County Code
+County Name
+District Type	
+District Code	
+District Name	
+Precinct	
+Total Voters",All the columns must be displayed correctly,,,
+,,,8.0,"Verify all the Column values are displayed correctly on the report
+County Code
+County Name
+District Type	
+District Code	
+District Name	
+Precinct	
+Total Voters",The values displayed in the report must match those shown in the EMS system,,,
+,,,9.0,"Verify  the report data for the selected region correctly displays 
+County Code
+County Name
+District Type	
+District Code	
+District Name	
+Precinct	
+Total Voters",The values displayed in the report must match those shown in the EMS system for the selected region.,,,
+,,,10.0,"
+","
+",,,
+86088.0,Test Case,69261-Verify Title Header for PDF Reports ,,,,SG\Elections\Java,Sujatha Yelchuri <syelchuri@gocivix.com>,Ready
+,,,1.0,Navigate to System Management->Reports->Report Run Request ,"Report Run Request Search Page must be displayed
+
+",,,
+,,,2.0,"Click on ""Add""",Select Report Definition ID 'DISTRICT-PRECINCT-MAPPING-LIST-REPORT',,,
+,,,3.0,Select Region and click  on Template,"Template parameters must be displayed
+
+",,,
+,,,4.0,"Enter the required parameters and select ""PDF"" for Output type Click ""SAVE""","""Report run request has been created"" message must be displayed",,,
+,,,5.0,Click on the ID Hyperlink on Report Run Request Search Page	,PDF Report must be generated successfully ,,,
+,,,6.0,Verify Date displayed  correctly on PDF Report1.date MM/DD/YYYY format.,"1.date must be displayed in MM/DD/YYYY format.
+2.Left aligned on the report",,,
+,,,7.0,"Verify that the name of the PDF report is displayed correctly on the report
+ User name","1.Must be displayed as Generated by :""User name""
+2.Right aligned on the report",,,
+,,,8.0,"Verify that the name of the PDF report is displayed correctly on the report
+ ""State of <client>""","Must Display ""Civix"" in QA_Base
+Texas in QA Texas Environment
+IOWA in IA Environment",,,
+,,,9.0,"Verify that the name of the PDF report is displayed correctly on the report
+ <current Region>","1.Must be displayed below Generated by column and right aligned.
+2.Must display the region name which is selected on Template",,,
+,,,10.0,"Verify that the name of the PDF report is displayed correctly on the report
+  <Name of the Report>","1.Must display as ""Districts List"" for 'DISTRICT-PRECINCT-MAPPING-LIST-REPORT'
+2.Must display as ""Voter List"" for VOTER-LIST-REPORT
+3.Must display as ""Precinct List"" for PRECINCT-DISTRICT-MAPPING-LIST-REPORT",,,

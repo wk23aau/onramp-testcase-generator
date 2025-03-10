@@ -1,0 +1,8 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+81248.0,Test Case,Verify Absentee ballot details appear in the new tab,,,,SG\Elections\Java,Shreya Nyapati <snyapati@gocivix.com>,Design
+,,,1.0,Home > Search for voter > Actions > View Voter Information page> Absentee Ballot History tab.,"Absentee ballot details are displayed in the Voter Details tab.
+",,,
+88656.0,Test Case,Manage Ballots - Absentee Ballot Processing,,,,SG\Elections\Java\EMS,Jorge Taveras <jtaveras@gocivix.com>,Design
+,,,1.0,"Given the user is on Landing page, VM > Voter Ballot > Manage Absentee Ballots > Absentee Ballot Processing",User should be on Absentee Ballot Records page,,,
+,,,2.0,Select an Election Date Name field value and also the Ballot status field value followed by clicking Search,System displays the buckets (number followed by date) available for the given search criteria,,,
+,,,3.0,Click on any one of the bucket,"System will display the scanned ballot along with all the Voter information. And at the bottom of the screen, there are Zoom In and Zoom Out buttons",,,
