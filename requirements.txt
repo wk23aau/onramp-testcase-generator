@@ -10,3 +10,4 @@ faiss-cpu  # or faiss-gpu
 sentence-transformers
 tqdm
 sentencepiece
+streamlit
